@@ -9,15 +9,14 @@
   <body>
     <div class="container">
       <div class="alert alert-primary">
-        This is an Alert message!
+        Testing this sexy hot reloading
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <script>
-      var socket = io("http://localhost:8080", { forceNew: true });
+      let socket = io("http://localhost:8080", { forceNew: true });
       socket.on("connect", function() {
         socket.emit("done");
-        console.log("Connected.");
       });
 
       socket.on("reload", () => {

@@ -104,6 +104,9 @@ button {
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto; }
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 90%; } }
 
 .code-block {
   padding: 30px;

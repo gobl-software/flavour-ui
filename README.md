@@ -6,8 +6,13 @@ Clone the repository with:
 
 git clone https://github.com/gobl-software/FlavourUI.git
 
-cd ./FlavourUI
+cd FlavourUI
+```
 
+Install dependencies with:
+
+```bash
+npm install
 ```
 
 Run development server:
@@ -48,3 +53,5 @@ npm install @gobl-software/flavour-ui
 
 [Inter](https://github.com/rsms/inter)
 [Metropolis](https://github.com/chrismsimpson/Metropolis)
+
+### Collection of all components - https://gobl-software.github.io/FlavourUI/

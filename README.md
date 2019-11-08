@@ -7,17 +7,25 @@ git clone https://github.com/gobl-software/FlavourUI.git
 cd ./FlavourUI
 ```
 
-Compile Scss to Css using:
+Run development server:
 
 ```bash
-npm run build
+npm run build:dev
 ```
 
-Run live-server for viewing elements and testing:
+### Hot-Reloading
+
+Visit http://localhost:8080/ and make some changes.
+
+## Production
+
+Build project using:
 
 ```bash
-npm run server
+npm run build:prod
 ```
+
+Outputs compiled file to /dist.
 
 ## Installation
 

@@ -1,8 +1,8 @@
 <h1 align="center">FlavourUI</h1>
 <p align="center">CSS components that got flavour!</p>
-<span align="center">
+<p align="center">
   <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/FlavourUI?style=flat-square">
-</span>
+</p>
 
 ## Development
 

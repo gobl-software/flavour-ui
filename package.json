@@ -6,10 +6,17 @@
   "repository": "https://github.com/gobl-software/FlavourUI",
   "author": "Barend Du Toit",
   "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "server": "node server.js"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }

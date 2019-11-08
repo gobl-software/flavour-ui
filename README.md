@@ -4,7 +4,14 @@ Clone the repository with:
 
 ```bash
 git clone https://github.com/gobl-software/FlavourUI.git
-cd ./FlavourUI
+
+cd FlavourUI
+```
+
+Install dependencies with:
+
+```bash
+npm install
 ```
 
 Run development server:

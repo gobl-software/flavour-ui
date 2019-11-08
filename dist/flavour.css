@@ -1,4 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem; }
+
+.alert-primary {
+  color: white;
+  background-color: #20123a; }
+
+.container {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }

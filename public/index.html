@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="/dist/flavour.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="alert alert-primary">
+        This is an Alert message!
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script>
+      var socket = io("http://localhost:8080", { forceNew: true });
+      socket.on("connect", function() {
+        socket.emit("done");
+        console.log("Connected.");
+      });
+
+      socket.on("reload", () => {
+        window.location.reload();
+      });
+    </script>
   </body>
 </html>

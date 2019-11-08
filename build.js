@@ -1,6 +1,9 @@
-const sass = require("node-sass");
 const path = require("path");
 const fs = require("fs");
+const chalk = require("chalk");
+const sass = require("node-sass");
+
+console.log(chalk.magenta(`[flavour] compiling project for production...`));
 
 sass.render(
   {
@@ -13,7 +16,9 @@ sass.render(
         result.css,
         function(err) {
           if (!err) {
-            console.log("Successfully compiled project.");
+            console.log(
+              chalk.green(`[flavour] compiled flavour.css to /dist/.`)
+            );
           }
         }
       );

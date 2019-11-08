@@ -9,6 +9,13 @@ const io = require("socket.io")(server);
 
 console.log(chalk.magenta(`[flavour] recompiling project...`));
 
+app.use("/dist", express.static("dist"));
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.render("index.html");
+});
+
 sass.render(
   {
     file: path.join(__dirname, "src", "index.scss")
@@ -20,13 +27,6 @@ sass.render(
         result.css,
         function(err) {
           if (!err) {
-            app.use("/dist", express.static("dist"));
-            app.use(express.static("public"));
-
-            app.get("/", (req, res) => {
-              res.render("index.html");
-            });
-
             server.listen(8080, () => {
               console.log(chalk.magenta(`[flavour] hot-reloading window...`));
             });

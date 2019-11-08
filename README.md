@@ -51,7 +51,7 @@ Install flavour-ui package using:
 
 ```bash
 
-npm install @gobl-software/flavour-ui
+npm install @gobl/flavour-ui
 
 ```
 

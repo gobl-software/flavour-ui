@@ -1,5 +1,5 @@
 {
-  "name": "@gobl-software/flavour-ui",
+  "name": "flavour-ui",
   "version": "0.0.1",
   "description": "The juiciest, most flavourful CSS UI framework around.",
   "main": "index.js",

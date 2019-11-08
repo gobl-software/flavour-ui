@@ -17,7 +17,18 @@ sass.render(
         function(err) {
           if (!err) {
             console.log(
-              chalk.green(`[flavour] compiled flavour.css to /dist/.`)
+              chalk.green(`[flavour] compiled flavour.css to "dist/".`)
+            );
+          }
+        }
+      );
+      fs.writeFile(
+        path.join(__dirname, "package", "flavour.css"),
+        result.css,
+        function(err) {
+          if (!err) {
+            console.log(
+              chalk.green(`[flavour] compiled flavour.css to "package/".`)
             );
           }
         }

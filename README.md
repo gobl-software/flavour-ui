@@ -1,3 +1,9 @@
+<h1 align="center">FlavourUI</h1>
+<p align="center">CSS components that got flavour!</p>
+<p align="center">
+  <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/FlavourUI?style=flat-square">
+</p>
+
 ## Development
 
 Clone the repository with:
@@ -45,7 +51,7 @@ Install flavour-ui package using:
 
 ```bash
 
-npm install @gobl-software/flavour-ui
+npm install @gobl/flavour-ui
 
 ```
 

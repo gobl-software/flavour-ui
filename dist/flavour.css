@@ -1,4 +1,92 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@font-face {
+  font-family: "Metropolis Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Regular"), url("fonts/metropolis/Metropolis-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Bold"), url("fonts/metropolis/Metropolis-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Metropolis Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Semi Bold"), url("fonts/metropolis/Metropolis-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Metropolis Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Extra Bold"), url("fonts/metropolis/Metropolis-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Regular"), url("fonts/Inter/Inter-Regular.woff") format("woff"); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #202529;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2.475rem;
+  font-weight: normal;
+  font-family: "Metropolis Extra Bold", sans-serif; }
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-family: "Metropolis Extra Bold", sans-serif; }
+
+h3 {
+  font-size: 1.925rem;
+  font-weight: normal;
+  font-family: "Metropolis Bold", sans-serif; }
+
+h4 {
+  font-size: 1.65rem;
+  font-weight: normal;
+  font-family: "Metropolis Bold", sans-serif; }
+
+h5 {
+  font-size: 1.375rem;
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif; }
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif; }
+
+div,
+p,
+span {
+  font-family: "Inter Regular", sans-serif;
+  color: #31383e; }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom: 1px solid #cad2d8;
+  opacity: 0.5; }
+
+button {
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif; }
+
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -13,8 +101,14 @@
   width: 60%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto; }
+
+.code-block {
+  padding: 30px;
+  border: 2px solid cyan;
+  border-radius: 0.15rem; }
 
 .btn {
   display: inline-block;
@@ -178,7 +272,6 @@
     cursor: not-allowed; }
 
 * {
-  font-family: "Heebu", sans-serif;
   padding: 0;
   margin: 0;
   margin-top: 10px;

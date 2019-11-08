@@ -1,0 +1,110 @@
+$index: 1.1rem;
+
+@font-face {
+  font-family: "Metropolis Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Regular"),
+    url("fonts/metropolis/Metropolis-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Bold"),
+    url("fonts/metropolis/Metropolis-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Semi Bold"),
+    url("fonts/metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Metropolis Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Metropolis Extra Bold"),
+    url("fonts/metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Regular"),
+    url("fonts/Inter/Inter-Regular.woff") format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark-grey;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Extra Bold", sans-serif;
+}
+
+h2 {
+  font-size: 2 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Extra Bold", sans-serif;
+}
+
+h3 {
+  font-size: 1.75 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Bold", sans-serif;
+}
+
+h4 {
+  font-size: 1.5 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Bold", sans-serif;
+}
+
+h5 {
+  font-size: 1.25 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif;
+}
+
+h6 {
+  font-size: 1 * $index;
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif;
+}
+
+div,
+p,
+span {
+  font-family: "Inter Regular", sans-serif;
+  color: $light-grey;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom: 1px solid $lighter-grey;
+  opacity: 0.5;
+}
+
+button {
+  font-weight: normal;
+  font-family: "Metropolis Semi Bold", sans-serif;
+}

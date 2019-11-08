@@ -1,5 +1,5 @@
 <h1 align="center">FlavourUI</h1>
-<p align="center">CSS components that got flavour!</p>
+<p align="center"><a href="https://github.com/facebook/react">React</a> UI component library built with flavour!</p>
 <p align="center">
   <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/FlavourUI?style=flat-square">
 </p>

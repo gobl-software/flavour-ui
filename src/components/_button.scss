@@ -8,6 +8,7 @@
   padding: 0.4rem 1rem;
   line-height: 1.5;
   border-radius: 0.15rem;
+  margin: 0.2rem 0rem;
   cursor: pointer;
 }
 
@@ -21,6 +22,7 @@
   }
   &:active {
     transform: translateY(1px);
+    background-color: darken($color, 5%);
   }
 }
 
@@ -44,7 +46,7 @@
   color: $color;
   background-color: transparent;
   border-color: $color;
-  transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.125s;
   &:hover {
     @include shadow;
     color: #fff;
@@ -78,13 +80,13 @@
 }
 
 .btn-lg {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.6rem 1.5rem;
   line-height: 1.5;
 }
 
 .btn-xl {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 0.8rem 2rem;
   line-height: 1.5;
 }
@@ -99,5 +101,35 @@
   &:hover {
     @include shadow-none;
     cursor: not-allowed;
+  }
+}
+
+.btn-group {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn-group > .btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group > .btn:not(:first-child) {
+  margin-left: -1px;
+}
+
+.btn-group > .btn {
+  &:hover {
+    @include shadow-none;
+  }
+  &:active {
+    transform: translate(0);
   }
 }

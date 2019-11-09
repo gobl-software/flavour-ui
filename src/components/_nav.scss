@@ -1,0 +1,55 @@
+.navbar {
+  padding: 1.2rem 0rem;
+  list-style: none;
+  width: 100%;
+  background-color: $dark;
+  color: white;
+  .nav-item {
+    display: inline-block;
+    font-weight: normal;
+    font-family: "Metropolis Semi Bold", sans-serif;
+    color: white;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.navbar-brand {
+  display: inline-block;
+  .navbar-brand-name {
+    font-size: 1.3 * $index;
+    font-weight: normal;
+    font-family: "Metropolis Semi Bold", sans-serif;
+  }
+}
+
+.navbar-light {
+  background-color: white;
+  color: $dark;
+  .nav-item {
+    display: inline-block;
+    font-weight: normal;
+    font-family: "Metropolis Semi Bold", sans-serif;
+    color: $dark;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > .nav-item:not(:last-child) {
+  margin-right: 3rem;
+}

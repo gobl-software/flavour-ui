@@ -1,11 +1,52 @@
 .alert {
+  font-family: "Metropolis Semi Bold", sans-serif;
+  font-weight: normal;
   position: relative;
   padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
   margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.15rem;
+}
+
+@mixin alert($color) {
+  color: white;
+  background-color: $color;
 }
 
 .alert-primary {
-  color: white;
-  background-color: #20123a;
+  @include alert($primary);
+}
+
+.alert-secondary {
+  @include alert($secondary);
+}
+
+.alert-success {
+  @include alert($success);
+}
+
+.alert-danger {
+  @include alert($danger);
+}
+
+@mixin alertOutline($color) {
+  color: $color;
+  background-color: transparent;
+  border: 2px solid $color;
+}
+
+.alert-outline-primary {
+  @include alertOutline($primary);
+}
+
+.alert-outline-secondary {
+  @include alertOutline($secondary);
+}
+
+.alert-outline-success {
+  @include alertOutline($success);
+}
+
+.alert-outline-danger {
+  @include alertOutline($danger);
 }

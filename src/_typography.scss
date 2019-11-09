@@ -1,4 +1,4 @@
-$index: 1.1rem;
+$index: 1.2rem;
 
 @font-face {
   font-family: "Metropolis Regular";
@@ -46,8 +46,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: $dark-grey;
+  color: $dark;
   line-height: 1.2;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
@@ -86,7 +88,6 @@ h6 {
   font-family: "Metropolis Semi Bold", sans-serif;
 }
 
-div,
 p,
 span {
   font-family: "Inter Regular", sans-serif;
@@ -108,3 +109,9 @@ button {
   font-weight: normal;
   font-family: "Metropolis Semi Bold", sans-serif;
 }
+
+// .nav {
+//   font-weight: normal;
+//   font-family: "Metropolis Semi Bold", sans-serif;
+//   font-size: 1.1 * $index;
+// }

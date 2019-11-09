@@ -1,11 +1,17 @@
 .alert {
-  font-family: "Metropolis Semi Bold", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
   font-weight: normal;
   position: relative;
   padding: 0.75rem 1.25rem;
   border: 2px solid transparent;
   margin-bottom: 1rem;
   border-radius: 0.15rem;
+  .alert-link {
+    font-family: "Inter Extra Bold", sans-serif;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 @mixin alert($color) {

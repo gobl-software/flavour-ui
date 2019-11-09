@@ -40,6 +40,29 @@ $index: 1.2rem;
     url("fonts/Inter/Inter-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Inter Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Semi Bold"),
+    url("fonts/Inter/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Bold"), url("fonts/Inter/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Extra Bold"),
+    url("fonts/Inter/Inter-ExtraBold.woff") format("woff");
+}
+
 h1,
 h2,
 h3,
@@ -88,8 +111,7 @@ h6 {
   font-family: "Metropolis Semi Bold", sans-serif;
 }
 
-p,
-span {
+p {
   font-family: "Inter Regular", sans-serif;
   color: $light-grey;
 }

@@ -22,7 +22,6 @@
   }
   &:active {
     transform: translateY(1px);
-    background-color: darken($color, 5%);
   }
 }
 
@@ -131,5 +130,6 @@
   }
   &:active {
     transform: translate(0);
+    filter: brightness(85%);
   }
 }

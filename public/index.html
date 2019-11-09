@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/dist/flavour.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light">
-      <div class="navbar-container">
+    <div class="navbar navbar-sticky navbar-light">
+      <div class="navbar-container-fluid">
         <div class="navbar-brand">
           <div class="navbar-brand-name">FlavourUI</div>
         </div>
@@ -25,15 +25,14 @@
         </div>
         <div class="nav">
           <div class="nav-item">
-            <button href="/" class="btn btn-primary">Login</button>
+            <button href="/" class="btn btn-outline-primary">Login</button>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
     <section class="section-dark">
       <div class="container">
-        <h2>Typography</h2>
-        <hr />
+        <h1>Typography</h1>
         <br />
         <h1>h1. Flavour Heading</h1>
         <h2>h2. Flavour Heading</h2>
@@ -51,8 +50,7 @@
     </section>
     <section class="section">
       <div class="container">
-        <h2>Buttons</h2>
-        <hr />
+        <h1>Buttons</h1>
         <br />
         <h5>Basic</h5>
         <button href="/" class="btn btn-primary">Primary</button>
@@ -95,8 +93,7 @@
     </section>
     <section class="section-dark">
       <div class="container">
-        <h2>Alerts</h2>
-        <hr />
+        <h1>Alerts</h1>
         <br />
         <h5>Basic</h5>
         <div class="alert alert-primary">This is a primary alert.</div>
@@ -110,6 +107,10 @@
         </div>
         <div class="alert alert-outline-success">This is a success alert.</div>
         <div class="alert alert-outline-danger">This is a danger alert.</div>
+        <h5>Alert Links</h5>
+        <div class="alert alert-primary">
+          This is a <span class="alert-link">primary</span> alert link.
+        </div>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>

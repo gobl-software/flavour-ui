@@ -7,54 +7,92 @@
     <link rel="stylesheet" href="./dist/flavour.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Typography</h1>
-      <hr />
-      <br />
-      <h1>h1. Flavour Heading</h1>
-      <h2>h2. Flavour Heading</h2>
-      <h3>h3. Flavour Heading</h3>
-      <h4>h4. Flavour Heading</h4>
-      <h5>h5. Flavour Heading</h5>
-      <h6>h6. Flavour Heading</h6>
-      <p>
-        p. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio et
-        eveniet deserunt culpa? Assumenda, enim suscipit molestiae recusandae at
-        ducimus mollitia vero. Debitis accusantium ex officia temporibus
-        recusandae totam?
-      </p>
-      <br />
-      <h1>Buttons</h1>
-      <hr />
-      <br />
-      <h5>Basic</h5>
-      <button href="/" class="btn btn-primary">Primary</button>
-      <button href="/" class="btn btn-secondary">Secondary</button>
-      <button href="/" class="btn btn-success">Success</button>
-      <button href="/" class="btn btn-danger">Danger</button>
-      <br />
-      <h5>Outlined</h5>
-      <button href="/" class="btn btn-outline-primary">Primary</button>
-      <button href="/" class="btn btn-outline-secondary">Secondary</button>
-      <button href="/" class="btn btn-outline-success">Success</button>
-      <button href="/" class="btn btn-outline-danger">Danger</button>
-      <br />
-      <h5>Sizes</h5>
-      <button href="/" class="btn btn-sm btn-primary">Small</button>
-      <button href="/" class="btn btn-outline-secondary">Medium</button>
-      <button href="/" class="btn btn-lg btn-success">Large</button>
-      <button href="/" class="btn btn-xl btn-outline-danger">X-Large</button>
-      <br />
-      <h5>Block</h5>
-      <button href="/" class="btn btn-lg btn-primary btn-block">
-        Block button
-      </button>
-      <h5>Disabled</h5>
-      <button href="/" class="btn btn-primary" disabled>Primary</button>
-      <button href="/" class="btn btn-secondary" disabled>Secondary</button>
-      <button href="/" class="btn btn-success" disabled>Success</button>
-      <button href="/" class="btn btn-danger" disabled>Danger</button>
-    </div>
+    <nav class="navbar navbar-light">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <div class="navbar-brand-name">FlavourUI</div>
+        </div>
+        <div class="nav">
+          <div class="nav-item">
+            Home
+          </div>
+          <div class="nav-item">
+            Components
+          </div>
+          <div class="nav-item">
+            Utils
+          </div>
+        </div>
+        <div class="nav">
+          <div class="nav-item">
+            <button href="/" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section-dark">
+      <div class="container">
+        <h2>Typography</h2>
+        <hr />
+        <br />
+        <h1>h1. Flavour Heading</h1>
+        <h2>h2. Flavour Heading</h2>
+        <h3>h3. Flavour Heading</h3>
+        <h4>h4. Flavour Heading</h4>
+        <h5>h5. Flavour Heading</h5>
+        <h6>h6. Flavour Heading</h6>
+        <p>
+          p. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio et
+          eveniet deserunt culpa? Assumenda, enim suscipit molestiae recusandae
+          at ducimus mollitia vero. Debitis accusantium ex officia temporibus
+          recusandae totam?
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Buttons</h2>
+        <hr />
+        <br />
+        <h5>Basic</h5>
+        <button href="/" class="btn btn-primary">Primary</button>
+        <button href="/" class="btn btn-secondary">Secondary</button>
+        <button href="/" class="btn btn-success">Success</button>
+        <button href="/" class="btn btn-danger">Danger</button>
+        <br />
+        <h5>Outlined</h5>
+        <button href="/" class="btn btn-outline-primary">Primary</button>
+        <button href="/" class="btn btn-outline-secondary">Secondary</button>
+        <button href="/" class="btn btn-outline-success">Success</button>
+        <button href="/" class="btn btn-outline-danger">Danger</button>
+        <br />
+        <h5>Sizes</h5>
+        <button href="/" class="btn btn-sm btn-primary">Small</button>
+        <button href="/" class="btn btn-outline-secondary">Medium</button>
+        <button href="/" class="btn btn-lg btn-success">Large</button>
+        <button href="/" class="btn btn-xl btn-outline-danger">X-Large</button>
+        <br />
+        <h5>Block</h5>
+        <button href="/" class="btn btn-lg btn-primary btn-block">
+          Block button
+        </button>
+        <h5>Groups</h5>
+        <div class="btn-group">
+          <button href="/" class="btn btn-primary">Left</button>
+          <button href="/" class="btn btn-primary">Middle</button>
+          <button href="/" class="btn btn-primary">Right</button>
+        </div>
+        <div class="btn-group">
+          <button href="/" class="btn btn-success">Left</button>
+          <button href="/" class="btn btn-success" disabled>Middle</button>
+        </div>
+        <h5>Disabled</h5>
+        <button href="/" class="btn btn-primary" disabled>Primary</button>
+        <button href="/" class="btn btn-secondary" disabled>Secondary</button>
+        <button href="/" class="btn btn-success" disabled>Success</button>
+        <button href="/" class="btn btn-danger" disabled>Danger</button>
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <script>
       let socket = io("http://localhost:8080", { forceNew: true });

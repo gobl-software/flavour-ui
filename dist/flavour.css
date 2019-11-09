@@ -28,6 +28,24 @@
   font-weight: normal;
   src: local("Inter Regular"), url("fonts/Inter/Inter-Regular.woff") format("woff"); }
 
+@font-face {
+  font-family: "Inter Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Semi Bold"), url("fonts/Inter/Inter-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Bold"), url("fonts/Inter/Inter-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Inter Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Extra Bold"), url("fonts/Inter/Inter-ExtraBold.woff") format("woff"); }
+
 h1,
 h2,
 h3,
@@ -69,8 +87,7 @@ h6 {
   font-weight: normal;
   font-family: "Metropolis Semi Bold", sans-serif; }
 
-p,
-span {
+p {
   font-family: "Inter Regular", sans-serif;
   color: #31383e; }
 
@@ -120,7 +137,7 @@ button {
     color: white; }
 
 .navbar {
-  padding: 1.2rem 0rem;
+  padding: 0.6rem 0rem;
   list-style: none;
   width: 100%;
   background-color: #20123a;
@@ -131,6 +148,16 @@ button {
     font-family: "Metropolis Semi Bold", sans-serif;
     color: white; }
 
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -140,6 +167,15 @@ button {
   margin-left: auto; }
   @media only screen and (max-width: 480px) {
     .navbar-container {
+      width: 90%; } }
+
+.navbar-container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.85rem; }
+  @media only screen and (max-width: 480px) {
+    .navbar-container-fluid {
       width: 90%; } }
 
 .navbar-brand {
@@ -167,14 +203,54 @@ button {
   margin-right: 3rem; }
 
 .alert {
+  font-family: "Inter Semi Bold", sans-serif;
+  font-weight: normal;
   position: relative;
   padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
   margin-bottom: 1rem;
-  border-radius: 0.25rem; }
+  border-radius: 0.15rem; }
+  .alert .alert-link {
+    font-family: "Inter Extra Bold", sans-serif;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer; }
 
 .alert-primary {
   color: white;
-  background-color: #20123a; }
+  background-color: #0060df; }
+
+.alert-secondary {
+  color: white;
+  background-color: #9858f4; }
+
+.alert-success {
+  color: white;
+  background-color: #28a745; }
+
+.alert-danger {
+  color: white;
+  background-color: #dc3545; }
+
+.alert-outline-primary {
+  color: #0060df;
+  background-color: transparent;
+  border: 2px solid #0060df; }
+
+.alert-outline-secondary {
+  color: #9858f4;
+  background-color: transparent;
+  border: 2px solid #9858f4; }
+
+.alert-outline-success {
+  color: #28a745;
+  background-color: transparent;
+  border: 2px solid #28a745; }
+
+.alert-outline-danger {
+  color: #dc3545;
+  background-color: transparent;
+  border: 2px solid #dc3545; }
 
 .btn {
   display: inline-block;
@@ -201,8 +277,7 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: #0065ec; }
   .btn-primary:active {
-    transform: translateY(1px);
-    background-color: #0055c6; }
+    transform: translateY(1px); }
 
 .btn-secondary {
   color: #fff;
@@ -216,8 +291,7 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: #9f64f5; }
   .btn-secondary:active {
-    transform: translateY(1px);
-    background-color: #8940f2; }
+    transform: translateY(1px); }
 
 .btn-success {
   color: #fff;
@@ -231,8 +305,7 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: #2ab149; }
   .btn-success:active {
-    transform: translateY(1px);
-    background-color: #23923d; }
+    transform: translateY(1px); }
 
 .btn-danger {
   color: #fff;
@@ -246,8 +319,7 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: #de404f; }
   .btn-danger:active {
-    transform: translateY(1px);
-    background-color: #d32535; }
+    transform: translateY(1px); }
 
 .btn-outline-primary {
   color: #0060df;
@@ -367,7 +439,8 @@ button {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.24); }
 
 .btn-group > .btn:active {
-  transform: translate(0); }
+  transform: translate(0);
+  filter: brightness(85%); }
 
 * {
   padding: 0;

@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1.2rem 0rem;
+  padding: 0.6rem 0rem;
   list-style: none;
   width: 100%;
   background-color: $dark;
@@ -12,6 +12,13 @@
   }
 }
 
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  @include shadow;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -19,6 +26,16 @@
   width: 60%;
   margin-right: auto;
   margin-left: auto;
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.navbar-container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.85rem;
   @media only screen and (max-width: 480px) {
     width: 90%;
   }

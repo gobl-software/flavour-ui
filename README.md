@@ -1,4 +1,4 @@
-<p align="center"><img  width="135" src="https://i.postimg.cc/rm9PWSPG/splash.png" /></p>
+<p align="center"><img  width="135" src="https://svgshare.com/i/G40.svg" /></p>
 <h1 align="center">FlavourUI</h1>
 <p align="center"><a href="https://github.com/facebook/react">React</a> UI component library built with flavour!</p>
 <p align="center">

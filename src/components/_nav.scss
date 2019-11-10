@@ -3,7 +3,6 @@
   width: 100%;
   padding: 0.6rem 0rem;
   list-style: none;
-  width: 100%;
   background-color: $dark;
   color: white;
   min-height: 3.2rem;
@@ -45,11 +44,17 @@
 }
 
 .navbar-brand {
-  display: inline-block;
-  .navbar-brand-name {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2.75rem;
+  .navbar-brand-title {
     font-size: 1.3 * $index;
     font-weight: normal;
     font-family: "Metropolis Semi Bold", sans-serif;
+  }
+  .navbar-brand-logo {
+    width: 2.25rem;
+    margin-right: 0.8rem;
   }
 }
 
@@ -71,5 +76,5 @@
 }
 
 .nav > .nav-item:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 2.25rem;
 }

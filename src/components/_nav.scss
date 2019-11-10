@@ -16,7 +16,7 @@
     &:after {
       content: "";
       width: 0%;
-      height: 8.5%;
+      height: 10%;
       position: absolute;
       border-radius: 0.15rem;
       background-color: $primary;
@@ -90,7 +90,7 @@
     &:after {
       content: "";
       width: 0%;
-      height: 8.5%;
+      height: 10%;
       position: absolute;
       border-radius: 0.15rem;
       background-color: $dark;
@@ -113,6 +113,9 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav > .nav-item:not(:last-child) {

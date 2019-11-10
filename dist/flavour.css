@@ -151,7 +151,7 @@ button {
     .navbar .nav-item:after {
       content: "";
       width: 0%;
-      height: 8.5%;
+      height: 10%;
       position: absolute;
       border-radius: 0.15rem;
       background-color: #0060df;
@@ -214,7 +214,7 @@ button {
     .navbar-light .nav-item:after {
       content: "";
       width: 0%;
-      height: 8.5%;
+      height: 10%;
       position: absolute;
       border-radius: 0.15rem;
       background-color: #20123a;
@@ -232,6 +232,9 @@ button {
   display: inline-flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 480px) {
+    .nav {
+      display: none; } }
 
 .nav > .nav-item:not(:last-child) {
   margin-right: 2.25rem; }

@@ -19,13 +19,21 @@ sass.render(
           );
         }
       });
-      fs.writeFile("./package/flavour.css", result.css, function(err) {
-        if (!err) {
-          console.log(
-            chalk.green("[flavour] compiled flavour.css to 'package/'.")
-          );
+      fs.writeFile(
+        "./packages/flavour-ui/src/flavour.css",
+        result.css,
+        function(err) {
+          if (!err) {
+            console.log(
+              chalk.green(
+                "[flavour] compiled flavour.css to 'packages/flavour-ui'."
+              )
+            );
+          } else {
+            console.log(err);
+          }
         }
-      });
+      );
     } else {
       console.log(error);
     }

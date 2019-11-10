@@ -10,7 +10,7 @@
     display: inline-block;
     padding: 0.45rem 0.1rem;
     font-weight: normal;
-    font-family: "Metropolis Semi Bold", sans-serif;
+    font-family: "Inter Semi Bold", sans-serif;
     color: white;
     cursor: pointer;
     &:after {
@@ -35,6 +35,58 @@
   }
 }
 
+.navbar-sm {
+  display: flex;
+  width: 100%;
+  padding: 0.6rem 0.1rem;
+  list-style: none;
+  background-color: $dark;
+  color: white;
+  min-height: 2rem;
+  .nav-item {
+    display: inline-block;
+    padding: 0.35rem 0.05rem;
+    font-weight: normal;
+    font-family: "Inter Semi Bold", sans-serif;
+    font-size: 0.85rem;
+    color: white;
+    cursor: pointer;
+    &:after {
+      content: "";
+      width: 0%;
+      height: 10%;
+      position: absolute;
+      border-radius: 0.15rem;
+      background-color: $primary;
+      bottom: -0.25rem;
+      left: calc(50%);
+      transition: all ease-in-out 0.125s;
+    }
+    &:hover:after {
+      width: 100%;
+      left: calc(0%);
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2.75rem;
+    .navbar-brand-title {
+      font-size: 1 * $index;
+      font-weight: normal;
+      font-family: "Metropolis Semi Bold", sans-serif;
+    }
+    .navbar-brand-logo {
+      width: 1.65rem;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
 .navbar-sticky {
   position: sticky;
   top: 0;
@@ -45,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 65%;
   margin-right: auto;
   margin-left: auto;
   @media only screen and (max-width: 480px) {

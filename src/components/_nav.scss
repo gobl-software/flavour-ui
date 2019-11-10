@@ -1,9 +1,12 @@
 .navbar {
+  display: flex;
+  width: 100%;
   padding: 0.6rem 0rem;
   list-style: none;
   width: 100%;
   background-color: $dark;
   color: white;
+  min-height: 3.2rem;
   .nav-item {
     display: inline-block;
     font-weight: normal;
@@ -33,6 +36,7 @@
 
 .navbar-container-fluid {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 0.85rem;

@@ -18,10 +18,7 @@
   transition: all ease-in-out 0.15s;
   &:hover {
     @include shadow;
-    background-color: lighten($color, 2.5%);
-  }
-  &:active {
-    transform: translateY(1px);
+    background-color: darken($color, 4%);
   }
 }
 
@@ -47,12 +44,10 @@
   border-color: $color;
   transition: all ease-in-out 0.125s;
   &:hover {
-    @include shadow;
     color: #fff;
-    background-color: lighten($color, 2.5%);
-  }
-  &:active {
-    transform: translateY(1px);
+    @include shadow;
+    background-color: darken($color, 4%);
+    border-color: darken($color, 4%);
   }
 }
 
@@ -125,6 +120,7 @@
 }
 
 .btn-group > .btn {
+  margin: 0;
   &:hover {
     @include shadow-none;
   }

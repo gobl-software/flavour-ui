@@ -19,7 +19,8 @@ app.get("/", (req, res) => {
 
 sass.render(
   {
-    file: path.join(__dirname, "src", "index.scss")
+    file: path.join(__dirname, "src", "index.scss"),
+    outputStyle: "compressed"
   },
   function(error, result) {
     if (!error) {

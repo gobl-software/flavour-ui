@@ -37,7 +37,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Inter Regular"),
-    url("fonts/Inter/Inter-Regular.woff") format("woff");
+    url("fonts/inter/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -45,14 +45,14 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Inter Semi Bold"),
-    url("fonts/Inter/Inter-SemiBold.woff") format("woff");
+    url("fonts/inter/Inter-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Bold"), url("fonts/Inter/Inter-Bold.woff") format("woff");
+  src: local("Inter Bold"), url("fonts/inter/Inter-Bold.woff") format("woff");
 }
 
 @font-face {

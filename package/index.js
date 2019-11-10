@@ -1,3 +1,3 @@
 module.exports = {
-  log: () => console.log("Log from package.")
+  log: () => console.error("Log from package.")
 };

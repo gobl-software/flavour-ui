@@ -31,7 +31,7 @@ npm run build:dev
 
 ### Hot-Reloading
 
-Visit http://localhost:8080/ and make some changes.
+Visit [locahost:8080](http://localhost:8080) and make some changes.
 
 ## Production
 
@@ -60,4 +60,4 @@ npm install @gobl/flavour-ui
 [Inter](https://github.com/rsms/inter)
 [Metropolis](https://github.com/chrismsimpson/Metropolis)
 
-### Collection of all components - https://gobl-software.github.io/FlavourUI/
+### Collection of all components - [List](https://gobl-software.github.io/FlavourUI/)

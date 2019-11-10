@@ -1,13 +1,14 @@
 const express = require("express");
 const app = express();
-const server = require("http").Server(app);
+const http = require("http");
+const server = new http.Server(app);
 const path = require("path");
 const fs = require("fs");
 const chalk = require("chalk");
 const sass = require("node-sass");
 const io = require("socket.io")(server);
 
-console.log(chalk.magenta(`[flavour] recompiling project...`));
+console.log(chalk.magenta("[flavour] recompiling project..."));
 
 app.use("/dist", express.static("dist"));
 app.use(express.static("public"));
@@ -22,17 +23,13 @@ sass.render(
   },
   function(error, result) {
     if (!error) {
-      fs.writeFile(
-        path.join(__dirname, "dist", "flavour.css"),
-        result.css,
-        function(err) {
-          if (!err) {
-            server.listen(8080, () => {
-              console.log(chalk.magenta(`[flavour] hot-reloading window...`));
-            });
-          }
+      fs.writeFile("./dist/flavour.css", result.css, function(err) {
+        if (!err) {
+          server.listen(8080, () => {
+            console.log(chalk.magenta("[flavour] hot-reloading window..."));
+          });
         }
-      );
+      });
     } else {
       console.log(error);
     }
@@ -46,7 +43,7 @@ io.on("connection", () => {
     reloading = true;
     io.emit("reload");
     console.log(
-      chalk.green(`[flavour] project running at http://localhost:8080`)
+      chalk.green("[flavour] project running at http://localhost:8080")
     );
   }
 });

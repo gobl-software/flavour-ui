@@ -1,15 +1,36 @@
 .navbar {
   display: flex;
   width: 100%;
-  padding: 0.6rem 0rem;
+  padding: 0.6rem 0.1rem;
   list-style: none;
   background-color: $dark;
   color: white;
   min-height: 3.2rem;
   .nav-item {
     display: inline-block;
+    padding: 0.45rem 0.1rem;
     font-weight: normal;
     font-family: "Metropolis Semi Bold", sans-serif;
+    color: white;
+    cursor: pointer;
+    &:after {
+      content: "";
+      width: 0%;
+      height: 8.5%;
+      position: absolute;
+      border-radius: 0.15rem;
+      background-color: $primary;
+      bottom: -0.25rem;
+      left: calc(50%);
+      transition: all ease-in-out 0.125s;
+    }
+    &:hover:after {
+      width: 100%;
+      left: calc(0%);
+    }
+  }
+  a {
+    text-decoration: none;
     color: white;
   }
 }
@@ -65,6 +86,25 @@
     display: inline-block;
     font-weight: normal;
     font-family: "Metropolis Semi Bold", sans-serif;
+    color: $dark;
+    &:after {
+      content: "";
+      width: 0%;
+      height: 8.5%;
+      position: absolute;
+      border-radius: 0.15rem;
+      background-color: $dark;
+      bottom: -0.25rem;
+      left: calc(50%);
+      transition: all ease-in-out 0.125s;
+    }
+    &:hover:after {
+      width: 100%;
+      left: calc(0%);
+    }
+  }
+  a {
+    text-decoration: none;
     color: $dark;
   }
 }

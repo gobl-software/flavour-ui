@@ -25,6 +25,12 @@
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.24);
 }
 
+// @mixin colorShadow($color) {
+//   -webkit-box-shadow: 10px 10px 0px -2px $color;
+//   -moz-box-shadow: 10px 10px 0px -2px $color;
+//   box-shadow: 10px 10px 0px -2px $color;
+// }
+
 @mixin nav-item($color) {
   display: flex;
   align-items: center;

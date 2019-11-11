@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.15rem;
+  background-color: white;
+  border: 1px solid $lighter-grey;
+  transition: all ease-in-out 0.15s;
+  .card-body {
+    padding: 0.75rem 1.25rem;
+    .card-title {
+      color: $dark;
+      margin-bottom: 1rem;
+    }
+    .card-text {
+      color: $light-grey;
+      margin-bottom: 1rem;
+    }
+    .card-link {
+      display: inline-block;
+      font-family: "Inter Regular", sans-serif;
+      font-weight: normal;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      color: $primary;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &:hover {
+    @include shadow;
+  }
+
+  .card-img-top {
+    border-top-right-radius: 0.15rem;
+    border-top-left-radius: 0.15rem;
+    object-fit: cover;
+    height: 14rem;
+  }
+}

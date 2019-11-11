@@ -7,8 +7,7 @@ console.log(chalk.magenta("[flavour] compiling project for production..."));
 
 sass.render(
   {
-    file: path.join(__dirname, "src", "index.scss"),
-    outputStyle: "compressed"
+    file: path.join(__dirname, "src", "index.scss")
   },
   function(error, result) {
     if (!error) {

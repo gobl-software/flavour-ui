@@ -10,7 +10,7 @@
   <body>
     <div id="nav" class="navbar navbar-sticky">
       <div id="cont" class="navbar-container">
-        <div class="nav">
+        <nav class="nav">
           <a href="/" class="navbar-brand">
             <img
               class="navbar-brand-logo"
@@ -39,8 +39,8 @@
           <div class="nav-item">
             Development
           </div>
-        </div>
-        <div class="nav">
+        </nav>
+        <nav class="nav">
           <div class="btn-group">
             <button onclick="changeTheme()" class="btn btn-sm btn-primary">
               Theme
@@ -52,7 +52,7 @@
               Width
             </button>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
     <section class="section-dark">
@@ -136,6 +136,57 @@
         <div class="alert alert-primary">
           This is a <span class="alert-link">primary</span> alert link.
         </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1>Breadcrumbs</h1>
+        <br />
+        <h5>Default</h5>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">
+              Home
+            </li>
+          </ol>
+        </nav>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              Blog
+            </li>
+          </ol>
+        </nav>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/">Blog</a>
+            </li>
+            <li class="breadcrumb-item active">
+              Post
+            </li>
+          </ol>
+        </nav>
+        <h5>Variant</h5>
+        <nav>
+          <ol class="breadcrumb breadcrumb-dark">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/">Blog</a>
+            </li>
+            <li class="breadcrumb-item active">
+              Post
+            </li>
+          </ol>
+        </nav>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>

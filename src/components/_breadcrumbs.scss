@@ -1,0 +1,51 @@
+ol {
+  list-style: none;
+}
+
+.breadcrumb {
+  display: flex;
+  font-family: "Inter Regular", sans-serif;
+  font-weight: normal;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid transparent;
+  margin-bottom: 1rem;
+  border-radius: 0.15rem;
+  background-color: lighten($primary, 50%);
+  .breadcrumb-item {
+    margin-right: 0.3rem;
+    &:not(:last-child):after {
+      content: "/";
+      color: $light-grey;
+    }
+    &.active {
+      cursor: default;
+      color: $light-grey;
+    }
+  }
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  &.breadcrumb-dark {
+    background-color: $primary;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    .breadcrumb-item {
+      margin-right: 0.3rem;
+      &:not(:last-child):after {
+        content: "/";
+        color: white;
+      }
+      &.active {
+        font-family: "Inter Bold", sans-serif;
+        cursor: default;
+        color: white;
+      }
+    }
+  }
+}

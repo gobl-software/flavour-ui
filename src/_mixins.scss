@@ -15,3 +15,47 @@
   -o-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px rgba(0, 0, 0, 0.24);
 }
+
+@mixin nav-item($color) {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.75rem;
+  font-weight: normal;
+  font-family: "Inter Semi Bold", sans-serif;
+  color: $color;
+  height: 100%;
+  cursor: pointer;
+}
+
+@mixin nav-item-dropdown($color) {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.75rem;
+  font-weight: normal;
+  font-family: "Inter Semi Bold", sans-serif;
+  color: $color;
+  height: 100%;
+  cursor: pointer;
+  &:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .dropdown-content {
+    position: absolute;
+    align-self: baseline;
+    opacity: 0;
+    background-color: white;
+    @include shadow;
+    color: $dark;
+    padding: 1rem 1rem;
+    border-radius: 0.15rem;
+    z-index: 1;
+    width: max-content;
+    margin-top: 3.5rem;
+    transform: translateY(-0.5rem);
+    transition: all ease-in-out 0.125s;
+    > .nav-item {
+      color: $dark;
+    }
+  }
+}

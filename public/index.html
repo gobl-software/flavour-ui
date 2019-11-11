@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FlavourUI</title>
     <link rel="stylesheet" href="/dist/flavour.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="navbar navbar-sticky">
-      <div class="navbar-container">
+    <div id="nav" class="navbar navbar-sticky">
+      <div id="cont" class="navbar-container">
         <div class="nav">
           <a href="/" class="navbar-brand">
             <img
@@ -40,7 +41,17 @@
           </div>
         </div>
         <div class="nav">
-          <button href="/" class="btn btn-sm btn-primary">Get Started</button>
+          <div class="btn-group">
+            <button onclick="changeTheme()" class="btn btn-sm btn-primary">
+              Theme
+            </button>
+            <button onclick="changeSize()" class="btn btn-sm btn-secondary">
+              Size
+            </button>
+            <button onclick="changeWidth()" class="btn btn-sm btn-success">
+              Width
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -137,6 +148,33 @@
       socket.on("reload", () => {
         window.location.reload();
       });
+    </script>
+    <script>
+      function changeTheme() {
+        if ($("#nav").hasClass("navbar-light")) {
+          $("#nav").removeClass("navbar-light");
+        } else {
+          $("#nav").addClass("navbar-light");
+        }
+      }
+
+      function changeSize() {
+        if ($("#nav").hasClass("navbar-sm")) {
+          $("#nav").removeClass("navbar-sm");
+        } else {
+          $("#nav").addClass("navbar-sm");
+        }
+      }
+
+      function changeWidth() {
+        if ($("#cont").hasClass("navbar-container")) {
+          $("#cont").removeClass("navbar-container");
+          $("#cont").addClass("navbar-container-fluid");
+        } else {
+          $("#cont").removeClass("navbar-container-fluid");
+          $("#cont").addClass("navbar-container");
+        }
+      }
     </script>
   </body>
 </html>

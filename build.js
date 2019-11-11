@@ -19,21 +19,9 @@ sass.render(
           );
         }
       });
-      // fs.writeFile(
-      //   "./packages/flavour-ui/src/flavour.css",
-      //   result.css,
-      //   function(err) {
-      //     if (!err) {
-      //       console.log(
-      //         chalk.green(
-      //           "[flavour] compiled flavour.css to 'packages/flavour-ui'."
-      //         )
-      //       );
-      //     } else {
-      //       console.log(err);
-      //     }
-      //   }
-      // );
+      fs.createReadStream("./public/index.html").pipe(
+        fs.createWriteStream("./index.html")
+      );
     } else {
       console.log(error);
     }

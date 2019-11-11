@@ -47,6 +47,7 @@
     background-color: white;
     @include shadow;
     color: $dark;
+    left: 0;
     padding: 1rem 1rem;
     border-radius: 0.15rem;
     z-index: 1;

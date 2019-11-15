@@ -1,10 +1,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 0.15rem;
+  border-radius: $border-radius;
   background-color: white;
   border: 1px solid $lighter-grey;
-  transition: all ease-in-out 0.15s;
+  transition: all ease-in-out $transition-speed;
   .card-body {
     padding: 0.75rem 1.25rem;
     .card-title {
@@ -12,7 +12,6 @@
       margin-bottom: 1rem;
     }
     .card-text {
-      color: $light-grey;
       margin-bottom: 1rem;
     }
     .card-link {

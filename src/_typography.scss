@@ -78,42 +78,42 @@ h6 {
 h1 {
   font-size: 2.25 * $index;
   font-weight: normal;
-  font-family: "Metropolis Extra Bold", sans-serif;
+  font-family: "Inter Extra Bold", sans-serif;
 }
 
 h2 {
   font-size: 2 * $index;
   font-weight: normal;
-  font-family: "Metropolis Extra Bold", sans-serif;
+  font-family: "Inter Extra Bold", sans-serif;
 }
 
 h3 {
   font-size: 1.75 * $index;
   font-weight: normal;
-  font-family: "Metropolis Bold", sans-serif;
+  font-family: "Inter Bold", sans-serif;
 }
 
 h4 {
   font-size: 1.5 * $index;
   font-weight: normal;
-  font-family: "Metropolis Bold", sans-serif;
+  font-family: "Inter Bold", sans-serif;
 }
 
 h5 {
   font-size: 1.25 * $index;
   font-weight: normal;
-  font-family: "Metropolis Semi Bold", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
 }
 
 h6 {
   font-size: 1 * $index;
   font-weight: normal;
-  font-family: "Metropolis Semi Bold", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
 }
 
 p {
   font-family: "Inter Regular", sans-serif;
-  color: $light-grey;
+  color: $text-light;
 }
 
 hr {
@@ -128,7 +128,6 @@ button {
   font-weight: normal;
   font-family: "Inter Semi Bold", sans-serif;
 }
-
 // .nav {
 //   font-weight: normal;
 //   font-family: "Metropolis Semi Bold", sans-serif;

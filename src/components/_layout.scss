@@ -18,10 +18,10 @@
   padding-bottom: 6rem;
 }
 
-.section-dark {
+.section-shade {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: $dark;
+  background-color: $bg-light;
   h1,
   h2,
   h3,
@@ -29,6 +29,6 @@
   h5,
   h6,
   p {
-    color: white;
+    color: $dark;
   }
 }

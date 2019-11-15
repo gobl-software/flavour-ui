@@ -47,7 +47,7 @@
   font-family: "Inter Extra Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Extra Bold"), url("./fonts/Inter/Inter-ExtraBold.woff") format("woff"); }
+  src: local("Inter Extra Bold"), url("./fonts/inter/Inter-ExtraBold.woff") format("woff"); }
 
 h1,
 h2,

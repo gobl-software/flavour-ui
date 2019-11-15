@@ -21,6 +21,15 @@
   pointer-events: none;
 }
 
+.up {
+  transform: scaleY(1);
+}
+
+.down {
+  transform: scaleY(-1);
+  color: $primary;
+}
+
 .dropdown-title {
   margin-bottom: 1.25rem;
 }
@@ -33,7 +42,6 @@
     display: flex;
     align-items: center;
     padding: 0.3rem 0rem;
-    transition: all ease-in $transition-speed;
     &:hover {
       .dropdown-icon-item-link {
         .title {
@@ -49,11 +57,9 @@
     .dropdown-icon-item-link {
       display: flex;
       flex-direction: column;
-      transition: all ease-in $transition-speed;
       .title {
         font-family: "Inter Semi Bold", sans-serif;
         color: $dark;
-        transition: all ease-in $transition-speed;
         margin-bottom: 0.25rem;
       }
     }

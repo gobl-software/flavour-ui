@@ -178,7 +178,8 @@ button {
       transition: all ease-in 225ms; }
     .navbar .nav-item .im {
       margin-left: 0.2rem;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      transition: all ease-in 225ms; }
   .navbar a {
     text-decoration: none;
     color: white; }
@@ -219,7 +220,8 @@ button {
       transition: all ease-in 225ms; }
     .navbar-light .nav-item .im {
       margin-left: 0.2rem;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      transition: all ease-in 225ms; }
   .navbar-light a {
     text-decoration: none;
     color: #031b4e; }
@@ -561,6 +563,13 @@ ol {
   opacity: 0;
   pointer-events: none; }
 
+.up {
+  transform: scaleY(1); }
+
+.down {
+  transform: scaleY(-1);
+  color: #0069ff; }
+
 .dropdown-title {
   margin-bottom: 1.25rem; }
 
@@ -571,8 +580,7 @@ ol {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 0.3rem 0rem;
-    transition: all ease-in 225ms; }
+    padding: 0.3rem 0rem; }
     .dropdown-link-list .dropdown-icon-item:hover .dropdown-icon-item-link .title {
       color: #0069ff; }
     .dropdown-link-list .dropdown-icon-item .im {
@@ -581,12 +589,10 @@ ol {
       color: #0069ff; }
     .dropdown-link-list .dropdown-icon-item .dropdown-icon-item-link {
       display: flex;
-      flex-direction: column;
-      transition: all ease-in 225ms; }
+      flex-direction: column; }
       .dropdown-link-list .dropdown-icon-item .dropdown-icon-item-link .title {
         font-family: "Inter Semi Bold", sans-serif;
         color: #031b4e;
-        transition: all ease-in 225ms;
         margin-bottom: 0.25rem; }
     .dropdown-link-list .dropdown-icon-item:not(:last-child) {
       margin-bottom: 1.2rem; }

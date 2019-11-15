@@ -27,7 +27,7 @@
             Components
           </div>
           <div onclick="showDropdown()" class="nav-item">
-            Dropdown<i class="im im-angle-down"></i>
+            Services<i id="ddarrow" class="up im im-angle-down"></i>
           </div>
         </nav>
         <nav class="nav">
@@ -39,7 +39,7 @@
       <div id="ddcont" class="dropdown-container ddhide">
         <div class="container">
           <div class="dropdown-link-list">
-            <h6 class="dropdown-title">Components</h6>
+            <h6 class="dropdown-title">Services</h6>
             <div class="dropdown-icon-item">
               <i class="im im-database"></i>
               <div class="dropdown-icon-item-link">
@@ -249,9 +249,13 @@
         if ($("#ddcont").hasClass("ddhide")) {
           $("#ddcont").removeClass("ddhide");
           $("#ddcont").addClass("ddshow");
+          $("#ddarrow").removeClass("up");
+          $("#ddarrow").addClass("down");
         } else {
           $("#ddcont").removeClass("ddshow");
           $("#ddcont").addClass("ddhide");
+          $("#ddarrow").removeClass("down");
+          $("#ddarrow").addClass("up");
         }
       }
     </script>

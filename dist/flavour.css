@@ -1,3 +1,6 @@
+.color-primary {
+  color: #0069ff; }
+
 @font-face {
   font-family: "Metropolis Regular";
   font-style: normal;
@@ -52,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #20123a;
+  color: #031b4e;
   line-height: 1.2;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
@@ -60,12 +63,12 @@ h6 {
 h1 {
   font-size: 2.7rem;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif; }
+  font-family: "Inter Extra Bold", sans-serif; }
 
 h2 {
   font-size: 2.4rem;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif; }
+  font-family: "Inter Extra Bold", sans-serif; }
 
 h3 {
   font-size: 2.1rem;
@@ -78,14 +81,16 @@ h4 {
   font-family: "Inter Bold", sans-serif; }
 
 h5 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-family: "Inter Bold", sans-serif; }
-
-h6 {
   font-size: 1.2rem;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif; }
+  font-family: "Inter Semi Bold", sans-serif;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: "Inter Semi Bold", sans-serif;
+  text-transform: uppercase; }
 
 p {
   font-family: "Inter Regular", sans-serif;
@@ -103,7 +108,7 @@ button {
   font-family: "Inter Semi Bold", sans-serif; }
 
 .container {
-  width: 65%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (max-width: 480px) {
@@ -130,16 +135,18 @@ button {
   .section-shade h5,
   .section-shade h6,
   .section-shade p {
-    color: #20123a; }
+    color: #031b4e; }
 
 .navbar {
   display: flex;
+  position: absolute;
   width: 100%;
   padding: 0rem 0rem;
   list-style: none;
-  background-color: #20123a;
+  background-color: #031b4e;
   color: white;
-  min-height: 4.2rem; }
+  min-height: 4.2rem;
+  z-index: 1; }
   .navbar .nav-item {
     display: flex;
     align-items: center;
@@ -169,14 +176,18 @@ button {
       width: calc(100% - 1.5rem);
       border-bottom: 3px solid transparent;
       transition: all ease-in 225ms; }
+    .navbar .nav-item .im {
+      margin-left: 0.2rem;
+      font-size: 0.8rem; }
   .navbar a {
     text-decoration: none;
     color: white; }
 
 .navbar-light {
   background-color: white;
-  color: #20123a;
-  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1); }
+  color: #031b4e;
+  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);
+  z-index: 1; }
   .navbar-light .nav-item {
     display: flex;
     align-items: center;
@@ -185,7 +196,7 @@ button {
     padding-right: 0.75rem;
     font-weight: normal;
     font-family: "Inter Semi Bold", sans-serif;
-    color: #20123a;
+    color: #031b4e;
     height: 100%;
     transition: all ease-in 225ms;
     border-bottom: 3px solid transparent;
@@ -206,9 +217,12 @@ button {
       width: calc(100% - 1.5rem);
       border-bottom: 3px solid transparent;
       transition: all ease-in 225ms; }
+    .navbar-light .nav-item .im {
+      margin-left: 0.2rem;
+      font-size: 0.8rem; }
   .navbar-light a {
     text-decoration: none;
-    color: #20123a; }
+    color: #031b4e; }
 
 .navbar-sm {
   min-height: 2.8rem; }
@@ -231,14 +245,13 @@ button {
 
 .navbar-sticky {
   position: sticky;
-  top: 0;
-  z-index: 10; }
+  top: 0; }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (max-width: 480px) {
@@ -263,12 +276,12 @@ button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.56rem;
+    font-size: 1.44rem;
     font-weight: normal;
     font-family: "Inter Semi Bold", sans-serif;
     height: 100%; }
   .navbar-brand .navbar-brand-logo {
-    width: 2.25rem;
+    width: 2rem;
     margin-right: 0.8rem; }
 
 .nav {
@@ -313,11 +326,11 @@ button {
 .btn {
   display: inline-block;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: center;
   vertical-align: middle;
   border: 2px solid transparent;
-  padding: 0.45rem 1.35rem;
+  padding: 0.35rem 1.25rem;
   line-height: 1.5;
   border-radius: 0.2rem;
   margin: 0.2rem 0rem;
@@ -400,18 +413,18 @@ button {
     border-color: #d72536; }
 
 .btn-sm {
-  font-size: 0.75rem;
-  padding: 0.3rem 0.75rem;
+  font-size: 0.65rem;
+  padding: 0.35rem 1.1rem;
   line-height: 1.5; }
 
 .btn-lg {
   font-size: 1.3rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.35rem 1.55rem;
   line-height: 1.5; }
 
 .btn-xl {
   font-size: 1.6rem;
-  padding: 0.8rem 2rem;
+  padding: 0.35rem 1.85rem;
   line-height: 1.5; }
 
 .btn-block {
@@ -507,7 +520,7 @@ ol {
   .card .card-body {
     padding: 0.75rem 1.25rem; }
     .card .card-body .card-title {
-      color: #20123a;
+      color: #031b4e;
       margin-bottom: 1rem; }
     .card .card-body .card-text {
       margin-bottom: 1rem; }
@@ -527,6 +540,56 @@ ol {
     border-top-left-radius: 0.15rem;
     object-fit: cover;
     height: 14rem; }
+
+.dropdown-container {
+  position: absolute;
+  top: 4.2rem;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  transition: all ease-in 225ms;
+  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1); }
+
+.ddshow {
+  opacity: 1;
+  pointer-events: all; }
+
+.ddhide {
+  opacity: 0;
+  pointer-events: none; }
+
+.dropdown-title {
+  margin-bottom: 1.25rem; }
+
+.dropdown-link-list {
+  display: flex;
+  flex-direction: column; }
+  .dropdown-link-list .dropdown-icon-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0rem;
+    transition: all ease-in 225ms; }
+    .dropdown-link-list .dropdown-icon-item:hover .dropdown-icon-item-link .title {
+      color: #0069ff; }
+    .dropdown-link-list .dropdown-icon-item .im {
+      font-size: 2.2rem;
+      margin-right: 1rem;
+      color: #0069ff; }
+    .dropdown-link-list .dropdown-icon-item .dropdown-icon-item-link {
+      display: flex;
+      flex-direction: column;
+      transition: all ease-in 225ms; }
+      .dropdown-link-list .dropdown-icon-item .dropdown-icon-item-link .title {
+        font-family: "Inter Semi Bold", sans-serif;
+        color: #031b4e;
+        transition: all ease-in 225ms;
+        margin-bottom: 0.25rem; }
+    .dropdown-link-list .dropdown-icon-item:not(:last-child) {
+      margin-bottom: 1.2rem; }
 
 * {
   padding: 0;

@@ -3,7 +3,7 @@ $secondary: #9858f4;
 $success: #28a745;
 $danger: #dc3545;
 
-$dark: #20123a;
+$dark: #031b4e;
 $dark-grey: #202529;
 $light-grey: lighten(#202529, 2%);
 $lighter-grey: #cad2d8;
@@ -15,3 +15,7 @@ $bg-light: #f3f5f9;
 $border-radius: 0.2rem;
 
 $transition-speed: 225ms;
+
+.color-primary {
+  color: $primary;
+}

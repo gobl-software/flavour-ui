@@ -78,13 +78,13 @@ h6 {
 h1 {
   font-size: 2.25 * $index;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif;
+  font-family: "Inter Extra Bold", sans-serif;
 }
 
 h2 {
   font-size: 2 * $index;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif;
+  font-family: "Inter Extra Bold", sans-serif;
 }
 
 h3 {
@@ -100,15 +100,17 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25 * $index;
+  font-size: 1 * $index;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
+  text-transform: uppercase;
 }
 
 h6 {
-  font-size: 1 * $index;
+  font-size: 0.75 * $index;
   font-weight: normal;
-  font-family: "Inter Bold", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
+  text-transform: uppercase;
 }
 
 p {

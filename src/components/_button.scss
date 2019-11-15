@@ -1,11 +1,11 @@
 .btn {
   display: inline-block;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: center;
   vertical-align: middle;
   border: 2px solid transparent;
-  padding: 0.45rem 1.35rem;
+  padding: 0.35rem 1.25rem;
   line-height: 1.5;
   border-radius: $border-radius;
   margin: 0.2rem 0rem;
@@ -68,20 +68,20 @@
 }
 
 .btn-sm {
-  font-size: 0.75rem;
-  padding: 0.3rem 0.75rem;
+  font-size: 0.65rem;
+  padding: 0.35rem 1.1rem;
   line-height: 1.5;
 }
 
 .btn-lg {
   font-size: 1.3rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.35rem 1.55rem;
   line-height: 1.5;
 }
 
 .btn-xl {
   font-size: 1.6rem;
-  padding: 0.8rem 2rem;
+  padding: 0.35rem 1.85rem;
   line-height: 1.5;
 }
 

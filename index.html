@@ -6,6 +6,10 @@
     <title>FlavourUI</title>
     <link rel="stylesheet" href="./dist/flavour.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
+    />
   </head>
   <body>
     <div id="nav" class="navbar navbar-light navbar-sticky">
@@ -20,28 +24,41 @@
             <div class="navbar-brand-title">FlavourUI</div>
           </a>
           <div class="nav-item active">
-            Documentation
+            Components
           </div>
-          <div class="nav-item">
-            Development
+          <div onclick="showDropdown()" class="nav-item">
+            Dropdown<i class="im im-angle-down"></i>
           </div>
         </nav>
         <nav class="nav">
-          <div class="btn-group">
-            <button onclick="changeTheme()" class="btn btn-sm btn-primary">
-              Theme
-            </button>
-            <button onclick="changeSize()" class="btn btn-sm btn-secondary">
-              Size
-            </button>
-            <button onclick="changeWidth()" class="btn btn-sm btn-success">
-              Width
-            </button>
-          </div>
+          <button class="btn btn-outline-primary">
+            Sign Up
+          </button>
         </nav>
       </div>
+      <div id="ddcont" class="dropdown-container ddhide">
+        <div class="container">
+          <div class="dropdown-link-list">
+            <h6 class="dropdown-title">Components</h6>
+            <div class="dropdown-icon-item">
+              <i class="im im-database"></i>
+              <div class="dropdown-icon-item-link">
+                <p class="title">Databases</p>
+                <p class="sub-title">Explore database options.</p>
+              </div>
+            </div>
+            <div class="dropdown-icon-item">
+              <i class="im im-cubes"></i>
+              <div class="dropdown-icon-item-link">
+                <p class="title">Containers</p>
+                <p class="sub-title">Explore container options.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="section">
+    <section class="section-shade">
       <div class="container">
         <h1>Typography</h1>
         <br />
@@ -59,7 +76,7 @@
         </p>
       </div>
     </section>
-    <section class="section-shade">
+    <section class="section">
       <div class="container">
         <h1>Buttons</h1>
         <br />
@@ -102,7 +119,7 @@
         <button href="/" class="btn btn-danger" disabled>Danger</button>
       </div>
     </section>
-    <section class="section">
+    <section class="section-shade">
       <div class="container">
         <h1>Alerts</h1>
         <br />
@@ -117,7 +134,7 @@
         </div>
       </div>
     </section>
-    <section class="section-shade">
+    <section class="section">
       <div class="container">
         <h1>Breadcrumbs</h1>
         <br />
@@ -168,7 +185,7 @@
         </nav>
       </div>
     </section>
-    <section class="section">
+    <section class="section-shade">
       <div class="container">
         <h1>Cards</h1>
         <br />
@@ -225,6 +242,16 @@
         } else {
           $("#cont").removeClass("navbar-container-fluid");
           $("#cont").addClass("navbar-container");
+        }
+      }
+
+      function showDropdown() {
+        if ($("#ddcont").hasClass("ddhide")) {
+          $("#ddcont").removeClass("ddhide");
+          $("#ddcont").addClass("ddshow");
+        } else {
+          $("#ddcont").removeClass("ddshow");
+          $("#ddcont").addClass("ddhide");
         }
       }
     </script>

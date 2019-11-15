@@ -1,11 +1,13 @@
 .navbar {
   display: flex;
+  position: absolute;
   width: 100%;
   padding: 0rem 0rem;
   list-style: none;
   background-color: $dark;
   color: white;
   min-height: 4.2rem;
+  z-index: 1;
   .nav-item {
     @include nav-item(white);
   }
@@ -19,6 +21,7 @@
   background-color: white;
   color: $dark;
   @include shadow;
+  z-index: 1;
   .nav-item {
     @include nav-item($dark);
   }
@@ -55,14 +58,13 @@
 .navbar-sticky {
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
   @media only screen and (max-width: 480px) {
@@ -89,13 +91,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3 * $index;
+    font-size: 1.2 * $index;
     font-weight: normal;
     font-family: "Inter Semi Bold", sans-serif;
     height: 100%;
   }
   .navbar-brand-logo {
-    width: 2.25rem;
+    width: 2rem;
     margin-right: 0.8rem;
   }
 }

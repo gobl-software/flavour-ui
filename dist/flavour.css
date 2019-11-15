@@ -5,49 +5,49 @@
   font-family: "Metropolis Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Metropolis Regular"), url("fonts/metropolis/Metropolis-Regular.woff") format("woff"); }
+  src: local("Metropolis Regular"), url("./fonts/metropolis/Metropolis-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Metropolis Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Metropolis Bold"), url("fonts/metropolis/Metropolis-Bold.woff") format("woff"); }
+  src: local("Metropolis Bold"), url("./fonts/metropolis/Metropolis-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Metropolis Semi Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Metropolis Semi Bold"), url("fonts/metropolis/Metropolis-SemiBold.woff") format("woff"); }
+  src: local("Metropolis Semi Bold"), url("./fonts/metropolis/Metropolis-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-family: "Metropolis Extra Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Metropolis Extra Bold"), url("fonts/metropolis/Metropolis-ExtraBold.woff") format("woff"); }
+  src: local("Metropolis Extra Bold"), url("./fonts/metropolis/Metropolis-ExtraBold.woff") format("woff"); }
 
 @font-face {
   font-family: "Inter Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Regular"), url("fonts/inter/Inter-Regular.woff") format("woff"); }
+  src: local("Inter Regular"), url("./fonts/inter/Inter-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Inter Semi Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Semi Bold"), url("fonts/inter/Inter-SemiBold.woff") format("woff"); }
+  src: local("Inter Semi Bold"), url("./fonts/inter/Inter-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-family: "Inter Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Bold"), url("fonts/inter/Inter-Bold.woff") format("woff"); }
+  src: local("Inter Bold"), url("./fonts/inter/Inter-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Inter Extra Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Extra Bold"), url("fonts/Inter/Inter-ExtraBold.woff") format("woff"); }
+  src: local("Inter Extra Bold"), url("./fonts/Inter/Inter-ExtraBold.woff") format("woff"); }
 
 h1,
 h2,

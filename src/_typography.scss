@@ -5,7 +5,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Metropolis Regular"),
-    url("fonts/metropolis/Metropolis-Regular.woff") format("woff");
+    url("./fonts/metropolis/Metropolis-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Metropolis Bold"),
-    url("fonts/metropolis/Metropolis-Bold.woff") format("woff");
+    url("./fonts/metropolis/Metropolis-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -21,7 +21,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Metropolis Semi Bold"),
-    url("fonts/metropolis/Metropolis-SemiBold.woff") format("woff");
+    url("./fonts/metropolis/Metropolis-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -29,7 +29,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Metropolis Extra Bold"),
-    url("fonts/metropolis/Metropolis-ExtraBold.woff") format("woff");
+    url("./fonts/metropolis/Metropolis-ExtraBold.woff") format("woff");
 }
 
 @font-face {
@@ -37,7 +37,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Inter Regular"),
-    url("fonts/inter/Inter-Regular.woff") format("woff");
+    url("./fonts/inter/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -45,14 +45,14 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Inter Semi Bold"),
-    url("fonts/inter/Inter-SemiBold.woff") format("woff");
+    url("./fonts/inter/Inter-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Bold"), url("fonts/inter/Inter-Bold.woff") format("woff");
+  src: local("Inter Bold"), url("./fonts/inter/Inter-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -60,7 +60,7 @@ $index: 1.2rem;
   font-style: normal;
   font-weight: normal;
   src: local("Inter Extra Bold"),
-    url("fonts/Inter/Inter-ExtraBold.woff") format("woff");
+    url("./fonts/Inter/Inter-ExtraBold.woff") format("woff");
 }
 
 h1,

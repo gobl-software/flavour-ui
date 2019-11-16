@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="nav" class="navbar navbar-light navbar-sticky">
-      <div id="cont" class="navbar-container">
+      <div id="cont" class="navbar-container-fluid">
         <nav class="nav">
           <a href="/" class="navbar-brand">
             <img
@@ -23,12 +23,12 @@
             />
             <div class="navbar-brand-title">FlavourUI</div>
           </a>
-          <div class="nav-item active">
+          <a class="nav-item active">
             Components
-          </div>
-          <div onclick="showDropdown()" class="nav-item">
-            Services<i id="ddarrow" class="up im im-angle-down"></i>
-          </div>
+          </a>
+          <a onclick="showDropdown()" class="nav-item">
+            Services<i data="arrow" class="im im-angle-down"></i>
+          </a>
         </nav>
         <nav class="nav">
           <button class="btn btn-outline-primary">
@@ -249,13 +249,9 @@
         if ($("#ddcont").hasClass("ddhide")) {
           $("#ddcont").removeClass("ddhide");
           $("#ddcont").addClass("ddshow");
-          $("#ddarrow").removeClass("up");
-          $("#ddarrow").addClass("down");
         } else {
           $("#ddcont").removeClass("ddshow");
           $("#ddcont").addClass("ddhide");
-          $("#ddarrow").removeClass("down");
-          $("#ddarrow").addClass("up");
         }
       }
     </script>

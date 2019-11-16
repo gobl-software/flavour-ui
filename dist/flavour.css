@@ -178,8 +178,7 @@ button {
       transition: all ease-in 225ms; }
     .navbar .nav-item .im {
       margin-left: 0.2rem;
-      font-size: 0.8rem;
-      transition: all ease-in 225ms; }
+      font-size: 0.8rem; }
   .navbar a {
     text-decoration: none;
     color: white; }
@@ -220,8 +219,7 @@ button {
       transition: all ease-in 225ms; }
     .navbar-light .nav-item .im {
       margin-left: 0.2rem;
-      font-size: 0.8rem;
-      transition: all ease-in 225ms; }
+      font-size: 0.8rem; }
   .navbar-light a {
     text-decoration: none;
     color: #031b4e; }
@@ -262,10 +260,11 @@ button {
 
 .navbar-container-fluid {
   display: flex;
-  width: 100%;
+  width: 97%;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 0.85rem; }
+  align-items: center; }
   @media only screen and (max-width: 480px) {
     .navbar-container-fluid {
       width: 90%; } }
@@ -575,7 +574,8 @@ ol {
 
 .dropdown-link-list {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: all ease-in 225ms; }
   .dropdown-link-list .dropdown-icon-item {
     cursor: pointer;
     display: flex;
@@ -593,7 +593,8 @@ ol {
       .dropdown-link-list .dropdown-icon-item .dropdown-icon-item-link .title {
         font-family: "Inter Semi Bold", sans-serif;
         color: #031b4e;
-        margin-bottom: 0.25rem; }
+        margin-bottom: 0.25rem;
+        transition: all ease-in 225ms; }
     .dropdown-link-list .dropdown-icon-item:not(:last-child) {
       margin-bottom: 1.2rem; }
 

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "The juiciest, most flavourful CSS UI framework around.",
   "main": "index.js",
-  "repository": "https://github.com/gobl-software/FlavourUI",
+  "repository": "https://github.com/gobl-software/FlavourUI.git",
   "author": "Barend Du Toit",
   "license": "MIT",
   "scripts": {

@@ -26,7 +26,7 @@ const styles = {
   }
 };
 
-const Button = props => {
+const Button = React.forwardRef(props => {
   const { children, classes, variant } = props;
 
   return (
@@ -34,6 +34,6 @@ const Button = props => {
       <span>{children}</span>
     </button>
   );
-};
+});
 
-export default withStyles(styles)(Button);
+export default withStyles(styles, { withTheme: true })(Button);

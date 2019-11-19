@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 
-import { Button, ThemeProvider } from "@gobl/flavour-ui";
-
-const myTheme = {
-  colorPrimary: "yellow"
-};
+import { Button } from "@gobl/flavour-ui";
 
 export default class App extends Component {
   render() {
     return (
-      <ThemeProvider theme={myTheme}>
+      <div>
         <Button variant="primary">Primary</Button>
-      </ThemeProvider>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="success">Success</Button>
+        <Button variant="danger">Danger</Button>
+      </div>
     );
   }
 }

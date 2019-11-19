@@ -1,4 +1,5 @@
 import React from "react";
+
 import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 
@@ -13,20 +14,44 @@ const styles = {
     padding: "0.35rem 1.25rem",
     lineHeight: "1.5",
     borderRadius: "0.2rem",
-    margin: "0.2rem 0rem",
+    margin: "0.2rem 0.2rem",
     cursor: "pointer"
   },
   primary: {
     color: "#fff",
-    backgroundColor: ({ theme }) => theme.colorPrimary,
+    backgroundColor: ({ theme }) => theme.colors.primary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      backgroundColor: "darkblue"
+      "box-shadow": ({ theme }) => theme.shadows.light
+    }
+  },
+  secondary: {
+    color: "#fff",
+    backgroundColor: ({ theme }) => theme.colors.secondary,
+    transition: "all ease-in-out 200ms",
+    "&:hover": {
+      "box-shadow": ({ theme }) => theme.shadows.light
+    }
+  },
+  success: {
+    color: "#fff",
+    backgroundColor: ({ theme }) => theme.colors.success,
+    transition: "all ease-in-out 200ms",
+    "&:hover": {
+      "box-shadow": ({ theme }) => theme.shadows.light
+    }
+  },
+  danger: {
+    color: "#fff",
+    backgroundColor: ({ theme }) => theme.colors.danger,
+    transition: "all ease-in-out 200ms",
+    "&:hover": {
+      "box-shadow": ({ theme }) => theme.shadows.light
     }
   }
 };
 
-const Button = React.forwardRef(props => {
+const Button = React.forwardRef((props, ref) => {
   const { children, classes, variant } = props;
 
   return (
@@ -36,4 +61,4 @@ const Button = React.forwardRef(props => {
   );
 });
 
-export default withStyles(styles, { withTheme: true })(Button);
+export default withStyles(styles)(Button);

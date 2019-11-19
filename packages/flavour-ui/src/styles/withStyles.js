@@ -1,15 +1,16 @@
 import React from "react";
-import { createUseStyles, createTheming } from "react-jss";
+import { createUseStyles } from "react-jss";
+
 import defaultTheme from "./defaultTheme";
 import { useTheme } from "./ThemeProvider";
+import _ from "lodash";
 
-const withStyles = (styles, options = {}) => Component => {
-  const { withTheme = false } = options;
+const withStyles = styles => Component => {
   let useStyles = createUseStyles(styles);
 
   const WithStyles = React.forwardRef((props, ref) => {
     const { innerRef, ...other } = props;
-    const theme = withTheme ? useTheme() : defaultTheme;
+    const theme = _.isEmpty(useTheme()) ? defaultTheme : useTheme();
     const classes = useStyles({ ...props, theme });
 
     return <Component ref={innerRef || ref} classes={classes} {...other} />;

@@ -9,6 +9,39 @@
   <img alt="David" src="https://img.shields.io/david/peer/gobl-software/FlavourUI?style=flat-square">
 </p>
 
+## Quick Start
+
+Install the package using npm:
+
+```bash
+npm i @gobl/flavour-ui
+```
+
+or by using yarn:
+
+```bash
+yarn add @gobl/flavour-ui
+```
+
+### Render a Button Component
+
+```javascript
+import React, { Component } from "react";
+
+import { Button } from "@gobl/flavour-ui";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Button variant="primary">Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+      </div>
+    );
+  }
+}
+```
+
 ## Development
 
 Clone the repository with:

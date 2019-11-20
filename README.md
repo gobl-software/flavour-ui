@@ -23,6 +23,12 @@ or by using yarn:
 yarn add @gobl/flavour-ui
 ```
 
+### Link [Inter](https://github.com/rsms/inter) Font-Face to index
+
+```html
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+```
+
 ### Render a Button Component
 
 ```javascript
@@ -86,5 +92,6 @@ Visit [locahost:8080](http://localhost:8080) and make some changes.
 - [Inter](https://github.com/rsms/inter)
 - [Metropolis](https://github.com/chrismsimpson/Metropolis)
 
-### Collection of all components 
+### Collection of all components
+
 - [List](https://gobl-software.github.io/FlavourUI/)

@@ -4,10 +4,8 @@ import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 
 const styles = {
-  root: {
-    display: "inline-block",
-    fontWeight: "400",
-    fontSize: "0.85rem",
+  root: ({ theme }) => ({
+    ...theme.typography.button,
     textAlign: "center",
     verticalAlign: "middle",
     border: "2px solid transparent",
@@ -16,39 +14,23 @@ const styles = {
     borderRadius: "0.2rem",
     margin: "0.2rem 0.2rem",
     cursor: "pointer"
-  },
-  primary: {
+  }),
+  primary: ({ theme }) => ({
     color: "#fff",
-    backgroundColor: ({ theme }) => theme.colors.primary,
+    backgroundColor: theme.colors.primary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": ({ theme }) => theme.shadows.light
+      "box-shadow": theme.shadows.light
     }
-  },
-  secondary: {
+  }),
+  secondary: ({ theme }) => ({
     color: "#fff",
-    backgroundColor: ({ theme }) => theme.colors.secondary,
+    backgroundColor: theme.colors.secondary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": ({ theme }) => theme.shadows.light
+      "box-shadow": theme.shadows.light
     }
-  },
-  success: {
-    color: "#fff",
-    backgroundColor: ({ theme }) => theme.colors.success,
-    transition: "all ease-in-out 200ms",
-    "&:hover": {
-      "box-shadow": ({ theme }) => theme.shadows.light
-    }
-  },
-  danger: {
-    color: "#fff",
-    backgroundColor: ({ theme }) => theme.colors.danger,
-    transition: "all ease-in-out 200ms",
-    "&:hover": {
-      "box-shadow": ({ theme }) => theme.shadows.light
-    }
-  }
+  })
 };
 
 const Button = React.forwardRef((props, ref) => {

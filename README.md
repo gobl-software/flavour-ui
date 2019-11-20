@@ -32,20 +32,20 @@ yarn add @gobl/flavour-ui
 ### Render a Button Component
 
 ```javascript
-import React, { Component } from "react";
+import React from "react";
+import ReactDOM from "react-dom";
 
 import { Button } from "@gobl/flavour-ui";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Button variant="primary">Primary</Button>
-        <Button variant="secondary">Secondary</Button>
-      </div>
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <React.Fragment>
+      <Button variant="primary">Primary</Button>
+    </React.Fragment>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 ## Development

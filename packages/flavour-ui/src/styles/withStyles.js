@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { createUseStyles } from "react-jss";
 
 import defaultTheme from "./defaultTheme";
@@ -19,6 +20,12 @@ const withStyles = styles => Component => {
 
     return <Component ref={innerRef || ref} classes={classes} {...other} />;
   });
+
+  WithStyles.propTypes = {
+    classes: PropTypes.object
+  };
+
+  WithStyles.defaultProps = Component.defaultProps;
 
   return WithStyles;
 };

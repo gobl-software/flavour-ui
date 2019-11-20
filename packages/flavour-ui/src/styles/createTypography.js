@@ -2,7 +2,7 @@ const typography = {
   typography: {
     button: {
       fontFamily: "Inter, sans-serif",
-      fontWeight: "400",
+      fontWeight: "500",
       fontSize: "0.85rem"
     }
   }

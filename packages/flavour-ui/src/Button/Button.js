@@ -30,6 +30,22 @@ const styles = {
     "&:hover": {
       "box-shadow": theme.shadows.light
     }
+  }),
+  success: ({ theme }) => ({
+    color: "#fff",
+    backgroundColor: theme.colors.success,
+    transition: "all ease-in-out 200ms",
+    "&:hover": {
+      "box-shadow": theme.shadows.light
+    }
+  }),
+  danger: ({ theme }) => ({
+    color: "#fff",
+    backgroundColor: theme.colors.danger,
+    transition: "all ease-in-out 200ms",
+    "&:hover": {
+      "box-shadow": theme.shadows.light
+    }
   })
 };
 

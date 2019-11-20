@@ -1,13 +1,11 @@
-const defaultTheme = {
-  colors: {
-    primary: "#0069ff",
-    secondary: "#9858f4",
-    success: "#28a745",
-    danger: "#dc3545"
-  },
-  shadows: {
-    light: "0 2px 4px rgba(3, 27, 78, 0.1)"
-  }
-};
+import { Colors, Mixins } from "./";
+import merge from "deepmerge";
 
-export default defaultTheme;
+//Array of all theme variable to be merged into default theme.
+
+const preTheme = [Colors, Mixins];
+
+//Merge all objects into one.
+const postTheme = merge.all(preTheme);
+
+export default postTheme;

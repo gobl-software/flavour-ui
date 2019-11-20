@@ -81,31 +81,10 @@ npm run build:dev
 
 Visit [locahost:8080](http://localhost:8080) and make some changes.
 
-## Production
-
-Build project using:
-
-```bash
-
-npm run build:prod
-
-```
-
-Outputs compiled file to /dist.
-
-## Installation
-
-Install flavour-ui package using:
-
-```bash
-
-npm install @gobl/flavour-ui
-
-```
-
 ## Fonts
 
-[Inter](https://github.com/rsms/inter)
-[Metropolis](https://github.com/chrismsimpson/Metropolis)
+- [Inter](https://github.com/rsms/inter)
+- [Metropolis](https://github.com/chrismsimpson/Metropolis)
 
-### Collection of all components - [List](https://gobl-software.github.io/FlavourUI/)
+### Collection of all components 
+- [List](https://gobl-software.github.io/FlavourUI/)

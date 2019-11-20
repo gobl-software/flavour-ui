@@ -28,9 +28,13 @@ const styles = {
 };
 
 const Typography = React.forwardRef((props, ref) => {
-  const { children, classes, variant } = props;
+  const { children, classes, variant, ...other } = props;
 
-  return <div className={clsx(classes.root, classes[variant])}>{children}</div>;
+  return (
+    <div className={clsx(classes.root, classes[variant])} ref={ref} {...other}>
+      {children}
+    </div>
+  );
 });
 
 export default withStyles(styles)(Typography);

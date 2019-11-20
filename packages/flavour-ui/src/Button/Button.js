@@ -50,10 +50,14 @@ const styles = {
 };
 
 const Button = React.forwardRef((props, ref) => {
-  const { children, classes, variant } = props;
+  const { children, classes, variant, ...other } = props;
 
   return (
-    <button className={clsx(classes.root, classes[variant])}>
+    <button
+      className={clsx(classes.root, classes[variant])}
+      ref={ref}
+      {...other}
+    >
       <span>{children}</span>
     </button>
   );

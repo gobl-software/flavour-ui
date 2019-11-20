@@ -89,26 +89,18 @@ const styles = {
       "box-shadow": theme.shadows.light
     }
   }),
-  sm: {
-    "font-size": "0.7rem",
-    padding: "0.35rem 1.1rem",
-    "line-height": "1.5"
-  },
-  md: {
-    "font-size": "0.85rem",
-    padding: "0.35rem 1.25rem",
-    "line-height": "1.5"
-  },
-  lg: {
-    "font-size": "1.3rem",
-    padding: "0.35rem 1.55rem",
-    "line-height": "1.5"
-  },
-  xlg: {
-    "font-size": "1.6rem",
-    padding: "0.35rem 1.85rem",
-    "line-height": "1.5"
-  },
+  sm: ({ theme }) => ({
+    ...theme.typography.button.sm
+  }),
+  md: ({ theme }) => ({
+    ...theme.typography.button.md
+  }),
+  lg: ({ theme }) => ({
+    ...theme.typography.button.lg
+  }),
+  xlg: ({ theme }) => ({
+    ...theme.typography.button.xlg
+  }),
   full: {
     width: "100%"
   }

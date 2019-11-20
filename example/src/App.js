@@ -24,14 +24,16 @@ export default class App extends Component {
           <Button variant="danger-ol">Danger</Button>
           <br />
           <Button variant="primary" size="sm">
-            Primary
+            Small
           </Button>
-          <Button variant="secondary">Secondary</Button>
+          <Button variant="secondary" size="md">
+            Medium
+          </Button>
           <Button variant="success" size="lg">
-            Success
+            Large
           </Button>
           <Button variant="danger" size="xlg">
-            Danger
+            XLarge
           </Button>
           <br />
           <Button variant="primary" width="full">

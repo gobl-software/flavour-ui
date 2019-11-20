@@ -29,8 +29,30 @@ const typography = {
     },
     button: {
       fontFamily: "Inter, sans-serif",
-      fontWeight: "500"
-    }
+      fontWeight: "500",
+      sm: {
+        padding: "0.35rem 1.1rem",
+        ...createFont(0.7, 500, 1.5)
+      },
+      md: {
+        padding: "0.35rem 1.25rem",
+        ...createFont(0.85, 500, 1.5)
+      },
+      lg: {
+        padding: "0.35rem 1.55rem",
+        ...createFont(1.3, 500, 1.5)
+      },
+      xlg: {
+        padding: "0.35rem 1.85rem",
+        ...createFont(1.6, 500, 1.5)
+      }
+    },
+    /**
+     * @param size font-size for font.
+     * @param weight font-wight for font.
+     * @param height line-height for font.
+     */
+    createFont: (size, weight, hight) => createFont
   }
 };
 

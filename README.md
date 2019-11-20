@@ -50,7 +50,7 @@ Clone the repository with:
 
 git clone https://github.com/gobl-software/FlavourUI.git
 
-cd FlavourUI
+cd ./FlavourUI
 ```
 
 Install dependencies with:
@@ -58,6 +58,16 @@ Install dependencies with:
 ```bash
 npm install
 ```
+
+Start the development server:
+
+```bash
+npm run package:dev
+```
+
+Now you can edit the packages/flavour-ui directory and the example will update automatically.
+
+### Playground for developing styles
 
 Run development server:
 
@@ -67,7 +77,7 @@ npm run build:dev
 
 ```
 
-### Hot-Reloading
+#### Hot-Reloading
 
 Visit [locahost:8080](http://localhost:8080) and make some changes.
 

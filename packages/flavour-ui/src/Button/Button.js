@@ -9,8 +9,6 @@ const styles = {
     textAlign: "center",
     verticalAlign: "middle",
     border: "2px solid transparent",
-    padding: "0.35rem 1.25rem",
-    lineHeight: "1.5",
     borderRadius: "0.2rem",
     margin: "0.2rem 0.2rem",
     cursor: "pointer"
@@ -90,7 +88,30 @@ const styles = {
       backgroundColor: theme.colors.danger,
       "box-shadow": theme.shadows.light
     }
-  })
+  }),
+  sm: {
+    "font-size": "0.7rem",
+    padding: "0.35rem 1.1rem",
+    "line-height": "1.5"
+  },
+  md: {
+    "font-size": "0.85rem",
+    padding: "0.35rem 1.25rem",
+    "line-height": "1.5"
+  },
+  lg: {
+    "font-size": "1.3rem",
+    padding: "0.35rem 1.55rem",
+    "line-height": "1.5"
+  },
+  xlg: {
+    "font-size": "1.6rem",
+    padding: "0.35rem 1.85rem",
+    "line-height": "1.5"
+  },
+  full: {
+    width: "100%"
+  }
 };
 
 const Button = React.forwardRef((props, ref) => {
@@ -98,14 +119,19 @@ const Button = React.forwardRef((props, ref) => {
     children,
     classes,
     variant,
-    size = "medium",
-    type = "outlined",
+    size = "md",
+    width = "wrap",
     ...other
   } = props;
 
   return (
     <button
-      className={clsx(classes.root, classes[variant])}
+      className={clsx(
+        classes.root,
+        classes[variant],
+        classes[width],
+        classes[size]
+      )}
       ref={ref}
       {...other}
     >
@@ -127,7 +153,8 @@ Button.propTypes = {
     "success-ol",
     "danger-ol"
   ]),
-  size: PropTypes.oneOf(["small", "medium", "large", "xlarge"])
+  size: PropTypes.oneOf(["sm", "md", "lg", "xlg"]),
+  width: PropTypes.oneOf(["wrap", "full"])
 };
 
 export default withStyles(styles)(Button);

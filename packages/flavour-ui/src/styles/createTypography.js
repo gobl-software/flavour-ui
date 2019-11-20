@@ -29,8 +29,7 @@ const typography = {
     },
     button: {
       fontFamily: "Inter, sans-serif",
-      fontWeight: "500",
-      fontSize: "0.85rem"
+      fontWeight: "500"
     }
   }
 };

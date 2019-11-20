@@ -22,6 +22,21 @@ export default class App extends Component {
           <Button variant="secondary-ol">Secondary</Button>
           <Button variant="success-ol">Success</Button>
           <Button variant="danger-ol">Danger</Button>
+          <br />
+          <Button variant="primary" size="sm">
+            Primary
+          </Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="success" size="lg">
+            Success
+          </Button>
+          <Button variant="danger" size="xlg">
+            Danger
+          </Button>
+          <br />
+          <Button variant="primary" width="full">
+            Primary
+          </Button>
         </Container>
       </Section>
     );

@@ -8,12 +8,14 @@
   "license": "MIT",
   "scripts": {
     "build:dev": "nodemon server.js",
-    "build:prod": "node build.js"
+    "build:prod": "node build.js",
+    "package:dev": "concurrently \"cd ./example && npm start\" \"cd ./packages/flavour-ui && npm start\""
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
+    "concurrently": "^5.0.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.4"
   },

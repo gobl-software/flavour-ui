@@ -118,4 +118,4 @@ Visit [locahost:8080](http://localhost:8080) and make some changes.
 
 ### Collection of all components
 
-- [List](https://gobl-software.github.io/FlavourUI/)
+- [List](https://gobl-software.github.io/flavour-ui/)

@@ -32,22 +32,21 @@ const typography = {
     },
     button: {
       fontFamily: "Inter, sans-serif",
-      fontWeight: "500",
       sm: {
         padding: "0.35rem 1.1rem",
-        ...createFont(0.7, 500, 1.5)
+        ...createFont(0.7, 600, 1.5)
       },
       md: {
         padding: "0.35rem 1.25rem",
-        ...createFont(0.85, 500, 1.5)
+        ...createFont(0.85, 600, 1.5)
       },
       lg: {
         padding: "0.35rem 1.55rem",
-        ...createFont(1.3, 500, 1.5)
+        ...createFont(1.3, 600, 1.5)
       },
       xlg: {
         padding: "0.35rem 1.85rem",
-        ...createFont(1.6, 500, 1.5)
+        ...createFont(1.6, 600, 1.5)
       }
     },
     /**

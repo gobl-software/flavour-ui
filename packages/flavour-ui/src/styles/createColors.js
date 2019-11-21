@@ -1,3 +1,5 @@
+const Color = require("color");
+
 const colors = {
   colors: {
     primary: "#0069ff",
@@ -8,7 +10,19 @@ const colors = {
       heading: {
         dark: "#031b4e"
       }
-    }
+    },
+    /**
+     * @param color rgb, rgba, hla or hex color string.
+     * @param val amount to change rgb values (1 = 100%)
+     */
+    darken: (color, val) =>
+      Color(color)
+        .darken(val)
+        .string(),
+    lighten: (color, val) =>
+      Color(color)
+        .lighten(val)
+        .string()
   }
 };
 

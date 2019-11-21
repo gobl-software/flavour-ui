@@ -18,7 +18,8 @@ const styles = {
     backgroundColor: theme.colors.primary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.mixins.shadows.light
+      "box-shadow": theme.mixins.shadows.light,
+      backgroundColor: theme.colors.darken(theme.colors.primary, 0.07)
     }
   }),
   secondary: ({ theme }) => ({
@@ -26,7 +27,8 @@ const styles = {
     backgroundColor: theme.colors.secondary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.mixins.shadows.light
+      "box-shadow": theme.mixins.shadows.light,
+      backgroundColor: theme.colors.darken(theme.colors.secondary, 0.07)
     }
   }),
   success: ({ theme }) => ({
@@ -34,7 +36,8 @@ const styles = {
     backgroundColor: theme.colors.success,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.mixins.shadows.light
+      "box-shadow": theme.mixins.shadows.light,
+      backgroundColor: theme.colors.darken(theme.colors.success, 0.07)
     }
   }),
   danger: ({ theme }) => ({
@@ -42,7 +45,8 @@ const styles = {
     backgroundColor: theme.colors.danger,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.mixins.shadows.light
+      "box-shadow": theme.mixins.shadows.light,
+      backgroundColor: theme.colors.darken(theme.colors.danger, 0.07)
     }
   }),
   "primary-ol": ({ theme }) => ({

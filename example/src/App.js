@@ -34,17 +34,17 @@ export default class App extends Component {
           <Container>
             <Typography variant="h1">Buttons</Typography>
             <br />
-            <Typography variant="h4">Basic</Typography>
+            <Typography variant="h5">Basic</Typography>
             <Button variant="primary">Primary</Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="success">Success</Button>
             <Button variant="danger">Danger</Button>
-            <Typography variant="h4">Outlined</Typography>
+            <Typography variant="h5">Outlined</Typography>
             <Button variant="primary-ol">Primary</Button>
             <Button variant="secondary-ol">Secondary</Button>
             <Button variant="success-ol">Success</Button>
             <Button variant="danger-ol">Danger</Button>
-            <Typography variant="h4">Sizes</Typography>
+            <Typography variant="h5">Sizes</Typography>
             <Button variant="primary" size="sm">
               Small
             </Button>
@@ -57,7 +57,7 @@ export default class App extends Component {
             <Button variant="danger" size="xlg">
               XLarge
             </Button>
-            <Typography variant="h4">Full Width</Typography>
+            <Typography variant="h5">Full Width</Typography>
             <Button variant="primary" size="lg" width="full">
               Full Width Button
             </Button>

@@ -83,14 +83,6 @@ npm run sg:server
 
 ```
 
-Build the site using:
-
-```bash
-
-npm run sg:build
-
-```
-
 ### Playground for developing styles
 
 Run development server:
@@ -98,6 +90,14 @@ Run development server:
 ```bash
 
 npm run build:dev
+
+```
+
+Build the site using:
+
+```bash
+
+npm run sg:build
 
 ```
 

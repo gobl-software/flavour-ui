@@ -54,15 +54,21 @@ Clone the repository with:
 
 ```bash
 
-git clone https://github.com/gobl-software/FlavourUI.git
+git clone https://github.com/gobl-software/flavour-ui.git
 
-cd ./FlavourUI
+cd flavour-ui
 ```
 
-Install dependencies with:
+Install dependencies with npm:
 
 ```bash
-npm install
+npm run install:all
+```
+
+or using yarn:
+
+```bash
+yarn install:all
 ```
 
 Start the development server:
@@ -100,7 +106,6 @@ Run development server:
 npm run build:dev
 
 ```
-
 
 #### Hot-Reloading
 

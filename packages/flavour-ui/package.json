@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/golb-software/FlavourUI.git",
+    "url": "https://github.com/golb-software/flavour-ui.git",
     "directory": "packages/flavour-ui"
   },
   "scripts": {

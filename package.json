@@ -13,7 +13,7 @@
     "sg:server": "cd styleguide && npx styleguidist server",
     "sg:build": "cd styleguide && npx styleguidist build",
     "preinstall": "cd example && yarn && cd ../styleguide && npm install && cd ../packages/flavour-ui && npm install",
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

@@ -73,7 +73,7 @@ npm run package:dev
 
 Now you can edit the packages/flavour-ui directory and the example will update automatically.
 
-## Developing [Styleguidist](https://github.com/styleguidist/react-styleguidist) Docs
+### Developing [styleguidist](https://github.com/styleguidist/react-styleguidist) docs
 
 Run the development server:
 

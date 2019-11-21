@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 
@@ -11,13 +11,18 @@ const styles = {
 };
 
 const Section = React.forwardRef((props, ref) => {
-  const { children, classes, variant, ...other } = props;
+  const { children, classes, ...other } = props;
 
   return (
-    <div className={clsx(classes.root, classes[variant])} ref={ref} {...other}>
+    <div className={clsx(classes.root)} ref={ref} {...other}>
       {children}
     </div>
   );
 });
+
+Section.propTypes = {
+  children: PropTypes.node,
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(styles)(Section);

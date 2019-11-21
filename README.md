@@ -2,11 +2,11 @@
 <h1 align="center">FlavourUI</h1>
 <p align="center"><a href="https://github.com/facebook/react">React</a> UI component library built with flavour!</p>
 <p align="center">
-  <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/FlavourUI?style=flat-square">
+  <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/flavour-ui?style=flat-square">
   <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/71c28e9b05424da7a084c29304e2a4fb?style=flat-square">
-  <img alt="David" src="https://img.shields.io/david/gobl-software/FlavourUI?style=flat-square">
-  <img alt="David" src="https://img.shields.io/david/dev/gobl-software/FlavourUI?style=flat-square">
-  <img alt="David" src="https://img.shields.io/david/peer/gobl-software/FlavourUI?style=flat-square">
+  <img alt="David" src="https://img.shields.io/david/gobl-software/flavour-ui?style=flat-square">
+  <img alt="David" src="https://img.shields.io/david/dev/gobl-software/flavour-ui?style=flat-square">
+  <img alt="David" src="https://img.shields.io/david/peer/gobl-software/flavour-ui?style=flat-square">
 </p>
 
 ## Quick Start

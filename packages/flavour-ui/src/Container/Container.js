@@ -29,7 +29,7 @@ const Container = React.forwardRef((props, ref) => {
 Container.propTypes = {
   children: PropTypes.node,
   classes: PropTypes.object.isRequired,
-  variant: PropTypes.oneOf(["fixed", "fluid"])
+  width: PropTypes.oneOf(["fixed", "fluid"])
 };
 
 export default withStyles(styles)(Container);

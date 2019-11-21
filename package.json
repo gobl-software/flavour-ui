@@ -9,7 +9,9 @@
   "scripts": {
     "build:dev": "nodemon server.js",
     "build:prod": "node build.js",
-    "package:dev": "concurrently \"cd ./example && npm start\" \"cd ./packages/flavour-ui && npm start\""
+    "package:dev": "concurrently \"cd ./example && npm start\" \"cd ./packages/flavour-ui && npm start\"",
+    "sg:server": "cd styleguide && npx styleguidist server",
+    "sg:build": "cd styleguide && npx styleguidist build"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

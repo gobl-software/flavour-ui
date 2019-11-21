@@ -18,7 +18,7 @@ const styles = {
     backgroundColor: theme.colors.primary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   secondary: ({ theme }) => ({
@@ -26,7 +26,7 @@ const styles = {
     backgroundColor: theme.colors.secondary,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   success: ({ theme }) => ({
@@ -34,7 +34,7 @@ const styles = {
     backgroundColor: theme.colors.success,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   danger: ({ theme }) => ({
@@ -42,7 +42,7 @@ const styles = {
     backgroundColor: theme.colors.danger,
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   "primary-ol": ({ theme }) => ({
@@ -53,7 +53,7 @@ const styles = {
     "&:hover": {
       color: "#fff",
       backgroundColor: theme.colors.primary,
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   "secondary-ol": ({ theme }) => ({
@@ -64,7 +64,7 @@ const styles = {
     "&:hover": {
       color: "#fff",
       backgroundColor: theme.colors.secondary,
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   "success-ol": ({ theme }) => ({
@@ -75,7 +75,7 @@ const styles = {
     "&:hover": {
       color: "#fff",
       backgroundColor: theme.colors.success,
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   "danger-ol": ({ theme }) => ({
@@ -86,7 +86,7 @@ const styles = {
     "&:hover": {
       color: "#fff",
       backgroundColor: theme.colors.danger,
-      "box-shadow": theme.shadows.light
+      "box-shadow": theme.mixins.shadows.light
     }
   }),
   sm: ({ theme }) => ({

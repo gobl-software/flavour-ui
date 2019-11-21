@@ -10,31 +10,31 @@ const styles = {
   },
   h1: ({ theme }) => ({
     ...theme.typography.h1,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   h2: ({ theme }) => ({
     ...theme.typography.h2,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   h3: ({ theme }) => ({
     ...theme.typography.h3,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   h4: ({ theme }) => ({
     ...theme.typography.h4,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   h5: ({ theme }) => ({
     ...theme.typography.h5,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   h6: ({ theme }) => ({
     ...theme.typography.h6,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   }),
   p: ({ theme }) => ({
     ...theme.typography.p,
-    color: theme.colors.text.heading.dark
+    color: theme.colors.text.dark
   })
 };
 

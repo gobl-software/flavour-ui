@@ -6,10 +6,13 @@ const colors = {
     secondary: "#9858f4",
     success: "#28a745",
     danger: "#dc3545",
+    warning: "#ffc107",
+    info: "#16a2b8",
+    light: "#f8f9fa",
+    dark: "#031b4e",
     text: {
-      heading: {
-        dark: "#031b4e"
-      }
+      dark: "#031b4e",
+      light: "#fff"
     },
     /**
      * @param color rgb, rgba, hla or hex color string.

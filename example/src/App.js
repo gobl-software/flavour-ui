@@ -35,30 +35,42 @@ export default class App extends Component {
             <Typography variant="h1">Buttons</Typography>
             <br />
             <Typography variant="h5">Basic</Typography>
-            <Button variant="primary">Primary</Button>
-            <Button variant="secondary">Secondary</Button>
-            <Button variant="success">Success</Button>
-            <Button variant="danger">Danger</Button>
+            <Button color="primary">Primary</Button>
+            <Button color="secondary">Secondary</Button>
+            <Button color="success">Success</Button>
+            <Button color="danger">Danger</Button>
+            <Button color="warning">Warning</Button>
+            <Button color="info">Info</Button>
+            <Button color="light">Light</Button>
+            <Button color="dark">Dark</Button>
             <Typography variant="h5">Outlined</Typography>
-            <Button variant="primary-ol">Primary</Button>
-            <Button variant="secondary-ol">Secondary</Button>
-            <Button variant="success-ol">Success</Button>
-            <Button variant="danger-ol">Danger</Button>
+            <Button color="primary" variant="outlined">
+              Primary
+            </Button>
+            <Button color="secondary" variant="outlined">
+              Secondary
+            </Button>
+            <Button color="success" variant="outlined">
+              Success
+            </Button>
+            <Button color="danger" variant="outlined">
+              Danger
+            </Button>
             <Typography variant="h5">Sizes</Typography>
-            <Button variant="primary" size="sm">
+            <Button color="primary" size="sm">
               Small
             </Button>
-            <Button variant="secondary" size="md">
+            <Button color="secondary" size="md">
               Medium
             </Button>
-            <Button variant="success" size="lg">
+            <Button color="success" size="lg">
               Large
             </Button>
-            <Button variant="danger" size="xlg">
+            <Button color="danger" size="xlg">
               XLarge
             </Button>
             <Typography variant="h5">Full Width</Typography>
-            <Button variant="primary" size="lg" width="full">
+            <Button color="primary" size="lg" width="full">
               Full Width Button
             </Button>
           </Container>

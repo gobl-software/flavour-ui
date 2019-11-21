@@ -62,13 +62,13 @@ cd flavour-ui
 Install dependencies with npm:
 
 ```bash
-npm run install:all
+npm install
 ```
 
 or using yarn:
 
 ```bash
-yarn install:all
+yarn install
 ```
 
 Start the development server:

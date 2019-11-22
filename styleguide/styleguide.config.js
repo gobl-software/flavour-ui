@@ -19,5 +19,20 @@ module.exports = {
       }
     }
   },
-  styleguideDir: "../docs"
+  styleguideDir: "../docs",
+  template: {
+    head: {
+      links: [
+        {
+          rel: "stylesheet",
+          href: "https://rsms.me/inter/inter.css"
+        }
+      ]
+    }
+  },
+  theme: {
+    fontFamily: {
+      base: '"Inter", sans-serif'
+    }
+  }
 };

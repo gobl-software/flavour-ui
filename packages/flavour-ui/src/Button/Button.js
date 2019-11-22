@@ -29,7 +29,7 @@ const styles = {
     borderColor: theme.colors[props.color ? props.color : "primary"],
     transition: "all ease-in-out 200ms",
     "&:hover": {
-      color: "#fff !important",
+      color: `${theme.colors.text.light} !important`,
       boxShadow: theme.mixins.shadows.light,
       backgroundColor: `${
         theme.colors[props.color ? props.color : "primary"]

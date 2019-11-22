@@ -29,9 +29,6 @@ sass.render(
           }
         }
       );
-      fs.createReadStream("./public/index.html").pipe(
-        fs.createWriteStream("./index.html")
-      );
     } else {
       console.log(error);
     }

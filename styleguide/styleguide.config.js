@@ -18,5 +18,6 @@ module.exports = {
         "react-dom": path.resolve(__dirname, "node_modules/react-dom")
       }
     }
-  }
+  },
+  styleguideDir: "../docs"
 };

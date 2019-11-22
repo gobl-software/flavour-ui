@@ -1,17 +1,23 @@
-Basic:
+## Basic:
 
 ```js
-<Button variant="primary">Primary</Button>
-<Button variant="secondary">Secondary</Button>
-<Button variant="success">Success</Button>
-<Button variant="danger">Danger</Button>
+<Button color="primary">Primary</Button>
+<Button color="secondary">Secondary</Button>
+<Button color="success">Success</Button>
+<Button color="danger">Danger</Button>
+<Button color="warning">Warning</Button>
+<Button color="info">Info</Button>
+<Button color="light">Light</Button>
+<Button color="dark">Dark</Button>
 ```
 
-Outlined:
+## Outlined:
 
 ```js
-<Button variant="primary-ol">Primary</Button>
-<Button variant="secondary-ol">Secondary</Button>
-<Button variant="success-ol">Success</Button>
-<Button variant="danger-ol">Danger</Button>
+            <Button color="primary" variant="outlined">
+              Primary
+            </Button>
+            <Button color="secondary" variant="outlined">
+              Secondary
+            </Button>
 ```

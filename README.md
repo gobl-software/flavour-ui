@@ -48,6 +48,8 @@ const App = (props) => {
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
+### [Documentation](https://gobl-software.github.io/flavour-ui/)
+
 ## Development
 
 Clone the repository with:
@@ -113,9 +115,4 @@ Visit [locahost:8080](http://localhost:8080) and make some changes.
 
 ## Fonts
 
-- [Inter](https://github.com/rsms/inter)
-- [Metropolis](https://github.com/chrismsimpson/Metropolis)
-
-### Collection of all components
-
-- [List](https://gobl-software.github.io/flavour-ui/)
+-  [Inter](https://github.com/rsms/inter)

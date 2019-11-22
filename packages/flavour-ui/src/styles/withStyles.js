@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { createUseStyles } from "react-jss";
 
 import defaultTheme from "./defaultTheme";
-import { useTheme } from "./ThemeProvider";
+import { useTheme } from "./themeCreator";
 import _ from "lodash";
 
 const withStyles = styles => Component => {

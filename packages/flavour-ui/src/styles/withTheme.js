@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import defaultTheme from "./defaultTheme";
-import merge from "deepmerge";
+import createFlavourTheme from "./createFlavourTheme";
 
 const withTheme = Component => {
   const WithTheme = React.forwardRef((props, ref) => {
     const { innerRef, theme, ...other } = props;
 
     //Combine default theme with user theme.
-    const combinedTheme = merge.all([defaultTheme, theme]);
+    const combinedTheme = createFlavourTheme(theme);
 
     return <Component theme={combinedTheme} ref={innerRef || ref} {...other} />;
   });

@@ -11,6 +11,9 @@ import {
 const theme = {
   colors: {
     primary: "darkblue"
+  },
+  typography: {
+    font: "Arial, sans-serif"
   }
 };
 

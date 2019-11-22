@@ -1,4 +1,4 @@
-### Headings:
+### Headings
 
 ```js
             <Typography variant="h1">h1. Flavour Heading</Typography>
@@ -9,7 +9,7 @@
             <Typography variant="h6">h6. Flavour Heading</Typography>
 ```
 
-### Paragraphs:
+### Paragraphs
 
 ```js
 <Typography variant="p">

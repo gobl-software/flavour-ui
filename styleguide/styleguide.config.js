@@ -32,7 +32,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      base: '"Inter", sans-serif'
+      base: "'Inter', sans-serif"
     }
   }
 };

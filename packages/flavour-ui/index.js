@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 
-var React = require('react');
+var React = require("react");
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -21,34 +21,41 @@ and limitations under the License.
 /* global Reflect, Promise */
 
 var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
+  extendStatics =
+    Object.setPrototypeOf ||
+    ({ __proto__: [] } instanceof Array &&
+      function(d, b) {
+        d.__proto__ = b;
+      }) ||
+    function(d, b) {
+      for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    };
+  return extendStatics(d, b);
 };
 
 function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  extendStatics(d, b);
+  function __() {
+    this.constructor = d;
+  }
+  d.prototype =
+    b === null ? Object.create(b) : ((__.prototype = b.prototype), new __());
 }
 
 /**
  * @class ExampleComponent
  */
-var ExampleComponent = /** @class */ (function (_super) {
-    __extends(ExampleComponent, _super);
-    function ExampleComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    ExampleComponent.prototype.render = function () {
-        var text = this.props.text;
-        return React.createElement("div", null,
-            "Example Component: ",
-            text);
-    };
-    return ExampleComponent;
-}(React.Component));
+var ExampleComponent = /** @class */ (function(_super) {
+  __extends(ExampleComponent, _super);
+  function ExampleComponent() {
+    return (_super !== null && _super.apply(this, arguments)) || this;
+  }
+  ExampleComponent.prototype.render = function() {
+    var text = this.props.text;
+    return React.createElement("div", null, "Example Component: ", text);
+  };
+  return ExampleComponent;
+})(React.Component);
 
 exports.default = ExampleComponent;
 //# sourceMappingURL=index.js.map

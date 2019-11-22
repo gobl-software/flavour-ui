@@ -1,4 +1,4 @@
-const Color = require("color");
+const colUtil = require("color");
 
 const colors = {
   colors: {
@@ -19,11 +19,11 @@ const colors = {
      * @param val amount to change rgb values (1 = 100%)
      */
     darken: (color, val) =>
-      Color(color)
+      colUtil(color)
         .darken(val)
         .string(),
     lighten: (color, val) =>
-      Color(color)
+      colUtil(color)
         .lighten(val)
         .string()
   }

@@ -1,4 +1,4 @@
-### Outlined:
+### Outlined
 
 ```js
 <Button color="primary" variant="outlined">
@@ -27,7 +27,7 @@
 </Button>
 ```
 
-### Basic:
+### Basic
 
 ```js
 <Button color="primary">Primary</Button>
@@ -40,7 +40,7 @@
 <Button color="dark">Dark</Button>
 ```
 
-### Width:
+### Width
 
 ```js
 <Button color="primary" size="lg" width="full">

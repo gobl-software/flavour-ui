@@ -64,7 +64,7 @@ const theme = {
   components: {
     button: {
       root: {
-        padding: "1.25rem !important"
+        padding: "0.35rem 1.25rem"
       }
     }
   }

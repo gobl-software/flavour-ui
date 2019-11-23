@@ -12,26 +12,10 @@ const styles = {
     ...theme.components.button.normal
   }),
   outlined: ({ theme, ...props }) => ({
-    color: `${theme.colors[props.color ? props.color : "primary"]} !important`,
-    backgroundColor: "transparent !important",
-    borderColor: theme.colors[props.color ? props.color : "primary"],
-    transition: "all ease-in-out 200ms",
-    "&:hover": {
-      color: `${theme.colors.text.light} !important`,
-      boxShadow: theme.mixins.shadows.light,
-      backgroundColor: `${
-        theme.colors[props.color ? props.color : "primary"]
-      } !important`
-    }
+    ...theme.components.button.outlined(props)
   }),
   color: ({ theme, ...props }) => ({
-    backgroundColor: theme.colors[props.color ? props.color : "primary"],
-    "&:hover": {
-      backgroundColor: theme.colors.darken(
-        theme.colors[props.color ? props.color : "primary"],
-        0.07
-      )
-    }
+    ...theme.components.button.color(props)
   }),
   size: ({ theme, ...props }) => ({
     ...theme.typography.button[props.size ? props.size : "md"]

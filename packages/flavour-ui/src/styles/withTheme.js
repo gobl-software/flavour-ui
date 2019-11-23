@@ -7,9 +7,9 @@ const withTheme = Component => {
     const { innerRef, theme, ...other } = props;
 
     //Combine default theme with user theme.
-    const combinedTheme = createFlavourTheme(theme);
+    const flavourTheme = createFlavourTheme(theme);
 
-    return <Component theme={combinedTheme} ref={innerRef || ref} {...other} />;
+    return <Component theme={flavourTheme} ref={innerRef || ref} {...other} />;
   });
 
   WithTheme.propTypes = {

@@ -23,7 +23,5 @@ export const createFlavourTheme = theme => {
     ...other
   };
 
-  console.log(flavourTheme);
-
   return merge.all([defaultTheme, flavourTheme]);
 };

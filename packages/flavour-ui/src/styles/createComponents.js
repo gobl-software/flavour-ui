@@ -6,7 +6,8 @@ const components = (colors, mixins) => ({
       border: "2px solid transparent",
       borderRadius: "0.2rem",
       margin: "0.2rem 0.2rem",
-      cursor: "pointer"
+      cursor: "pointer",
+      padding: "0.35rem 1.25rem"
     },
     normal: {
       color: colors.text.light,

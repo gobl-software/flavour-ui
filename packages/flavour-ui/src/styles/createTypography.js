@@ -32,19 +32,15 @@ const typography = font => ({
   button: {
     fontFamily: font,
     sm: {
-      padding: "0.35rem 1.1rem",
       ...createFont(0.7, 600, 1.5, font)
     },
     md: {
-      padding: "0.35rem 1.25rem",
       ...createFont(0.85, 600, 1.5, font)
     },
     lg: {
-      padding: "0.35rem 1.55rem",
       ...createFont(1.3, 600, 1.5, font)
     },
     xlg: {
-      padding: "0.35rem 1.85rem",
       ...createFont(1.6, 600, 1.5, font)
     }
   },

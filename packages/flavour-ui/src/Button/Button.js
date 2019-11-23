@@ -6,22 +6,10 @@ import clsx from "clsx";
 const styles = {
   root: ({ theme }) => ({
     ...theme.typography.button,
-    textAlign: "center",
-    verticalAlign: "middle",
-    border: "2px solid transparent",
-    borderRadius: "0.2rem",
-    margin: "0.2rem 0.2rem",
-    cursor: "pointer"
+    ...theme.components.button.root
   }),
-  normal: ({ theme, ...props }) => ({
-    color:
-      props.color === "light"
-        ? theme.colors.text.dark
-        : theme.colors.text.light,
-    transition: "all ease-in-out 200ms",
-    "&:hover": {
-      "box-shadow": theme.mixins.shadows.light
-    }
+  normal: ({ theme }) => ({
+    ...theme.components.button.normal
   }),
   outlined: ({ theme, ...props }) => ({
     color: `${theme.colors[props.color ? props.color : "primary"]} !important`,

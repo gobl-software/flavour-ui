@@ -1,16 +1,29 @@
 import merge from "deepmerge";
-import defaultTheme from "./defaultTheme";
+import defaultTheme from "./createDefaultTheme";
 import createTypography from "./createTypography";
+import createComponents from "./createComponents";
 
-const createFlavourTheme = theme => {
-  const { typography = { font: "Inter, sans-serif" }, ...other } = theme;
+export const createFlavourTheme = theme => {
+  const { typography, components, colors = {}, mixins = {}, ...other } = theme;
+
+  let mergedColors = merge.all([defaultTheme.colors, colors]),
+    mergedMixins = merge.all([defaultTheme.mixins, mixins]);
 
   let flavourTheme = {
-    ...merge.all([createTypography(typography.font), { typography }]),
+    typography: {
+      ...merge.all([createTypography(typography.font), { ...typography }])
+    },
+    components: {
+      ...merge.all([
+        createComponents(mergedColors, mergedMixins),
+        { ...components }
+      ])
+    },
+    colors,
     ...other
   };
 
+  console.log(flavourTheme);
+
   return merge.all([defaultTheme, flavourTheme]);
 };
-
-export default createFlavourTheme;

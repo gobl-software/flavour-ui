@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { createUseStyles } from "react-jss";
 
-import defaultTheme from "./defaultTheme";
-import { useTheme } from "./themeCreator";
+import defaultTheme from "./createDefaultTheme";
+import { useTheme } from "./createTheme";
 import _ from "lodash";
 
 const withStyles = styles => Component => {

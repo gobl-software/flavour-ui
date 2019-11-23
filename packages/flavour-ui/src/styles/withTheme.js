@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import createFlavourTheme from "./createFlavourTheme";
+import { createFlavourTheme } from "./createFlavourTheme";
 
 const withTheme = Component => {
   const WithTheme = React.forwardRef((props, ref) => {

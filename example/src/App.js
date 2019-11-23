@@ -9,11 +9,18 @@ import {
 } from "@gobl/flavour-ui";
 
 const theme = {
-  colors: {
-    primary: "darkblue"
-  },
   typography: {
-    font: "Arial, sans-serif"
+    font: "Inter, sans-serif"
+  },
+  colors: {
+    primary: "hotpink"
+  },
+  components: {
+    button: {
+      root: {
+        padding: "0.5rem 1.25rem !important"
+      }
+    }
   }
 };
 

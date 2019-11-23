@@ -31,7 +31,7 @@ yarn add @gobl/flavour-ui
 
 ### Render a Button Component
 
-```javascript
+```jsx
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -46,6 +46,38 @@ const App = (props) => {
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
+```
+
+### Theming
+
+```jsx
+...
+import { ThemeProvider, Button } from "@gobl/flavour-ui";
+
+const theme = {
+  typography: {
+    font: "Arial, sans-serif"
+  }
+  colors: {
+    primary: "hotpink"
+  },
+  components: {
+    button: {
+      root: {
+        padding: "0.35rem 1.25rem"
+      }
+    }
+  }
+  ...
+}
+
+...
+
+<ThemeProvider theme={ theme }>
+  <Button color="primary">Hot Pink Button!</Button>
+</ThemeProvider>
+
+...
 ```
 
 ### [Documentation](https://gobl-software.github.io/flavour-ui/)

@@ -40,7 +40,7 @@ import { Button } from "@gobl/flavour-ui";
 const App = (props) => {
   return (
     <React.Fragment>
-      <Button variant="primary">Primary</Button>
+      <Button color="primary">Primary</Button>
     </React.Fragment>
   );
 };

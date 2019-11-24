@@ -12,17 +12,17 @@ const theme = {
   typography: {
     font: "Inter, sans-serif"
   },
-  colors: {
-    primary: "hotpink"
-  },
   components: {
     button: {
       root: {
-        padding: "0.35rem 1.25rem"
+        borderRadius: "100px"
       },
-      outlined: {
-        padding: "1rem 2rem"
-      }
+      normal: {
+        borderRadius: "5px"
+      },
+      outlined: (props) => ({
+        borderRadius: props.color === "primary" ? "1px" : ""
+      })
     }
   }
 };

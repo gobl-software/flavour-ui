@@ -4,12 +4,12 @@ import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 
 const styles = {
-  root: ({ theme }) => ({
+  root: ({ theme, ...props }) => ({
     ...theme.typography.button,
-    ...theme.components.button.root
+    ...theme.components.button.root(props)
   }),
-  normal: ({ theme }) => ({
-    ...theme.components.button.normal
+  normal: ({ theme, ...props }) => ({
+    ...theme.components.button.normal(props)
   }),
   outlined: ({ theme, ...props }) => ({
     ...theme.components.button.outlined(props)

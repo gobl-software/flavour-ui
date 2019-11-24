@@ -1,28 +1,35 @@
+import appendStyles from "./appendStyles";
+
 const button = (colors, mixins, components) => {
-  let outlined, color;
-
-  if (components && components.button) {
-    outlined = components.button.outlined;
-    color = components.button.color;
-  }
-
   return {
-    root: {
+    root: props => ({
       textAlign: "center",
       verticalAlign: "middle",
       border: "2px solid transparent",
       borderRadius: "0.2rem",
       margin: "0.2rem 0.2rem",
       cursor: "pointer",
-      padding: "0.35rem 1.25rem"
-    },
-    normal: {
+      padding: "0.35rem 1.25rem",
+      ...appendStyles({
+        component: "button",
+        components,
+        style: "root",
+        props
+      })
+    }),
+    normal: props => ({
       color: colors.text.light,
       transition: "all ease-in-out 200ms",
       "&:hover": {
         "box-shadow": mixins.shadows.light
-      }
-    },
+      },
+      ...appendStyles({
+        component: "button",
+        components,
+        style: "normal",
+        props
+      })
+    }),
     outlined: props => ({
       color: `${colors[props.color ? props.color : "primary"]}`,
       backgroundColor: "transparent !important",
@@ -35,7 +42,12 @@ const button = (colors, mixins, components) => {
           colors[props.color ? props.color : "primary"]
         } !important`
       },
-      ...outlined
+      ...appendStyles({
+        component: "button",
+        components,
+        style: "outlined",
+        props
+      })
     }),
     color: props => ({
       backgroundColor: colors[props.color ? props.color : "primary"],
@@ -45,7 +57,12 @@ const button = (colors, mixins, components) => {
           0.07
         )
       },
-      ...color
+      ...appendStyles({
+        component: "button",
+        components,
+        style: "color",
+        props
+      })
     })
   };
 };

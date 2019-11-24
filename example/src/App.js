@@ -19,6 +19,9 @@ const theme = {
     button: {
       root: {
         padding: "0.35rem 1.25rem"
+      },
+      outlined: {
+        padding: "1rem 2rem"
       }
     }
   }

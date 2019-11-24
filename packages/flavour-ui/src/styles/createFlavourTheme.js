@@ -14,14 +14,13 @@ export const createFlavourTheme = theme => {
       ...merge.all([createTypography(typography.font), { ...typography }])
     },
     components: {
-      ...merge.all([
-        createComponents(mergedColors, mergedMixins),
-        { ...components }
-      ])
+      ...createComponents(mergedColors, mergedMixins, components)
     },
     colors,
     ...other
   };
+
+  console.log(flavourTheme);
 
   return merge.all([defaultTheme, flavourTheme]);
 };

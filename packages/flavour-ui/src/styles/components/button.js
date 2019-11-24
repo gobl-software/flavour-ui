@@ -1,15 +1,18 @@
-import appendStyles from "./appendStyles";
+import appendStyles from "../appendStyles";
 
 const button = (colors, mixins, components) => {
   return {
     root: props => ({
       textAlign: "center",
-      verticalAlign: "middle",
       border: "2px solid transparent",
       borderRadius: "0.2rem",
-      margin: "0.2rem 0.2rem",
       cursor: "pointer",
       padding: "0.35rem 1.25rem",
+      outline: "none",
+      minWidth: "64",
+      "&:not(last-child)": {
+        marginRight: "0.25rem"
+      },
       ...appendStyles({
         component: "button",
         components,

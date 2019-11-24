@@ -4,7 +4,13 @@ import createTypography from "./createTypography";
 import createComponents from "./createComponents";
 
 export const createFlavourTheme = theme => {
-  const { typography, components, colors = {}, mixins = {}, ...other } = theme;
+  const {
+    typography = { font: "Inter, sans-serif" },
+    components,
+    colors = {},
+    mixins = {},
+    ...other
+  } = theme;
 
   let mergedColors = merge.all([defaultTheme.colors, colors]),
     mergedMixins = merge.all([defaultTheme.mixins, mixins]);

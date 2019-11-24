@@ -20,17 +20,25 @@ const styles = {
   size: ({ theme, ...props }) => ({
     ...theme.typography.button[props.size ? props.size : "md"]
   }),
-  full: {
+  fullWidth: {
     width: "100%"
-  }
+  },
+  grouped: ({ theme, ...props }) => ({
+    borderRightColor:
+      props.variant !== "outlined"
+        ? theme.colors.darken(theme.colors[props.color], 0.075)
+        : ""
+  })
 };
 
 const Button = React.forwardRef((props, ref) => {
   const {
     children,
     classes,
+    className,
     variant = "normal",
-    width = "wrap",
+    fullWidth = false,
+    grouped = false,
     ...other
   } = props;
 
@@ -41,7 +49,9 @@ const Button = React.forwardRef((props, ref) => {
         classes.color,
         classes.size,
         classes[variant],
-        classes[width]
+        { [classes.fullWidth]: fullWidth },
+        { [classes.grouped]: grouped },
+        className
       )}
       ref={ref}
       {...other}
@@ -54,6 +64,7 @@ const Button = React.forwardRef((props, ref) => {
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
+  className: PropTypes.string,
   variant: PropTypes.oneOf(["normal", "outlined"]),
   color: PropTypes.oneOf([
     "primary",
@@ -66,7 +77,8 @@ Button.propTypes = {
     "dark"
   ]),
   size: PropTypes.oneOf(["sm", "md", "lg", "xlg"]),
-  width: PropTypes.oneOf(["wrap", "full"])
+  fullWidth: PropTypes.bool,
+  grouped: PropTypes.bool
 };
 
 export default withStyles(styles)(Button);

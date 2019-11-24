@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import {
   Button,
+  ButtonGroup,
   Container,
   Section,
   Typography,
@@ -9,22 +10,7 @@ import {
 } from "@gobl/flavour-ui";
 
 const theme = {
-  typography: {
-    font: "Inter, sans-serif"
-  },
-  components: {
-    button: {
-      root: {
-        borderRadius: "100px"
-      },
-      normal: {
-        borderRadius: "5px"
-      },
-      outlined: (props) => ({
-        borderRadius: props.color === "primary" ? "1px" : ""
-      })
-    }
-  }
+  components: {}
 };
 
 export default class App extends Component {
@@ -95,8 +81,30 @@ export default class App extends Component {
               <Button color="danger" size="xlg">
                 XLarge
               </Button>
+              <Typography variant="h5">Button Groups</Typography>
+              <ButtonGroup>
+                <Button color="primary">Left</Button>
+                <Button color="primary">Middle</Button>
+                <Button color="primary">Right</Button>
+              </ButtonGroup>
+              <ButtonGroup style={{ marginBottom: "1rem" }}>
+                <Button color="primary" variant="outlined">
+                  Left
+                </Button>
+                <Button color="primary" variant="outlined">
+                  Middle
+                </Button>
+                <Button color="primary" variant="outlined">
+                  Right
+                </Button>
+              </ButtonGroup>
+              <ButtonGroup fullWidth={true}>
+                <Button color="primary">Left</Button>
+                <Button color="primary">Middle</Button>
+                <Button color="primary">Right</Button>
+              </ButtonGroup>
               <Typography variant="h5">Full Width</Typography>
-              <Button color="primary" size="lg" width="full">
+              <Button color="primary" size="lg" fullWidth={true}>
                 Full Width Button
               </Button>
             </Container>

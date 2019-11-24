@@ -22,13 +22,7 @@ const styles = {
   }),
   fullWidth: {
     width: "100%"
-  },
-  grouped: ({ theme, ...props }) => ({
-    borderRightColor:
-      props.variant !== "outlined"
-        ? theme.colors.darken(theme.colors[props.color], 0.075)
-        : ""
-  })
+  }
 };
 
 const Button = React.forwardRef((props, ref) => {
@@ -50,7 +44,6 @@ const Button = React.forwardRef((props, ref) => {
         classes.size,
         classes[variant],
         { [classes.fullWidth]: fullWidth },
-        { [classes.grouped]: grouped },
         className
       )}
       ref={ref}
@@ -77,8 +70,7 @@ Button.propTypes = {
     "dark"
   ]),
   size: PropTypes.oneOf(["sm", "md", "lg", "xlg"]),
-  fullWidth: PropTypes.bool,
-  grouped: PropTypes.bool
+  fullWidth: PropTypes.bool
 };
 
 export default withStyles(styles)(Button);

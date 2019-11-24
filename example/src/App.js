@@ -53,8 +53,8 @@ export default class App extends Component {
               <Button color="danger">Danger</Button>
               <Button color="warning">Warning</Button>
               <Button color="info">Info</Button>
-              <Button color="light">Light</Button>
               <Button color="dark">Dark</Button>
+              <Button color="light">Light</Button>
               <Typography variant="h5">Outlined</Typography>
               <Button color="primary" variant="outlined">
                 Primary
@@ -82,26 +82,25 @@ export default class App extends Component {
                 XLarge
               </Button>
               <Typography variant="h5">Button Groups</Typography>
-              <ButtonGroup>
-                <Button color="primary">Left</Button>
-                <Button color="primary">Middle</Button>
-                <Button color="primary">Right</Button>
+              <ButtonGroup color="primary">
+                <Button>Left</Button>
+                <Button>Middle</Button>
+                <Button>Right</Button>
               </ButtonGroup>
-              <ButtonGroup style={{ marginBottom: "1rem" }}>
-                <Button color="primary" variant="outlined">
-                  Left
-                </Button>
-                <Button color="primary" variant="outlined">
-                  Middle
-                </Button>
-                <Button color="primary" variant="outlined">
-                  Right
-                </Button>
+              <ButtonGroup
+                color="secondary"
+                variant="outlined"
+                size="sm"
+                style={{ marginBottom: "1rem" }}
+              >
+                <Button>Left</Button>
+                <Button>Middle</Button>
+                <Button>Right</Button>
               </ButtonGroup>
-              <ButtonGroup fullWidth={true}>
-                <Button color="primary">Left</Button>
-                <Button color="primary">Middle</Button>
-                <Button color="primary">Right</Button>
+              <ButtonGroup color="info" fullWidth={true}>
+                <Button>Left</Button>
+                <Button>Middle</Button>
+                <Button>Right</Button>
               </ButtonGroup>
               <Typography variant="h5">Full Width</Typography>
               <Button color="primary" size="lg" fullWidth={true}>

@@ -13,6 +13,9 @@ const colors = {
     dark: "#031b4e",
     light: "#fff"
   },
+  borders: {
+    lighterGrey: "#cad2d8"
+  },
   /**
    * @param color rgb, rgba, hla or hex color string.
    * @param val amount to change rgb values (1 = 100%)

@@ -4,13 +4,19 @@ import {
   Button,
   ButtonGroup,
   Container,
+  Card,
   Section,
   Typography,
   ThemeProvider
 } from "@gobl/flavour-ui";
 
 const theme = {
-  components: {}
+  typography: { font: "Inter, sans-serif" },
+  variables: {
+    borders: {
+      width: "2px"
+    }
+  }
 };
 
 export default class App extends Component {
@@ -106,6 +112,10 @@ export default class App extends Component {
               <Button color="primary" size="lg" fullWidth={true}>
                 Full Width Button
               </Button>
+              <Typography variant="h5">Cards</Typography>
+              <Card>
+                <Button color="primary">Card Button</Button>
+              </Card>
             </Container>
           </Section>
         </ThemeProvider>

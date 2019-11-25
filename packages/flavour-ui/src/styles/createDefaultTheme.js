@@ -1,4 +1,4 @@
-import { colors, mixins, fonts } from ".";
+import { colors, mixins, fonts, variables } from ".";
 import createTypography from "./createTypography";
 import createComponents from "./createComponents";
 import merge from "deepmerge";
@@ -12,7 +12,8 @@ const defaultTheme = merge.all([
     colors,
     mixins,
     typography,
-    components
+    components,
+    variables
   }
 ]);
 

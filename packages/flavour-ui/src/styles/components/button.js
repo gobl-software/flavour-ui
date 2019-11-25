@@ -1,11 +1,11 @@
 import appendStyles from "../appendStyles";
 
-const button = (colors, mixins, components) => {
+const button = (colors, mixins, variables, components) => {
   return {
     root: props => ({
       textAlign: "center",
-      border: "2px solid transparent",
-      borderRadius: "0.2rem",
+      border: `${variables.borders.width} solid transparent`,
+      borderRadius: variables.borders.radius,
       cursor: "pointer",
       padding: "0.35rem 1.25rem",
       outline: "none",

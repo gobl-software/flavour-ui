@@ -5,6 +5,7 @@ import {
   ButtonGroup,
   Container,
   Card,
+  Grid,
   Section,
   Typography,
   ThemeProvider
@@ -46,10 +47,6 @@ export default class App extends Component {
                 recently with desktop publishing software like Aldus PageMaker
                 including versions of Lorem Ipsum
               </Typography>
-            </Container>
-          </Section>
-          <Section>
-            <Container>
               <Typography variant="h1">Buttons</Typography>
               <br />
               <Typography variant="h5">Basic</Typography>
@@ -112,10 +109,50 @@ export default class App extends Component {
               <Button color="primary" size="lg" fullWidth={true}>
                 Full Width Button
               </Button>
-              <Typography variant="h5">Cards</Typography>
+              <Typography variant="h1">Cards</Typography>
               <Card>
-                <Button color="primary">Card Button</Button>
+                <Typography variant="p">Example Card</Typography>
               </Card>
+              <Typography variant="h1">Grids</Typography>
+              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
+                <Card>
+                  <Typography variant="p">Column 1</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 2</Typography>
+                </Card>
+              </Grid>
+              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
+                <Card>
+                  <Typography variant="p">Column 1</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 2</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 3</Typography>
+                </Card>
+              </Grid>
+              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
+                <Card>
+                  <Typography variant="p">Column 1</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 2</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 3</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 4</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 5</Typography>
+                </Card>
+                <Card>
+                  <Typography variant="p">Column 6</Typography>
+                </Card>
+              </Grid>
             </Container>
           </Section>
         </ThemeProvider>

@@ -45,7 +45,6 @@ const ButtonGroup = React.forwardRef((props, ref) => {
     ...other
   } = props;
 
-  console.log(props);
   return (
     <div
       className={clsx(

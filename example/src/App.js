@@ -115,43 +115,38 @@ export default class App extends Component {
               </Card>
               <Typography variant="h1">Grids</Typography>
               <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
-                <Card>
-                  <Typography variant="p">Column 1</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 2</Typography>
-                </Card>
+                <Grid item xs={12} md={4} lg={4}>
+                  <Card>
+                    <Typography variant="p">lg = 4</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={4} lg={4}>
+                  <Card>
+                    <Typography variant="p">lg = 4</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={4} lg={4}>
+                  <Card>
+                    <Typography variant="p">lg = 4</Typography>
+                  </Card>
+                </Grid>
               </Grid>
               <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
-                <Card>
-                  <Typography variant="p">Column 1</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 2</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 3</Typography>
-                </Card>
-              </Grid>
-              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
-                <Card>
-                  <Typography variant="p">Column 1</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 2</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 3</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 4</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 5</Typography>
-                </Card>
-                <Card>
-                  <Typography variant="p">Column 6</Typography>
-                </Card>
+                <Grid item xs={12} md={4} lg={2}>
+                  <Card>
+                    <Typography variant="p">lg = 2</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={8} lg={8}>
+                  <Card>
+                    <Typography variant="p">lg = 8</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={2} lg={2}>
+                  <Card>
+                    <Typography variant="p">lg = 2</Typography>
+                  </Card>
+                </Grid>
               </Grid>
             </Container>
           </Section>

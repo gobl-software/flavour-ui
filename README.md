@@ -10,6 +10,8 @@
   <img alt="David" src="https://img.shields.io/david/peer/gobl-software/flavour-ui?style=flat-square">
 </p>
 
+<h2 align="center">⚠ THIS REPOSITORY IS IN DEVELOPMENT ⚠</h2>
+
 ## Quick Start
 
 Install the package using npm:

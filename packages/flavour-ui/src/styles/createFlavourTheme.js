@@ -13,21 +13,12 @@ export const createFlavourTheme = theme => {
     ...other
   } = theme;
 
-  let mergedColors = merge.all([defaultTheme.colors, colors]),
-    mergedMixins = merge.all([defaultTheme.mixins, mixins]),
-    mergedVariables = merge.all([defaultTheme.variables, variables]);
-
   let flavourTheme = {
     typography: {
       ...merge.all([createTypography(typography.font), { ...typography }])
     },
     components: {
-      ...createComponents(
-        mergedColors,
-        mergedMixins,
-        mergedVariables,
-        components
-      )
+      ...createComponents(components)
     },
     variables,
     colors,

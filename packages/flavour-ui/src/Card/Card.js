@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 const styles = {
   root: ({ theme, ...props }) => ({
-    ...theme.components.card.root(props)
+    ...theme.components.card.root(props, theme)
   })
 };
 

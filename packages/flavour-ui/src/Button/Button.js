@@ -6,16 +6,16 @@ import clsx from "clsx";
 const styles = {
   root: ({ theme, ...props }) => ({
     ...theme.typography.button,
-    ...theme.components.button.root(props)
+    ...theme.components.button.root(props, theme)
   }),
   normal: ({ theme, ...props }) => ({
-    ...theme.components.button.normal(props)
+    ...theme.components.button.normal(props, theme)
   }),
   outlined: ({ theme, ...props }) => ({
-    ...theme.components.button.outlined(props)
+    ...theme.components.button.outlined(props, theme)
   }),
   color: ({ theme, ...props }) => ({
-    ...theme.components.button.color(props)
+    ...theme.components.button.color(props, theme)
   }),
   size: ({ theme, ...props }) => ({
     ...theme.typography.button[props.size ? props.size : "md"]

@@ -11,24 +11,7 @@ import {
   ThemeProvider
 } from "@gobl/flavour-ui";
 
-const theme = {
-  typography: { font: "Inter, sans-serif" },
-  variables: {
-    borders: {
-      width: 2
-    },
-    grids: {
-      spacing: 10
-    }
-  },
-  components: {
-    card: {
-      root: {
-        borderWidth: 1
-      }
-    }
-  }
-};
+const theme = {};
 
 export default class App extends Component {
   render() {
@@ -36,7 +19,7 @@ export default class App extends Component {
       <React.Fragment>
         <ThemeProvider theme={theme}>
           <Section>
-            <Container>
+            <Container lg="fixed" md="fixed" xs="fluid">
               <Typography variant="h1">Typography</Typography>
               <br />
               <Grid container spacing={1}>

@@ -1,11 +1,11 @@
 import appendStyles from "../appendStyles";
 
-const button = (colors, mixins, variables, components) => {
+const button = components => {
   return {
-    root: props => ({
+    root: (props, theme) => ({
       textAlign: "center",
-      border: `${variables.borders.width}px solid transparent`,
-      borderRadius: variables.borders.radius,
+      border: `${theme.variables.borders.width}px solid transparent`,
+      borderRadius: theme.variables.borders.radius,
       cursor: "pointer",
       padding: "0.35rem 1.25rem",
       outline: "none",
@@ -16,56 +16,60 @@ const button = (colors, mixins, variables, components) => {
       },
       ...appendStyles({
         component: "button",
-        components,
         style: "root",
-        props
+        components,
+        props,
+        theme
       })
     }),
-    normal: props => ({
-      color: colors.text.light,
+    normal: (props, theme) => ({
+      color: theme.colors.text.light,
       transition: "all ease-in-out 200ms",
       "&:hover": {
-        "box-shadow": mixins.shadows.light
+        "box-shadow": theme.mixins.shadows.light
       },
       ...appendStyles({
         component: "button",
-        components,
         style: "normal",
-        props
+        components,
+        props,
+        theme
       })
     }),
-    outlined: props => ({
-      color: `${colors[props.color ? props.color : "primary"]}`,
+    outlined: (props, theme) => ({
+      color: `${theme.colors[props.color ? props.color : "primary"]}`,
       backgroundColor: "transparent !important",
-      borderColor: colors[props.color ? props.color : "primary"],
+      borderColor: theme.colors[props.color ? props.color : "primary"],
       transition: "all ease-in-out 200ms",
       "&:hover": {
-        color: `${colors.text.light} !important`,
-        boxShadow: mixins.shadows.light,
+        color: `${theme.colors.text.light} !important`,
+        boxShadow: theme.mixins.shadows.light,
         backgroundColor: `${
-          colors[props.color ? props.color : "primary"]
+          theme.colors[props.color ? props.color : "primary"]
         } !important`
       },
       ...appendStyles({
         component: "button",
-        components,
         style: "outlined",
-        props
+        components,
+        props,
+        theme
       })
     }),
-    color: props => ({
-      backgroundColor: colors[props.color ? props.color : "primary"],
+    color: (props, theme) => ({
+      backgroundColor: theme.colors[props.color ? props.color : "primary"],
       "&:hover": {
-        backgroundColor: colors.darken(
-          colors[props.color ? props.color : "primary"],
+        backgroundColor: theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
           0.07
         )
       },
       ...appendStyles({
         component: "button",
-        components,
         style: "color",
-        props
+        components,
+        props,
+        theme
       })
     })
   };

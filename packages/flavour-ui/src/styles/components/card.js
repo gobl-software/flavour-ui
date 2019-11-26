@@ -1,20 +1,21 @@
 import appendStyles from "../appendStyles";
 
-const card = (colors, mixins, variables, components) => {
+const card = components => {
   return {
-    root: props => ({
+    root: (props, theme) => ({
       padding: "1rem",
-      borderRadius: variables.borders.radius,
-      border: `${variables.borders.width}px solid ${colors.borders.lighterGrey}`,
+      borderRadius: theme.variables.borders.radius,
+      border: `${theme.variables.borders.width}px solid ${theme.colors.borders.lighterGrey}`,
       transition: "all ease-in-out 200ms",
       "&:hover": {
-        "box-shadow": mixins.shadows.light
+        "box-shadow": theme.mixins.shadows.light
       },
       ...appendStyles({
         component: "card",
-        components,
         style: "root",
-        props
+        components,
+        props,
+        theme
       })
     })
   };

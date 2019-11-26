@@ -5,8 +5,8 @@ import clsx from "clsx";
 
 const styles = {
   root: {
-    "margin-bottom": "0.75rem",
-    "margin-top": "0.75rem"
+    "margin-bottom": "1.5rem",
+    "margin-top": "1.5rem"
   },
   h1: ({ theme }) => ({
     ...theme.typography.h1,

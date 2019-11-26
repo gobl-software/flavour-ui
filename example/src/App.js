@@ -15,7 +15,14 @@ const theme = {
   typography: { font: "Inter, sans-serif" },
   variables: {
     borders: {
-      width: "2px"
+      width: 2
+    }
+  },
+  components: {
+    card: {
+      root: {
+        borderWidth: 1
+      }
     }
   }
 };
@@ -49,62 +56,75 @@ export default class App extends Component {
               </Typography>
               <Typography variant="h1">Buttons</Typography>
               <br />
-              <Typography variant="h5">Basic</Typography>
-              <Button color="primary">Primary</Button>
-              <Button color="secondary">Secondary</Button>
-              <Button color="success">Success</Button>
-              <Button color="danger">Danger</Button>
-              <Button color="warning">Warning</Button>
-              <Button color="info">Info</Button>
-              <Button color="dark">Dark</Button>
-              <Button color="light">Light</Button>
-              <Typography variant="h5">Outlined</Typography>
-              <Button color="primary" variant="outlined">
-                Primary
-              </Button>
-              <Button color="secondary" variant="outlined">
-                Secondary
-              </Button>
-              <Button color="success" variant="outlined">
-                Success
-              </Button>
-              <Button color="danger" variant="outlined">
-                Danger
-              </Button>
-              <Typography variant="h5">Sizes</Typography>
-              <Button color="primary" size="sm">
-                Small
-              </Button>
-              <Button color="secondary" size="md">
-                Medium
-              </Button>
-              <Button color="success" size="lg">
-                Large
-              </Button>
-              <Button color="danger" size="xlg">
-                XLarge
-              </Button>
-              <Typography variant="h5">Button Groups</Typography>
-              <ButtonGroup color="primary">
-                <Button>Left</Button>
-                <Button>Middle</Button>
-                <Button>Right</Button>
-              </ButtonGroup>
-              <ButtonGroup
-                color="secondary"
-                variant="outlined"
-                size="sm"
-                style={{ marginBottom: "1rem" }}
-              >
-                <Button>Left</Button>
-                <Button>Middle</Button>
-                <Button>Right</Button>
-              </ButtonGroup>
-              <ButtonGroup color="info" fullWidth={true}>
-                <Button>Left</Button>
-                <Button>Middle</Button>
-                <Button>Right</Button>
-              </ButtonGroup>
+              <Grid container spacing={1}>
+                <Grid item lg={6}>
+                  <Typography variant="h5">Basic</Typography>
+                  <Button color="primary">Primary</Button>
+                  <Button color="secondary">Secondary</Button>
+                  <Button color="success">Success</Button>
+                  <Button color="danger">Danger</Button>
+                  <Button color="warning">Warning</Button>
+                  <Button color="info">Info</Button>
+                  <Button color="dark">Dark</Button>
+                  <Button color="light">Light</Button>
+                </Grid>
+                <Grid item lg={6}>
+                  <Typography variant="h5">Outlined</Typography>
+                  <Button color="primary" variant="outlined">
+                    Primary
+                  </Button>
+                  <Button color="secondary" variant="outlined">
+                    Secondary
+                  </Button>
+                  <Button color="success" variant="outlined">
+                    Success
+                  </Button>
+                  <Button color="danger" variant="outlined">
+                    Danger
+                  </Button>
+                </Grid>
+              </Grid>
+              <Grid container spacing={1}>
+                <Grid item lg={6}>
+                  <Typography variant="h5">Sizes</Typography>
+                  <Button color="primary" size="sm">
+                    Small
+                  </Button>
+                  <Button color="secondary" size="md">
+                    Medium
+                  </Button>
+                  <Button color="success" size="lg">
+                    Large
+                  </Button>
+                  <Button color="danger" size="xlg">
+                    XLarge
+                  </Button>
+                </Grid>
+                <Grid item lg={6}>
+                  <Typography variant="h5">Button Groups</Typography>
+                  <ButtonGroup color="primary">
+                    <Button>Left</Button>
+                    <Button>Middle</Button>
+                    <Button>Right</Button>
+                  </ButtonGroup>
+                  <ButtonGroup
+                    color="secondary"
+                    variant="outlined"
+                    size="sm"
+                    style={{ marginBottom: "1rem" }}
+                  >
+                    <Button>Left</Button>
+                    <Button>Middle</Button>
+                    <Button>Right</Button>
+                  </ButtonGroup>
+                  <ButtonGroup color="info" fullWidth={true}>
+                    <Button>Left</Button>
+                    <Button>Middle</Button>
+                    <Button>Right</Button>
+                  </ButtonGroup>
+                </Grid>
+              </Grid>
+
               <Typography variant="h5">Full Width</Typography>
               <Button color="primary" size="lg" fullWidth={true}>
                 Full Width Button

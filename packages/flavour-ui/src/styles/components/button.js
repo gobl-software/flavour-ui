@@ -4,12 +4,13 @@ const button = (colors, mixins, variables, components) => {
   return {
     root: props => ({
       textAlign: "center",
-      border: `${variables.borders.width} solid transparent`,
+      border: `${variables.borders.width}px solid transparent`,
       borderRadius: variables.borders.radius,
       cursor: "pointer",
       padding: "0.35rem 1.25rem",
       outline: "none",
       minWidth: "64",
+      marginBottom: "0.25rem",
       "&:not(last-child)": {
         marginRight: "0.25rem"
       },

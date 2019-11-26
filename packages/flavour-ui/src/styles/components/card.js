@@ -5,7 +5,7 @@ const card = (colors, mixins, variables, components) => {
     root: props => ({
       padding: "1rem",
       borderRadius: variables.borders.radius,
-      border: `${variables.borders.width} solid ${colors.borders.lighterGrey}`,
+      border: `${variables.borders.width}px solid ${colors.borders.lighterGrey}`,
       transition: "all ease-in-out 200ms",
       "&:hover": {
         "box-shadow": mixins.shadows.light

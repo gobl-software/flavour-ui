@@ -11,7 +11,13 @@ const styles = {
     "&:not(:first-child)": {
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
-      borderLeftWidth: "1px",
+      borderLeftWidth: `${
+        props.variant === "outlined"
+          ? theme.variables.borders.width > 1
+            ? theme.variables.borders.width / 2
+            : 0
+          : theme.variables.borders.width / 2
+      }px`,
       borderLeftColor:
         props.variant !== "outlined"
           ? theme.colors.darken(theme.colors[props.color], 0.1)
@@ -21,7 +27,13 @@ const styles = {
       borderTopRightRadius: 0,
       borderBottomRightRadius: 0,
       marginRight: 0,
-      borderRightWidth: "1px",
+      borderRightWidth: `${
+        props.variant === "outlined"
+          ? theme.variables.borders.width > 1
+            ? theme.variables.borders.width / 2
+            : 0
+          : theme.variables.borders.width / 2
+      }px`,
       borderRightColor:
         props.variant !== "outlined"
           ? theme.colors.darken(theme.colors[props.color], 0.1)

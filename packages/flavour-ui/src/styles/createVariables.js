@@ -1,7 +1,7 @@
 const variables = {
   borders: {
     radius: "0.2rem",
-    width: "2px"
+    width: 1
   },
   grids: {
     spacing: 1

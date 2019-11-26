@@ -39,28 +39,35 @@ export default class App extends Component {
             <Container>
               <Typography variant="h1">Typography</Typography>
               <br />
-              <Typography variant="h1">h1. Flavour Heading</Typography>
-              <Typography variant="h2">h2. Flavour Heading</Typography>
-              <Typography variant="h3">h3. Flavour Heading</Typography>
-              <Typography variant="h4">h4. Flavour Heading</Typography>
-              <Typography variant="h5">h5. Flavour Heading</Typography>
-              <Typography variant="h6">h6. Flavour Heading</Typography>
-              <Typography variant="p">
-                p. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially
-                unchanged. It was popularised in the 1960s with the release of
-                Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker
-                including versions of Lorem Ipsum
-              </Typography>
+              <Grid container spacing={1}>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h1">h1. Flavour Heading</Typography>
+                  <Typography variant="h2">h2. Flavour Heading</Typography>
+                  <Typography variant="h3">h3. Flavour Heading</Typography>
+                  <Typography variant="h4">h4. Flavour Heading</Typography>
+                  <Typography variant="h5">h5. Flavour Heading</Typography>
+                  <Typography variant="h6">h6. Flavour Heading</Typography>
+                </Grid>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="p">
+                    p. Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum
+                  </Typography>
+                </Grid>
+              </Grid>
+
               <Typography variant="h1">Buttons</Typography>
               <br />
               <Grid container spacing={1}>
-                <Grid item lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Basic</Typography>
                   <Button color="primary">Primary</Button>
                   <Button color="secondary">Secondary</Button>
@@ -71,7 +78,7 @@ export default class App extends Component {
                   <Button color="dark">Dark</Button>
                   <Button color="light">Light</Button>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Outlined</Typography>
                   <Button color="primary" variant="outlined">
                     Primary
@@ -98,7 +105,7 @@ export default class App extends Component {
                     Light
                   </Button>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Sizes</Typography>
                   <Button color="primary" size="sm">
                     Small
@@ -113,42 +120,32 @@ export default class App extends Component {
                     XLarge
                   </Button>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">Full Width</Typography>
+                  <Button color="primary" size="lg" fullWidth={true}>
+                    Full Width Button
+                  </Button>
+                </Grid>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Button Groups</Typography>
-                  <Grid container spacing={1}>
-                    <Grid item xs={12} md={12} lg={6}>
-                      <ButtonGroup color="primary" fullWidth={true}>
-                        <Button>Left</Button>
-                        <Button>Middle</Button>
-                        <Button>Right</Button>
-                      </ButtonGroup>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={6}>
-                      <ButtonGroup
-                        color="secondary"
-                        fullWidth={true}
-                        variant="outlined"
-                        style={{ marginBottom: "1rem" }}
-                      >
-                        <Button>Left</Button>
-                        <Button>Middle</Button>
-                        <Button>Right</Button>
-                      </ButtonGroup>
-                    </Grid>
-                    <Grid item xs={12} lg={12}>
-                      <ButtonGroup color="info" fullWidth={true}>
-                        <Button>Left</Button>
-                        <Button>Middle</Button>
-                        <Button>Right</Button>
-                      </ButtonGroup>
-                    </Grid>
-                  </Grid>
+                  <ButtonGroup color="primary">
+                    <Button>Left</Button>
+                    <Button>Middle</Button>
+                    <Button>Right</Button>
+                  </ButtonGroup>
+                  <ButtonGroup
+                    color="secondary"
+                    fullWidth={true}
+                    variant="outlined"
+                    style={{ marginBottom: "1rem" }}
+                  >
+                    <Button>Left</Button>
+                    <Button>Middle</Button>
+                    <Button>Right</Button>
+                  </ButtonGroup>
                 </Grid>
               </Grid>
-              <Typography variant="h5">Full Width</Typography>
-              <Button color="primary" size="lg" fullWidth={true}>
-                Full Width Button
-              </Button>
+
               <Typography variant="h1">Cards</Typography>
               <Card>
                 <Typography variant="p">Example Card</Typography>

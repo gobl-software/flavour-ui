@@ -4,7 +4,7 @@ const variables = {
     width: 1
   },
   grids: {
-    spacing: 1
+    spacing: 10
   }
 };
 

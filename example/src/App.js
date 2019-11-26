@@ -16,6 +16,9 @@ const theme = {
   variables: {
     borders: {
       width: 2
+    },
+    grids: {
+      spacing: 10
     }
   },
   components: {
@@ -150,8 +153,6 @@ export default class App extends Component {
                     <Typography variant="p">lg=4</Typography>
                   </Card>
                 </Grid>
-              </Grid>
-              <Grid container spacing={1}>
                 <Grid item xs={12} md={2} lg={2}>
                   <Card>
                     <Typography variant="p">lg=2</Typography>

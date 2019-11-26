@@ -4,6 +4,7 @@ import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 import _ from "lodash";
 
+const SPACING = [0, 1, 2, 4, 5, 6, 7, 8, 9, 10];
 const GRID_SIZES = ["auto", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const BREAKPOINTS = ["xs", "sm", "md", "lg", "xl"];
 const QUERIES = {
@@ -16,7 +17,6 @@ const QUERIES = {
 
 const generateGrid = () => {
   const grid = {};
-
   BREAKPOINTS.forEach(breakpoint => {
     GRID_SIZES.forEach(size => {
       const key = `grid-${breakpoint}-${size}`;
@@ -45,6 +45,24 @@ const generateGrid = () => {
   return grid;
 };
 
+const generateSpacing = () => {
+  const spacing = {};
+
+  SPACING.forEach(space => {
+    const key = `spacing-${space}`;
+
+    spacing[key] = {
+      width: `${100 - space}%`,
+      margin: `-${space}%`,
+      "& > $item:not(last-child)": {
+        padding: `${space}%`
+      }
+    };
+  });
+
+  return spacing;
+};
+
 const styles = {
   root: {},
   container: {
@@ -57,7 +75,8 @@ const styles = {
     boxSizing: "border-box",
     margin: "0"
   },
-  ...generateGrid()
+  ...generateGrid(),
+  ...generateSpacing()
 };
 
 const Grid = React.forwardRef((props, ref) => {
@@ -83,6 +102,7 @@ const Grid = React.forwardRef((props, ref) => {
         {
           [classes.container]: container,
           [classes.item]: item,
+          [classes[`spacing-${spacing}`]]: spacing !== false,
           [classes[`grid-xs-${xs}`]]: xs !== false,
           [classes[`grid-sm-${sm}`]]: sm !== false,
           [classes[`grid-md-${md}`]]: md !== false,
@@ -104,8 +124,8 @@ Grid.propTypes = {
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
   container: PropTypes.bool,
-  spacing: PropTypes.number,
   item: PropTypes.bool,
+  spacing: PropTypes.number,
   lg: PropTypes.oneOf(["auto", true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
   md: PropTypes.oneOf(["auto", true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
   sm: PropTypes.oneOf(["auto", true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),

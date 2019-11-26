@@ -114,37 +114,37 @@ export default class App extends Component {
                 <Typography variant="p">Example Card</Typography>
               </Card>
               <Typography variant="h1">Grids</Typography>
-              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
+              <Grid container spacing={1}>
                 <Grid item xs={12} md={4} lg={4}>
                   <Card>
-                    <Typography variant="p">lg = 4</Typography>
+                    <Typography variant="p">lg=4</Typography>
                   </Card>
                 </Grid>
                 <Grid item xs={12} md={4} lg={4}>
                   <Card>
-                    <Typography variant="p">lg = 4</Typography>
+                    <Typography variant="p">lg=4</Typography>
                   </Card>
                 </Grid>
                 <Grid item xs={12} md={4} lg={4}>
                   <Card>
-                    <Typography variant="p">lg = 4</Typography>
+                    <Typography variant="p">lg=4</Typography>
                   </Card>
                 </Grid>
               </Grid>
-              <Grid container spacing={1} style={{ marginBottom: "1rem" }}>
-                <Grid item xs={12} md={4} lg={2}>
-                  <Card>
-                    <Typography variant="p">lg = 2</Typography>
-                  </Card>
-                </Grid>
-                <Grid item xs={12} md={8} lg={8}>
-                  <Card>
-                    <Typography variant="p">lg = 8</Typography>
-                  </Card>
-                </Grid>
+              <Grid container spacing={1}>
                 <Grid item xs={12} md={2} lg={2}>
                   <Card>
-                    <Typography variant="p">lg = 2</Typography>
+                    <Typography variant="p">lg=2</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={6} lg={6}>
+                  <Card>
+                    <Typography variant="p">lg=6</Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={4} lg={4}>
+                  <Card>
+                    <Typography variant="p">lg=4</Typography>
                   </Card>
                 </Grid>
               </Grid>

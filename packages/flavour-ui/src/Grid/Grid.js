@@ -52,10 +52,10 @@ const generateSpacing = () => {
     const key = `spacing-${space}`;
 
     spacing[key] = props => ({
-      width: `calc(100% - ${space * props.theme.variables.grids.spacing})px`,
-      margin: `-${space * props.theme.variables.grids.spacing}px`,
+      width: `calc(100% + ${space * props.theme.variables.grids.spacing}px)`,
+      margin: `-${(space * props.theme.variables.grids.spacing) / 2}px`,
       "& > $item:not(last-child)": {
-        padding: `${space * props.theme.variables.grids.spacing}px`
+        padding: `${(space * props.theme.variables.grids.spacing) / 2}px`
       }
     });
   });

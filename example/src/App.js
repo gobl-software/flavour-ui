@@ -85,9 +85,19 @@ export default class App extends Component {
                   <Button color="danger" variant="outlined">
                     Danger
                   </Button>
+                  <Button color="warning" variant="outlined">
+                    Warning
+                  </Button>
+                  <Button color="info" variant="outlined">
+                    Info
+                  </Button>
+                  <Button color="dark" variant="outlined">
+                    Dark
+                  </Button>
+                  <Button color="light" variant="outlined">
+                    Light
+                  </Button>
                 </Grid>
-              </Grid>
-              <Grid container spacing={1}>
                 <Grid item lg={6}>
                   <Typography variant="h5">Sizes</Typography>
                   <Button color="primary" size="sm">
@@ -105,29 +115,36 @@ export default class App extends Component {
                 </Grid>
                 <Grid item lg={6}>
                   <Typography variant="h5">Button Groups</Typography>
-                  <ButtonGroup color="primary">
-                    <Button>Left</Button>
-                    <Button>Middle</Button>
-                    <Button>Right</Button>
-                  </ButtonGroup>
-                  <ButtonGroup
-                    color="secondary"
-                    variant="outlined"
-                    size="sm"
-                    style={{ marginBottom: "1rem" }}
-                  >
-                    <Button>Left</Button>
-                    <Button>Middle</Button>
-                    <Button>Right</Button>
-                  </ButtonGroup>
-                  <ButtonGroup color="info" fullWidth={true}>
-                    <Button>Left</Button>
-                    <Button>Middle</Button>
-                    <Button>Right</Button>
-                  </ButtonGroup>
+                  <Grid container spacing={1}>
+                    <Grid item xs={12} md={12} lg={6}>
+                      <ButtonGroup color="primary" fullWidth={true}>
+                        <Button>Left</Button>
+                        <Button>Middle</Button>
+                        <Button>Right</Button>
+                      </ButtonGroup>
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={6}>
+                      <ButtonGroup
+                        color="secondary"
+                        fullWidth={true}
+                        variant="outlined"
+                        style={{ marginBottom: "1rem" }}
+                      >
+                        <Button>Left</Button>
+                        <Button>Middle</Button>
+                        <Button>Right</Button>
+                      </ButtonGroup>
+                    </Grid>
+                    <Grid item xs={12} lg={12}>
+                      <ButtonGroup color="info" fullWidth={true}>
+                        <Button>Left</Button>
+                        <Button>Middle</Button>
+                        <Button>Right</Button>
+                      </ButtonGroup>
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
-
               <Typography variant="h5">Full Width</Typography>
               <Button color="primary" size="lg" fullWidth={true}>
                 Full Width Button

@@ -11,6 +11,8 @@
 </p>
 
 <h2 align="center">⚠ THIS REPOSITORY IS IN DEVELOPMENT ⚠</h2>
+<p align="center"><b>FlavourUI is still in active development and has not yet been released for production use.</b></p>
+<p align="center">If you would like to participate in the development of FlavourUI email me. 😊</p>
 
 ## Quick Start
 

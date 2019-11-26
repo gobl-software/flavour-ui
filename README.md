@@ -1,6 +1,7 @@
 <p align="center"><img  width="135" src="https://svgshare.com/i/G40.svg" /></p>
 <h1 align="center">FlavourUI</h1>
 <p align="center">Highly theme-able <a href="https://github.com/facebook/react">React</a> component library built with flavour.</p>
+<p align="center"><sub>Inspired by <a href="https://github.com/mui-org/material-ui">material-ui</a></sub></p>
 <p align="center">
   <img alt="Travis (.org)" src="https://img.shields.io/travis/gobl-software/flavour-ui?style=flat-square">
   <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/71c28e9b05424da7a084c29304e2a4fb?style=flat-square">
@@ -8,6 +9,10 @@
   <img alt="David" src="https://img.shields.io/david/dev/gobl-software/flavour-ui?style=flat-square">
   <img alt="David" src="https://img.shields.io/david/peer/gobl-software/flavour-ui?style=flat-square">
 </p>
+
+<h2 align="center">⚠ THIS REPOSITORY IS IN DEVELOPMENT ⚠</h2>
+<p align="center"><b>FlavourUI is still in active development and has not yet been released for production use.</b></p>
+<p align="center">If you would like to participate in the development of FlavourUI email me. 😊</p>
 
 ## Quick Start
 

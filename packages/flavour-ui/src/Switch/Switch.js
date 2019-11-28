@@ -51,20 +51,25 @@ const Switch = React.forwardRef((props, ref) => {
 
   return (
     <div
-      onClick={() => setSliderActive(!sliderActive)}
+      onClick={() => {
+        setSliderActive(!sliderActive);
+        if (typeof props.onChange === "function") {
+          props.onChange(!sliderActive);
+        }
+      }}
       className={clsx(classes.root, className, {
         [classes.active]: sliderActive
       })}
+      color={color}
       ref={ref}
       {...other}
     >
-      <div className={clsx(classes.slider)}></div>
+      <div className={clsx(classes.slider)} />
     </div>
   );
 });
 
 Switch.propTypes = {
-  children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
   active: PropTypes.bool,

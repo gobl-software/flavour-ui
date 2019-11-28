@@ -135,7 +135,7 @@ export default class App extends Component {
                 </Grid>
               </Grid>
               <Typography variant="h1">Checkboxes</Typography>
-              <Grid container>
+              <Grid container spacing={1}>
                 <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Basic</Typography>
                   <Checkbox label="Primary" color="primary" />
@@ -173,16 +173,21 @@ export default class App extends Component {
                 </Grid>
               </Grid>
               <Typography variant="h1">Switches</Typography>
-              <Grid item xs={12} lg={6}>
-                <Typography variant="h5">Basic</Typography>
-                <Switch color="primary" />
-                <Switch color="secondary" />
-                <Switch color="success" />
-                <Switch color="danger" />
-                <Switch color="warning" />
-                <Switch color="info" />
-                <Switch color="dark" />
-                <Switch color="light" />
+              <Grid container spacing={1}>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">Basic</Typography>
+                  <Switch
+                    onChange={(state) => console.log(state)}
+                    color="primary"
+                  />
+                  <Switch color="secondary" />
+                  <Switch color="success" />
+                  <Switch color="danger" />
+                  <Switch color="warning" />
+                  <Switch color="info" />
+                  <Switch color="dark" />
+                  <Switch color="light" />
+                </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>
               <Card>

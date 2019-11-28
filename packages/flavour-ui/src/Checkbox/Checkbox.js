@@ -73,7 +73,7 @@ const Checkbox = React.forwardRef((props, ref) => {
       }}
       className={clsx(classes.root, { [classes.disabled]: disabled })}
       ref={ref}
-      color
+      color={color}
       {...other}
     >
       {checkedBool ? (

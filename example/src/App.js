@@ -144,80 +144,37 @@ export default class App extends Component {
               <Grid container>
                 <Typography variant="h5">Basic</Typography>
                 <Grid item xs={12} lg={12}>
-                  <Checkbox
-                    color="primary"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Primary
-                  </Checkbox>
-                  <Checkbox
-                    color="secondary"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Secondary
-                  </Checkbox>
-                  <Checkbox
-                    color="success"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Success
-                  </Checkbox>
-                  <Checkbox
-                    color="danger"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Danger
-                  </Checkbox>
-                  <Checkbox
-                    color="warning"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Warning
-                  </Checkbox>
-                  <Checkbox
-                    color="info"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    info
-                  </Checkbox>
-                  <Checkbox
-                    color="dark"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Dark
-                  </Checkbox>
-                  <Checkbox
-                    color="light"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Light
-                  </Checkbox>
+                  <Checkbox label="Primary" color="primary" />
+                  <Checkbox label="Secondary" color="secondary" />
+                  <Checkbox label="Success" color="success" />
+                  <Checkbox label="Danger" color="danger" />
+                  <Checkbox label="Warning" color="warning" />
+                  <Checkbox label="Info" color="info" />
+                  <Checkbox label="Dark" color="dark" />
+                  <Checkbox label="Light" color="light" />
                 </Grid>
                 <Typography variant="h5">Variants</Typography>
                 <Grid item xs={12} lg={12}>
+                  <Checkbox label="Default" color="primary" checked={true} />
+                  <Checkbox label="Disabled" color="primary" disabled />
                   <Checkbox
+                    label="Disabled"
                     color="primary"
                     checked={true}
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Default
-                  </Checkbox>
+                    disabled
+                  />
                   <Checkbox
+                    label="Add"
                     color="success"
                     checked={true}
                     variant="add"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Add
-                  </Checkbox>
+                  />
                   <Checkbox
+                    label="Remove"
                     color="danger"
                     checked={true}
                     variant="remove"
-                    onChange={(checked) => console.log(checked)}
-                  >
-                    Remove
-                  </Checkbox>
+                  />
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>

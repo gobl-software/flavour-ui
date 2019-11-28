@@ -12,11 +12,12 @@ import {
 const styles = {
   root: {
     display: "inline-flex",
-    alignItems: "center"
+    alignItems: "center",
+    cursor: "pointer"
   },
   icon: ({ theme, ...props }) => ({
     color: theme.colors[props.color ? props.color : "primary"],
-    cursor: "pointer",
+
     marginRight: "7px"
   }),
   label: ({ theme }) => ({
@@ -24,7 +25,16 @@ const styles = {
     color: theme.colors.text.dark,
     userSelect: "none",
     marginRight: "10px"
-  })
+  }),
+  disabled: {
+    pointerEvents: "none",
+    "& > $label": {
+      color: "grey"
+    },
+    "& > $icon": {
+      color: "grey"
+    }
+  }
 };
 
 const Checkbox = React.forwardRef((props, ref) => {
@@ -34,6 +44,8 @@ const Checkbox = React.forwardRef((props, ref) => {
     color = "primary",
     checked = false,
     variant,
+    label = "",
+    disabled = false,
     ...other
   } = props;
 
@@ -60,7 +72,7 @@ const Checkbox = React.forwardRef((props, ref) => {
           props.onChange(!checkedBool);
         }
       }}
-      className={clsx(classes.root)}
+      className={clsx(classes.root, { [classes.disabled]: disabled })}
       ref={ref}
       color={color}
       {...other}
@@ -70,7 +82,7 @@ const Checkbox = React.forwardRef((props, ref) => {
       ) : (
         <MdCheckBoxOutlineBlank size={24} className={clsx(classes.icon)} />
       )}
-      <span className={clsx(classes.label)}>{children}</span>
+      <span className={clsx(classes.label)}>{props.label}</span>
     </div>
   );
 });
@@ -88,6 +100,8 @@ Checkbox.propTypes = {
     "light",
     "dark"
   ]),
+  disabled: PropTypes.bool,
+  label: PropTypes.string,
   variant: PropTypes.oneOf(["add", "remove"])
 };
 

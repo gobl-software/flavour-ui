@@ -17,7 +17,6 @@ const styles = {
   },
   icon: ({ theme, ...props }) => ({
     color: theme.colors[props.color ? props.color : "primary"],
-
     marginRight: "7px"
   }),
   label: ({ theme }) => ({
@@ -74,7 +73,7 @@ const Checkbox = React.forwardRef((props, ref) => {
       }}
       className={clsx(classes.root, { [classes.disabled]: disabled })}
       ref={ref}
-      color={color}
+      color
       {...other}
     >
       {checkedBool ? (

@@ -3,6 +3,7 @@ export { default as ButtonGroup } from "./ButtonGroup";
 export { default as Card } from "./Card";
 export { default as Grid } from "./Grid";
 export { default as Checkbox } from "./Checkbox";
+export { default as Switch } from "./Switch";
 
 export { default as Container } from "./Container";
 export { default as Section } from "./Section";

@@ -9,19 +9,13 @@ import {
   Section,
   Typography,
   ThemeProvider,
-  Checkbox
+  Checkbox,
+  Switch
 } from "@gobl/flavour-ui";
 
 const theme = {
   components: {
-    button: {
-      root: {
-        "&:active": {
-          boxShadow: "none !important",
-          transform: "translateY(1px)"
-        }
-      }
-    }
+    button: {}
   }
 };
 
@@ -142,8 +136,8 @@ export default class App extends Component {
               </Grid>
               <Typography variant="h1">Checkboxes</Typography>
               <Grid container>
-                <Typography variant="h5">Basic</Typography>
-                <Grid item xs={12} lg={12}>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">Basic</Typography>
                   <Checkbox label="Primary" color="primary" />
                   <Checkbox label="Secondary" color="secondary" />
                   <Checkbox label="Success" color="success" />
@@ -153,8 +147,9 @@ export default class App extends Component {
                   <Checkbox label="Dark" color="dark" />
                   <Checkbox label="Light" color="light" />
                 </Grid>
-                <Typography variant="h5">Variants</Typography>
-                <Grid item xs={12} lg={12}>
+
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">Variants</Typography>
                   <Checkbox label="Default" color="primary" checked={true} />
                   <Checkbox label="Disabled" color="primary" disabled />
                   <Checkbox
@@ -176,6 +171,18 @@ export default class App extends Component {
                     variant="remove"
                   />
                 </Grid>
+              </Grid>
+              <Typography variant="h1">Switches</Typography>
+              <Grid item xs={12} lg={6}>
+                <Typography variant="h5">Basic</Typography>
+                <Switch color="primary" />
+                <Switch color="secondary" />
+                <Switch color="success" />
+                <Switch color="danger" />
+                <Switch color="warning" />
+                <Switch color="info" />
+                <Switch color="dark" />
+                <Switch color="light" />
               </Grid>
               <Typography variant="h1">Cards</Typography>
               <Card>

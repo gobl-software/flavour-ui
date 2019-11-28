@@ -24,10 +24,7 @@ const button = components => {
     }),
     normal: (props, theme) => ({
       color: theme.colors.text.light,
-      transition: "all ease-in-out 200ms",
-      "&:hover": {
-        "box-shadow": theme.mixins.shadows.light
-      },
+      transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 250ms",
       ...appendStyles({
         component: "button",
         style: "normal",
@@ -40,10 +37,9 @@ const button = components => {
       color: `${theme.colors[props.color ? props.color : "primary"]}`,
       backgroundColor: "transparent !important",
       borderColor: theme.colors[props.color ? props.color : "primary"],
-      transition: "all ease-in-out 200ms",
+      transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 250ms",
       "&:hover": {
         color: `${theme.colors.text.light} !important`,
-        boxShadow: theme.mixins.shadows.light,
         backgroundColor: `${
           theme.colors[props.color ? props.color : "primary"]
         } !important`

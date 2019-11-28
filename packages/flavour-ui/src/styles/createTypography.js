@@ -44,6 +44,9 @@ const typography = font => ({
       ...createFont(1.6, 600, 1.5, font)
     }
   },
+  checkbox: {
+    fontFamily: font
+  },
   /**
    * @param size font-size for font.
    * @param weight font-wight for font.

@@ -51,11 +51,11 @@ const generateSpacing = () => {
   SPACING.forEach(space => {
     const key = `spacing-${space}`;
 
-    spacing[key] = props => ({
-      width: `calc(100% + ${space * props.theme.variables.grids.spacing}px)`,
-      margin: `-${(space * props.theme.variables.grids.spacing) / 2}px`,
+    spacing[key] = ({ theme }) => ({
+      width: `calc(100% + ${space * theme.variables.grids.spacing}px)`,
+      margin: `-${(space * theme.variables.grids.spacing) / 2}px`,
       "& > $item:not(last-child)": {
-        padding: `${(space * props.theme.variables.grids.spacing) / 2}px`
+        padding: `${(space * theme.variables.grids.spacing) / 2}px`
       }
     });
   });

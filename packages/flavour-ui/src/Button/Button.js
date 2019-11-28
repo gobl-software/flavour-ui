@@ -22,6 +22,10 @@ const styles = {
   }),
   fullWidth: {
     width: "100%"
+  },
+  label: {
+    display: "inline-flex",
+    alignItems: "center"
   }
 };
 
@@ -49,7 +53,7 @@ const Button = React.forwardRef((props, ref) => {
       ref={ref}
       {...other}
     >
-      <span>{children}</span>
+      <span className={clsx(classes.label)}>{children}</span>
     </button>
   );
 });

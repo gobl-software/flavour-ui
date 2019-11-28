@@ -19,11 +19,14 @@ const generateClasses = () => {
     TYPES.forEach(type => {
       const key = `cont-${breakpoint}-${type}`;
 
-      containers[key] = {
+      containers[key] = ({ theme }) => ({
         [`@media only screen and (min-width: ${QUERIES[breakpoint]}px)`]: {
-          width: type === "fixed" ? "60%" : "92.5%"
+          width:
+            type === "fixed"
+              ? `${theme.variables.layout.container.fixed.width}%`
+              : `${theme.variables.layout.container.fluid.width}%`
         }
-      };
+      });
     });
   });
 

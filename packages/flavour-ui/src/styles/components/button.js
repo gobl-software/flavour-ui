@@ -61,7 +61,7 @@ const button = components => {
       "&:hover": {
         backgroundColor: theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.07
+          0.15
         )
       },
       ...appendStyles({

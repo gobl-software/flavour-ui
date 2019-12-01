@@ -34,7 +34,13 @@ const styles = {
       backgroundColor: theme.colors[props.color ? props.color : "primary"],
       left: "calc(100% - 25px)"
     }
-  })
+  }),
+  disabled: {
+    pointerEvents: "none",
+    "& > $slider": {
+      backgroundColor: "lightgrey"
+    }
+  }
 };
 
 const Switch = React.forwardRef((props, ref) => {
@@ -44,6 +50,7 @@ const Switch = React.forwardRef((props, ref) => {
     className,
     active = false,
     color = "primary",
+    disabled = false,
     ...other
   } = props;
 
@@ -58,10 +65,12 @@ const Switch = React.forwardRef((props, ref) => {
         }
       }}
       className={clsx(classes.root, className, {
-        [classes.active]: sliderActive
+        [classes.active]: sliderActive,
+        [classes.disabled]: disabled
       })}
       color={color}
       ref={ref}
+      disabled={disabled}
       {...other}
     >
       <div className={clsx(classes.slider)} />
@@ -82,7 +91,8 @@ Switch.propTypes = {
     "info",
     "light",
     "dark"
-  ])
+  ]),
+  disabled: PropTypes.bool
 };
 
 export default withStyles(styles)(Switch);

@@ -179,6 +179,7 @@ export default class App extends Component {
                   <Switch
                     onChange={(state) => console.log(state)}
                     color="primary"
+                    disabled
                   />
                   <Switch color="secondary" />
                   <Switch color="success" />

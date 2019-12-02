@@ -174,20 +174,26 @@ export default class App extends Component {
               </Grid>
               <Typography variant="h1">Switches</Typography>
               <Grid container spacing={1}>
-                <Grid item xs={12} lg={6}>
+                <Grid item xs={12} lg={12}>
                   <Typography variant="h5">Basic</Typography>
+                  <Switch color="primary" label="Primary" />
+                  <Switch color="secondary" label="Secondary" />
+                  <Switch color="success" label="Success" />
+                  <Switch color="danger" label="Danger" />
+                  <Switch color="warning" label="Warning" />
+                  <Switch color="info" label="Info" />
+                  <Switch color="dark" label="Dark" />
+                  <Switch color="light" label="Light" />
+                </Grid>
+                <Grid item xs={12} lg={12}>
+                  <Typography variant="h5">Variants</Typography>
+                  <Switch color="primary" label="Disabled" disabled />
                   <Switch
-                    onChange={(state) => console.log(state)}
-                    color="primary"
+                    color="secondary"
+                    active={true}
+                    label="Disabled"
                     disabled
                   />
-                  <Switch color="secondary" />
-                  <Switch color="success" />
-                  <Switch color="danger" />
-                  <Switch color="warning" />
-                  <Switch color="info" />
-                  <Switch color="dark" />
-                  <Switch color="light" />
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>

@@ -4,43 +4,24 @@ import withStyles from "../styles/withStyles";
 import clsx from "clsx";
 
 const styles = {
-  root: {
-    display: "inline-block",
-    position: "relative",
-    backgroundColor: "lightgrey",
-    borderRadius: "100px",
-    width: "50px",
-    height: "25px",
-    cursor: "pointer",
-    marginRight: "10px",
-    transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 100ms"
-  },
+  root: ({ theme, ...props }) => ({
+    ...theme.components.switch.root(props, theme)
+  }),
+  track: ({ theme, ...props }) => ({
+    ...theme.components.switch.track(props, theme)
+  }),
   slider: ({ theme, ...props }) => ({
-    position: "absolute",
-    backgroundColor: theme.colors[props.color ? props.color : "primary"],
-    height: "25px",
-    borderRadius: "100px",
-    left: "0",
-    width: "25px",
-    transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 100ms",
-    boxShadow: theme.mixins.shadows.light
+    ...theme.components.switch.slider(props, theme)
   }),
   active: ({ theme, ...props }) => ({
-    backgroundColor: theme.colors.lighten(
-      theme.colors[props.color ? props.color : "primary"],
-      0.35
-    ),
-    "& > $slider": {
-      backgroundColor: theme.colors[props.color ? props.color : "primary"],
-      left: "calc(100% - 25px)"
-    }
+    ...theme.components.switch.active(props, theme)
   }),
-  disabled: {
-    pointerEvents: "none",
-    "& > $slider": {
-      backgroundColor: "lightgrey"
-    }
-  }
+  label: ({ theme, ...props }) => ({
+    ...theme.components.switch.label(props, theme)
+  }),
+  disabled: ({ theme, ...props }) => ({
+    ...theme.components.switch.disabled(props, theme)
+  })
 };
 
 const Switch = React.forwardRef((props, ref) => {
@@ -51,29 +32,33 @@ const Switch = React.forwardRef((props, ref) => {
     active = false,
     color = "primary",
     disabled = false,
+    label = "",
     ...other
   } = props;
 
   const [sliderActive, setSliderActive] = useState(active);
 
   return (
-    <div
-      onClick={() => {
-        setSliderActive(!sliderActive);
-        if (typeof props.onChange === "function") {
-          props.onChange(!sliderActive);
-        }
-      }}
-      className={clsx(classes.root, className, {
-        [classes.active]: sliderActive,
-        [classes.disabled]: disabled
-      })}
-      color={color}
-      ref={ref}
-      disabled={disabled}
-      {...other}
-    >
-      <div className={clsx(classes.slider)} />
+    <div className={clsx(classes.root)}>
+      <div
+        onClick={() => {
+          setSliderActive(!sliderActive);
+          if (typeof props.onChange === "function") {
+            props.onChange(!sliderActive);
+          }
+        }}
+        className={clsx(classes.track, className, {
+          [classes.active]: sliderActive,
+          [classes.disabled]: disabled
+        })}
+        color={color}
+        ref={ref}
+        disabled={disabled}
+        {...other}
+      >
+        <div className={clsx(classes.slider)} />
+      </div>
+      <span className={clsx(classes.label)}>{props.label}</span>
     </div>
   );
 });
@@ -92,6 +77,7 @@ Switch.propTypes = {
     "light",
     "dark"
   ]),
+  label: PropTypes.string,
   disabled: PropTypes.bool
 };
 

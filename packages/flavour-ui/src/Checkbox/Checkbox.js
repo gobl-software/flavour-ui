@@ -10,30 +10,19 @@ import {
 } from "react-icons/md";
 
 const styles = {
-  root: {
-    display: "inline-flex",
-    alignItems: "center",
-    cursor: "pointer"
-  },
+  root: ({ theme, ...props }) => ({
+    ...theme.components.checkbox.root(props, theme)
+  }),
   icon: ({ theme, ...props }) => ({
-    color: theme.colors[props.color ? props.color : "primary"],
-    marginRight: "7px"
+    ...theme.components.checkbox.icon(props, theme)
   }),
-  label: ({ theme }) => ({
+  label: ({ theme, ...props }) => ({
     ...theme.typography.checkbox,
-    color: theme.colors.text.dark,
-    userSelect: "none",
-    marginRight: "10px"
+    ...theme.components.checkbox.label(props, theme)
   }),
-  disabled: {
-    pointerEvents: "none",
-    "& > $label": {
-      color: "grey"
-    },
-    "& > $icon": {
-      color: "grey"
-    }
-  }
+  disabled: ({ theme, ...props }) => ({
+    ...theme.components.checkbox.disabled(props, theme)
+  })
 };
 
 const Checkbox = React.forwardRef((props, ref) => {

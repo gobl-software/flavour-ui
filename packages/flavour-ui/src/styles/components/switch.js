@@ -17,7 +17,7 @@ const switch_ = components => {
     track: (props, theme) => ({
       display: "inline-block",
       position: "relative",
-      backgroundColor: "lightgrey",
+      backgroundColor: theme.colors.backgrounds.lightgrey,
       borderRadius: "100px",
       width: "50px",
       height: "25px",
@@ -81,9 +81,9 @@ const switch_ = components => {
     }),
     disabled: (props, theme) => ({
       pointerEvents: "none",
-      backgroundColor: "lightgrey !important",
+      backgroundColor: theme.colors.backgrounds.lightgrey,
       "& > $slider": {
-        backgroundColor: "lightgrey !important"
+        backgroundColor: theme.colors.backgrounds.lightgrey
       },
       ...appendStyles({
         component: "switch",

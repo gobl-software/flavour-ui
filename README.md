@@ -136,20 +136,6 @@ npm run sg:build
 
 ```
 
-### Playground for developing styles
-
-Run development server:
-
-```bash
-
-npm run build:dev
-
-```
-
-#### Hot-Reloading
-
-Visit [locahost:8080](http://localhost:8080) and make some changes.
-
 ## Fonts
 
--  [Inter](https://github.com/rsms/inter)
+- [Inter](https://github.com/rsms/inter)

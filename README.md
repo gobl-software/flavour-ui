@@ -87,6 +87,24 @@ const theme = {
 
 ### [Documentation](https://gobl-software.github.io/flavour-ui/)
 
+## Library Progress
+
+###### 🟩 Completed | ⬜ Next
+
+- 🟩 Buttons
+- 🟩 ButtonGroups
+- 🟩 Checkboxes
+- 🟩 Containers
+- 🟩 Typography
+- 🟩 Grids
+- 🟩 Radios
+- 🟩 RadioGroups
+- 🟩 Switches
+- ⬜ Date/Time
+- ⬜ TextField
+- ⬜ Select
+- ⬜ Sliders
+
 ## Development
 
 Clone the repository with:

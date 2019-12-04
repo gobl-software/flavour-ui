@@ -10,7 +10,9 @@ import {
   Typography,
   ThemeProvider,
   Checkbox,
-  Switch
+  Switch,
+  Radio,
+  RadioGroup
 } from "@gobl/flavour-ui";
 
 const theme = {
@@ -194,6 +196,30 @@ export default class App extends Component {
                     label="Disabled"
                     disabled
                   />
+                </Grid>
+              </Grid>
+              <Typography variant="h1">Radios</Typography>
+              <Grid container spacing={1}>
+                <Grid item xs={12} lg={4}>
+                  <RadioGroup color="primary" onChange={(e) => console.log(e)}>
+                    <Radio label="Radio 1" />
+                    <Radio label="Radio 2" />
+                    <Radio label="Radio 3" />
+                  </RadioGroup>
+                </Grid>
+                <Grid item xs={12} lg={4}>
+                  <RadioGroup color="secondary">
+                    <Radio label="Radio 1" />
+                    <Radio disabled label="Disabled 1" />
+                    <Radio label="Radio 3" />
+                  </RadioGroup>
+                </Grid>
+                <Grid item xs={12} lg={4}>
+                  <RadioGroup color="success">
+                    <Radio label="Radio 1" />
+                    <Radio disabled label="Disabled 1" />
+                    <Radio disabled label="Disabled 2" />
+                  </RadioGroup>
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>

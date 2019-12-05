@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import withStyles from "../styles/withStyles";
 import clsx from "clsx";
+import { MdPlayArrow } from "react-icons/md";
 
 const styles = {
   root: ({ theme, ...props }) => ({
@@ -17,6 +18,9 @@ const styles = {
   color: ({ theme, ...props }) => ({
     ...theme.components.button.color(props, theme)
   }),
+  endIcon: ({ theme, ...props }) => ({
+    ...theme.components.button.endIcon(props, theme)
+  }),
   size: ({ theme, ...props }) => ({
     ...theme.typography.button[props.size ? props.size : "md"]
   }),
@@ -24,8 +28,10 @@ const styles = {
     width: "100%"
   },
   label: {
+    width: "100%",
     display: "inline-flex",
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "center"
   }
 };
 
@@ -37,6 +43,7 @@ const Button = React.forwardRef((props, ref) => {
     variant = "normal",
     fullWidth = false,
     grouped = false,
+    endIcon = endIconProp,
     ...other
   } = props;
 

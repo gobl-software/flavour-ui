@@ -12,13 +12,12 @@ import {
   Checkbox,
   Switch,
   Radio,
-  RadioGroup
+  RadioGroup,
+  Select
 } from "@gobl/flavour-ui";
 
 const theme = {
-  components: {
-    button: {}
-  }
+  variables: {}
 };
 
 export default class App extends Component {
@@ -220,6 +219,12 @@ export default class App extends Component {
                     <Radio disabled label="Disabled 1" />
                     <Radio disabled label="Disabled 2" />
                   </RadioGroup>
+                </Grid>
+              </Grid>
+              <Typography variant="h1">Selects</Typography>
+              <Grid container spacing={1}>
+                <Grid item xs={12} lg={4}>
+                  <Select value="Select" />
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>

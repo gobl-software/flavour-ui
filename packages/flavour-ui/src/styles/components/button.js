@@ -7,9 +7,8 @@ const button = components => {
       border: `${theme.variables.borders.width}px solid transparent`,
       borderRadius: theme.variables.borders.radius,
       cursor: "pointer",
-      padding: "0.35rem 1.25rem",
+      padding: "6px 16px",
       outline: "none",
-      minWidth: "64",
       marginBottom: "0.25rem",
       "&:not(last-child)": {
         marginRight: "0.25rem"
@@ -40,9 +39,25 @@ const button = components => {
       transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 250ms",
       "&:hover": {
         color: `${theme.colors.text.light} !important`,
-        backgroundColor: `${
-          theme.colors[props.color ? props.color : "primary"]
-        } !important`
+        backgroundColor: `${theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
+          0.15
+        )} !important`,
+        borderColor: `${theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
+          0.15
+        )} !important`
+      },
+      "&:active": {
+        color: `${theme.colors.text.light} !important`,
+        backgroundColor: `${theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
+          0.35
+        )} !important`,
+        borderColor: `${theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
+          0.35
+        )} !important`
       },
       ...appendStyles({
         component: "button",
@@ -60,9 +75,27 @@ const button = components => {
           0.15
         )
       },
+      "&:active": {
+        backgroundColor: theme.colors.darken(
+          theme.colors[props.color ? props.color : "primary"],
+          0.35
+        )
+      },
       ...appendStyles({
         component: "button",
         style: "color",
+        components,
+        props,
+        theme
+      })
+    }),
+    endIcon: (props, theme) => ({
+      marginLeft: 8,
+      marginRight: -4,
+      fontSize: 20,
+      ...appendStyles({
+        component: "button",
+        style: "iconRight",
         components,
         props,
         theme

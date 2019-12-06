@@ -3,11 +3,13 @@ import appendStyles from "../appendStyles";
 const button = components => {
   return {
     root: (props, theme) => ({
-      textAlign: "center",
+      display: "inline-flex",
+      verticalAlign: "middle",
+      justifyContent: "center",
+      alignItems: "center",
       border: `${theme.variables.borders.width}px solid transparent`,
       borderRadius: theme.variables.borders.radius,
       cursor: "pointer",
-      padding: "6px 16px",
       outline: "none",
       marginBottom: "0.25rem",
       "&:not(last-child)": {
@@ -41,22 +43,22 @@ const button = components => {
         color: `${theme.colors.text.light} !important`,
         backgroundColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.15
+          0.1
         )} !important`,
         borderColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.15
+          0.1
         )} !important`
       },
       "&:active": {
         color: `${theme.colors.text.light} !important`,
         backgroundColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.35
+          0.25
         )} !important`,
         borderColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.35
+          0.25
         )} !important`
       },
       ...appendStyles({
@@ -72,13 +74,13 @@ const button = components => {
       "&:hover": {
         backgroundColor: theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.15
+          0.1
         )
       },
       "&:active": {
         backgroundColor: theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.35
+          0.25
         )
       },
       ...appendStyles({
@@ -90,12 +92,28 @@ const button = components => {
       })
     }),
     endIcon: (props, theme) => ({
-      marginLeft: 8,
-      marginRight: -4,
-      fontSize: 20,
+      display: "inline-flex",
+      verticalAlign: "middle",
+      justifyContent: "center",
+      alignItems: "center",
+      marginRight: 6,
       ...appendStyles({
         component: "button",
-        style: "iconRight",
+        style: "endIcon",
+        components,
+        props,
+        theme
+      })
+    }),
+    startIcon: (props, theme) => ({
+      display: "inline-flex",
+      verticalAlign: "middle",
+      justifyContent: "center",
+      alignItems: "center",
+      marginLeft: 6,
+      ...appendStyles({
+        component: "button",
+        style: "startIcon",
         components,
         props,
         theme

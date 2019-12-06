@@ -5,7 +5,10 @@ import clsx from "clsx";
 
 const styles = {
   root: {
-    display: "inline-flex"
+    display: "inline-flex",
+    verticalAlign: "middle",
+    justifyContent: "center",
+    alignItems: "center"
   },
   grouped: ({ theme, ...props }) => ({
     "&:not(:first-child)": {
@@ -17,11 +20,7 @@ const styles = {
             ? theme.variables.borders.width / 2
             : 0
           : theme.variables.borders.width / 2
-      }px`,
-      borderLeftColor:
-        props.variant !== "outlined"
-          ? theme.colors.darken(theme.colors[props.color], 0.1)
-          : ""
+      }px`
     },
     "&:not(:last-child)": {
       borderTopRightRadius: 0,
@@ -33,11 +32,7 @@ const styles = {
             ? theme.variables.borders.width / 2
             : 0
           : theme.variables.borders.width / 2
-      }px`,
-      borderRightColor:
-        props.variant !== "outlined"
-          ? theme.colors.darken(theme.colors[props.color], 0.1)
-          : ""
+      }px`
     }
   }),
   fullWidth: {
@@ -58,7 +53,7 @@ const ButtonGroup = React.forwardRef((props, ref) => {
   } = props;
 
   return (
-    <div
+    <span
       className={clsx(
         classes.root,
         { [classes.fullWidth]: fullWidth },
@@ -76,7 +71,7 @@ const ButtonGroup = React.forwardRef((props, ref) => {
           variant: child.props.variant || variant
         });
       })}
-    </div>
+    </span>
   );
 });
 

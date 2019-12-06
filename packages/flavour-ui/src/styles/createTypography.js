@@ -36,13 +36,13 @@ const typography = font => ({
       ...createFont(0.65, 600, 1.5, font)
     },
     md: {
-      ...createFont(0.8, 600, 1.5, font)
+      ...createFont(0.875, 600, 1.5, font)
     },
     lg: {
-      ...createFont(1.25, 600, 1.5, font)
+      ...createFont(1.32, 600, 1.5, font)
     },
     xlg: {
-      ...createFont(1.55, 600, 1.5, font)
+      ...createFont(1.62, 600, 1.5, font)
     }
   },
   checkbox: {

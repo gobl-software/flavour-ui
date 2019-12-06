@@ -4,11 +4,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@gobl/flavour-ui": "link:../packages/flavour-ui",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
-    "@gobl/flavour-ui": "link:../packages/flavour-ui"
+    "react-icons": "^3.8.0",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

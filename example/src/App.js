@@ -16,6 +16,8 @@ import {
   Select
 } from "@gobl/flavour-ui";
 
+import { MdSend, MdDelete, MdSave, MdEdit } from "react-icons/md";
+
 const theme = {
   variables: {}
 };
@@ -123,15 +125,27 @@ export default class App extends Component {
                     <Button>Middle</Button>
                     <Button>Right</Button>
                   </ButtonGroup>
-                  <ButtonGroup
-                    color="secondary"
-                    fullWidth={true}
-                    variant="outlined"
-                    style={{ marginBottom: "1rem" }}
-                  >
+                  <ButtonGroup fullWidth size="lg" color="primary">
                     <Button>Left</Button>
                     <Button>Middle</Button>
                     <Button>Right</Button>
+                  </ButtonGroup>
+                </Grid>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">Button Icons</Typography>
+                  <Button color="secondary" endIcon={<MdSend size={20} />}>
+                    Send
+                  </Button>
+                  <Button color="success" startIcon={<MdSave size={20} />}>
+                    Save
+                  </Button>
+                  <Button color="danger" endIcon={<MdDelete size={20} />}>
+                    Delete
+                  </Button>
+                  <ButtonGroup color="primary">
+                    <Button startIcon={<MdEdit size={20} />}>Edit</Button>
+                    <Button startIcon={<MdSave size={20} />}>Save</Button>
+                    <Button endIcon={<MdDelete size={20} />}>Delete</Button>
                   </ButtonGroup>
                 </Grid>
               </Grid>
@@ -224,7 +238,7 @@ export default class App extends Component {
               <Typography variant="h1">Selects</Typography>
               <Grid container spacing={1}>
                 <Grid item xs={12} lg={4}>
-                  <Select value="Select" />
+                  <Select>Dropdown</Select>
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>

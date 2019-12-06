@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import withStyles from "../styles/withStyles";
 import clsx from "clsx";
-import { MdPlayArrow } from "react-icons/md";
 
 const styles = {
   root: ({ theme, ...props }) => ({
@@ -18,6 +17,9 @@ const styles = {
   color: ({ theme, ...props }) => ({
     ...theme.components.button.color(props, theme)
   }),
+  startIcon: ({ theme, ...props }) => ({
+    ...theme.components.button.startIcon(props, theme)
+  }),
   endIcon: ({ theme, ...props }) => ({
     ...theme.components.button.endIcon(props, theme)
   }),
@@ -28,10 +30,12 @@ const styles = {
     width: "100%"
   },
   label: {
-    width: "100%",
     display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  text: {
+    padding: "4px 8px"
   }
 };
 
@@ -43,9 +47,18 @@ const Button = React.forwardRef((props, ref) => {
     variant = "normal",
     fullWidth = false,
     grouped = false,
-    endIcon = endIconProp,
+    endIcon: endIconProp,
+    startIcon: startIconProp,
     ...other
   } = props;
+
+  const startIcon = startIconProp && (
+    <span className={clsx(classes.startIcon)}>{startIconProp}</span>
+  );
+
+  const endIcon = endIconProp && (
+    <span className={clsx(classes.endIcon)}>{endIconProp}</span>
+  );
 
   return (
     <button
@@ -60,7 +73,11 @@ const Button = React.forwardRef((props, ref) => {
       ref={ref}
       {...other}
     >
-      <span className={clsx(classes.label)}>{children}</span>
+      <span className={clsx(classes.label)}>
+        {startIcon}
+        <span className={clsx(classes.text)}>{children}</span>
+        {endIcon}
+      </span>
     </button>
   );
 });
@@ -80,6 +97,8 @@ Button.propTypes = {
     "light",
     "dark"
   ]),
+  endIcon: PropTypes.node,
+  startIcon: PropTypes.node,
   size: PropTypes.oneOf(["sm", "md", "lg", "xlg"]),
   fullWidth: PropTypes.bool
 };

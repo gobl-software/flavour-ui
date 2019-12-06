@@ -1,6 +1,6 @@
 const mixins = {
   shadows: {
-    light: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)"
+    light: "rgba(0, 0, 0, 0.03) 0px 3px 8px 0px;"
   }
 };
 

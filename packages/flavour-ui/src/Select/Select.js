@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import withStyles from "../styles/withStyles";
 import clsx from "clsx";
-import { TiArrowSortedDown } from "react-icons/ti";
+import { MdArrowDropDown } from "react-icons/md";
 import Button from "../Button";
 
 const styles = {
@@ -13,7 +13,7 @@ const Select = React.forwardRef((props, ref) => {
   const { children, classes, className, ...other } = props;
 
   return (
-    <Button endIcon={<TiArrowSortedDown />} ref={ref} {...other}>
+    <Button endIcon={<MdArrowDropDown size={20} />} ref={ref} {...other}>
       {children}
     </Button>
   );

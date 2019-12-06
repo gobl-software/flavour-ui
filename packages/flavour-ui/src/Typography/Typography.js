@@ -39,10 +39,14 @@ const styles = {
 };
 
 const Typography = React.forwardRef((props, ref) => {
-  const { children, classes, variant = "p", ...other } = props;
+  const { children, classes, className, variant = "p", ...other } = props;
 
   return (
-    <p className={clsx(classes.root, classes[variant])} ref={ref} {...other}>
+    <p
+      className={clsx(classes.root, classes[variant], className)}
+      ref={ref}
+      {...other}
+    >
       {children}
     </p>
   );

@@ -31,18 +31,17 @@ const typography = font => ({
   },
   button: {
     fontFamily: font,
-    // textTransform: "uppercase",
     sm: {
-      ...createFont(0.65, 600, 1.5, font)
+      ...createFont(0.65, 500, 1.5, font)
     },
     md: {
-      ...createFont(0.875, 600, 1.5, font)
+      ...createFont(0.875, 500, 1.5, font)
     },
     lg: {
-      ...createFont(1.32, 600, 1.5, font)
+      ...createFont(1.32, 500, 1.5, font)
     },
     xlg: {
-      ...createFont(1.62, 600, 1.5, font)
+      ...createFont(1.62, 500, 1.5, font)
     }
   },
   checkbox: {

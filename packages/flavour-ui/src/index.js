@@ -1,6 +1,6 @@
 export { default as Button } from "./Button";
 export { default as ButtonGroup } from "./ButtonGroup";
-export { default as Card } from "./Card";
+export { Card, CardImg, CardBody, CardTitle } from "./Card";
 export { default as Grid } from "./Grid";
 export { default as Checkbox } from "./Checkbox";
 export { default as Switch } from "./Switch";

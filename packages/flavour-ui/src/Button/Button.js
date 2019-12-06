@@ -26,7 +26,11 @@ const styles = {
   size: ({ theme, ...props }) => ({
     ...theme.typography.button[props.size ? props.size : "md"]
   }),
-  fullWidth: {
+  disabled: ({ theme, ...props }) => ({
+    pointerEvents: "none",
+    backgroundColor: theme.colors.backgrounds.lightgrey
+  }),
+  block: {
     width: "100%"
   },
   label: {
@@ -44,9 +48,10 @@ const Button = React.forwardRef((props, ref) => {
     children,
     classes,
     className,
-    variant = "normal",
-    fullWidth = false,
+    outlined = false,
+    block = false,
     grouped = false,
+    disabled = false,
     endIcon: endIconProp,
     startIcon: startIconProp,
     ...other
@@ -66,8 +71,12 @@ const Button = React.forwardRef((props, ref) => {
         classes.root,
         classes.color,
         classes.size,
-        classes[variant],
-        { [classes.fullWidth]: fullWidth },
+        classes.normal,
+        {
+          [classes.block]: block,
+          [classes.outlined]: outlined,
+          [classes.disabled]: disabled
+        },
         className
       )}
       ref={ref}
@@ -83,10 +92,29 @@ const Button = React.forwardRef((props, ref) => {
 });
 
 Button.propTypes = {
+  /**
+   * Content of the button.
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * Override or extend the styles of the component.
+   */
   classes: PropTypes.object.isRequired,
+  /**
+   * @ignore
+   */
   className: PropTypes.string,
-  variant: PropTypes.oneOf(["normal", "outlined"]),
+  /**
+   * Set true to change button to outlined type.
+   */
+  outlined: PropTypes.bool,
+  /**
+   * Set Button to disabled state.
+   */
+  disabled: PropTypes.bool,
+  /**
+   * Color the Button using one of the theme defaults.
+   */
   color: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -97,10 +125,22 @@ Button.propTypes = {
     "light",
     "dark"
   ]),
+  /**
+   * Set icon to display on the right side of the text.
+   */
   endIcon: PropTypes.node,
+  /**
+   * Set icon to display on the left side of the text.
+   */
   startIcon: PropTypes.node,
+  /**
+   * Changes the size of the button.
+   */
   size: PropTypes.oneOf(["sm", "md", "lg", "xlg"]),
-  fullWidth: PropTypes.bool
+  /**
+   * Sets the button to the full width of the parent container.
+   */
+  block: PropTypes.bool
 };
 
 export default withStyles(styles)(Button);

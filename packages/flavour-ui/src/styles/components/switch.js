@@ -82,6 +82,7 @@ const switch_ = components => {
     disabled: (props, theme) => ({
       pointerEvents: "none",
       backgroundColor: theme.colors.backgrounds.lightgrey,
+
       "& > $slider": {
         backgroundColor: theme.colors.backgrounds.lightgrey
       },

@@ -13,10 +13,19 @@ import {
   Switch,
   Radio,
   RadioGroup,
-  Select
+  Select,
+  CardImg,
+  CardBody,
+  CardTitle
 } from "@gobl/flavour-ui";
 
-import { MdSend, MdDelete, MdSave, MdEdit } from "react-icons/md";
+import {
+  MdSend,
+  MdDelete,
+  MdSave,
+  MdEdit,
+  MdKeyboardArrowRight
+} from "react-icons/md";
 
 const theme = {
   variables: {}
@@ -72,28 +81,28 @@ export default class App extends Component {
                 </Grid>
                 <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Outlined</Typography>
-                  <Button color="primary" variant="outlined">
+                  <Button color="primary" outlined>
                     Primary
                   </Button>
-                  <Button color="secondary" variant="outlined">
+                  <Button color="secondary" outlined>
                     Secondary
                   </Button>
-                  <Button color="success" variant="outlined">
+                  <Button color="success" outlined>
                     Success
                   </Button>
-                  <Button color="danger" variant="outlined">
+                  <Button color="danger" outlined>
                     Danger
                   </Button>
-                  <Button color="warning" variant="outlined">
+                  <Button color="warning" outlined>
                     Warning
                   </Button>
-                  <Button color="info" variant="outlined">
+                  <Button color="info" outlined>
                     Info
                   </Button>
-                  <Button color="dark" variant="outlined">
+                  <Button color="dark" outlined>
                     Dark
                   </Button>
-                  <Button color="light" variant="outlined">
+                  <Button color="light" outlined>
                     Light
                   </Button>
                 </Grid>
@@ -114,7 +123,7 @@ export default class App extends Component {
                 </Grid>
                 <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Full Width</Typography>
-                  <Button color="primary" size="lg" fullWidth={true}>
+                  <Button color="primary" size="lg" block>
                     Full Width Button
                   </Button>
                 </Grid>
@@ -125,7 +134,7 @@ export default class App extends Component {
                     <Button>Middle</Button>
                     <Button>Right</Button>
                   </ButtonGroup>
-                  <ButtonGroup fullWidth size="lg" color="primary">
+                  <ButtonGroup block outlined size="lg" color="primary">
                     <Button>Left</Button>
                     <Button>Middle</Button>
                     <Button>Right</Button>
@@ -242,9 +251,47 @@ export default class App extends Component {
                 </Grid>
               </Grid>
               <Typography variant="h1">Cards</Typography>
-              <Card>
-                <Typography variant="p">Example Card</Typography>
-              </Card>
+              <Grid container spacing={1}>
+                <Grid item xs={12} md={4} lg={3}>
+                  <Card>
+                    <CardImg source="https://www.b3multimedia.ie/wp-content/uploads/2017/06/free-stock-images-websites.jpg" />
+                    <CardBody>
+                      <CardTitle>Header</CardTitle>
+                      <Typography variant="p">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </Typography>
+                      <Button
+                        color="primary"
+                        endIcon={<MdKeyboardArrowRight size={20} />}
+                      >
+                        Read More
+                      </Button>
+                    </CardBody>
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={4} lg={3}>
+                  <Card>
+                    <CardBody>
+                      <CardTitle>Header</CardTitle>
+                      <Typography variant="p">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </Typography>
+                      <Button
+                        color="primary"
+                        endIcon={<MdKeyboardArrowRight size={20} />}
+                      >
+                        Read More
+                      </Button>
+                    </CardBody>
+                    <CardImg
+                      bottom
+                      source="https://www.b3multimedia.ie/wp-content/uploads/2017/06/free-stock-images-websites.jpg"
+                    />
+                  </Card>
+                </Grid>
+              </Grid>
               <Typography variant="h1">Grids</Typography>
               <Grid container spacing={1}>
                 <Grid item xs={12} md={4} lg={4}>

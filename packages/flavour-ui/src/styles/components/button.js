@@ -12,6 +12,7 @@ const button = components => {
       cursor: "pointer",
       outline: "none",
       marginBottom: "0.25rem",
+      "box-shadow": theme.mixins.shadows.light,
       "&:not(last-child)": {
         marginRight: "0.25rem"
       },

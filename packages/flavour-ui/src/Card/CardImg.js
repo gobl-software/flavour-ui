@@ -7,7 +7,8 @@ const styles = {
   root: ({ theme, ...props }) => ({
     "object-fit": "cover",
     width: "100%",
-    marginBottom: "-4px"
+    minHeight: "200px",
+    minWidth: "200px"
   }),
   top: ({ theme, ...props }) => ({
     borderTopRightRadius: theme.variables.borders.radius,
@@ -16,6 +17,14 @@ const styles = {
   bottom: ({ theme, ...props }) => ({
     borderBottomRightRadius: theme.variables.borders.radius,
     borderBottomLeftRadius: theme.variables.borders.radius
+  }),
+  left: ({ theme, ...props }) => ({
+    borderTopLeftRadius: theme.variables.borders.radius,
+    borderBottomLeftRadius: theme.variables.borders.radius
+  }),
+  right: ({ theme, ...props }) => ({
+    borderBottomRightRadius: theme.variables.borders.radius,
+    borderTopRightRadius: theme.variables.borders.radius
   })
 };
 
@@ -24,19 +33,23 @@ const CardImg = React.forwardRef((props, ref) => {
     children,
     classes,
     className,
-    source,
+    src,
     top = false,
     bottom = false,
+    left = false,
+    right = false,
     ...other
   } = props;
 
   return (
     <img
       className={clsx(classes.root, {
-        [classes.top]: bottom && top === false ? false : true,
-        [classes.bottom]: bottom
+        [classes.top]: top,
+        [classes.bottom]: bottom,
+        [classes.left]: left,
+        [classes.right]: right
       })}
-      src={source}
+      src={src}
       ref={ref}
       {...other}
     />
@@ -47,9 +60,11 @@ CardImg.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
-  img: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
   top: PropTypes.bool,
-  bottom: PropTypes.bool
+  bottom: PropTypes.bool,
+  left: PropTypes.bool,
+  right: PropTypes.bool
 };
 
 export default withStyles(styles)(CardImg);

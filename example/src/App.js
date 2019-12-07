@@ -254,9 +254,12 @@ export default class App extends Component {
               <Grid container spacing={1}>
                 <Grid item xs={12} md={4} lg={3}>
                   <Card>
-                    <CardImg source="https://www.b3multimedia.ie/wp-content/uploads/2017/06/free-stock-images-websites.jpg" />
+                    <CardImg
+                      top
+                      src="https://polarexpedition.net/assets/img/placeholder.svg"
+                    />
                     <CardBody>
-                      <CardTitle>Header</CardTitle>
+                      <CardTitle>Top Image</CardTitle>
                       <Typography variant="p">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry.
@@ -273,7 +276,7 @@ export default class App extends Component {
                 <Grid item xs={12} md={4} lg={3}>
                   <Card>
                     <CardBody>
-                      <CardTitle>Header</CardTitle>
+                      <CardTitle>Bottom Image</CardTitle>
                       <Typography variant="p">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry.
@@ -287,9 +290,55 @@ export default class App extends Component {
                     </CardBody>
                     <CardImg
                       bottom
-                      source="https://www.b3multimedia.ie/wp-content/uploads/2017/06/free-stock-images-websites.jpg"
+                      src="https://polarexpedition.net/assets/img/placeholder.svg"
                     />
                   </Card>
+                </Grid>
+                <Grid item xs={12} md={4} lg={6}>
+                  <Grid container spacing={1}>
+                    <Grid item xs={12} md={12} lg={12}>
+                      <Card vertical>
+                        <CardImg
+                          left
+                          src="https://polarexpedition.net/assets/img/placeholder.svg"
+                        />
+                        <CardBody>
+                          <CardTitle>Left Image</CardTitle>
+                          <Typography variant="p">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                          </Typography>
+                          <Button
+                            color="primary"
+                            endIcon={<MdKeyboardArrowRight size={20} />}
+                          >
+                            Read More
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={12}>
+                      <Card vertical>
+                        <CardBody>
+                          <CardTitle>Right Image</CardTitle>
+                          <Typography variant="p">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                          </Typography>
+                          <Button
+                            color="primary"
+                            endIcon={<MdKeyboardArrowRight size={20} />}
+                          >
+                            Read More
+                          </Button>
+                        </CardBody>
+                        <CardImg
+                          right
+                          src="https://polarexpedition.net/assets/img/placeholder.svg"
+                        />
+                      </Card>
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
               <Typography variant="h1">Grids</Typography>

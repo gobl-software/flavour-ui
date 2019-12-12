@@ -28,6 +28,9 @@ import {
 } from "react-icons/md";
 
 const theme = {
+  typography: {
+    font: "Segoe UI, sans-serif"
+  },
   variables: {}
 };
 
@@ -123,8 +126,8 @@ export default class App extends Component {
                 </Grid>
                 <Grid item xs={12} lg={6}>
                   <Typography variant="h5">Full Width</Typography>
-                  <Button color="primary" size="lg" block>
-                    Full Width Button
+                  <Button color="primary" block>
+                    Block Button
                   </Button>
                 </Grid>
                 <Grid item xs={12} lg={6}>

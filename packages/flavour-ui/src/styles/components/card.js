@@ -8,7 +8,7 @@ const card = components => {
       borderRadius: theme.variables.borders.radius,
       border: `1px solid ${theme.colors.borders.lighterGrey}`,
       transition: "all ease-in-out 200ms",
-      "box-shadow": theme.mixins.shadows.light,
+      "box-shadow": theme.mixins.shadows.button,
       ...appendStyles({
         component: "card",
         style: "root",

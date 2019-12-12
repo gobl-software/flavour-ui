@@ -34,11 +34,13 @@ const switch_ = components => {
     }),
     slider: (props, theme) => ({
       position: "absolute",
-      backgroundColor: theme.colors[props.color ? props.color : "primary"],
-      height: "25px",
+      boxSizing: "border-box",
+      backgroundColor: "white",
+      height: "21px",
       borderRadius: "100px",
-      left: "0",
-      width: "25px",
+      top: "2px",
+      left: "2px",
+      width: "21px",
       transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 100ms",
       boxShadow: theme.mixins.shadows.light,
       ...appendStyles({
@@ -50,13 +52,9 @@ const switch_ = components => {
       })
     }),
     active: (props, theme) => ({
-      backgroundColor: theme.colors.lighten(
-        theme.colors[props.color ? props.color : "primary"],
-        0.35
-      ),
+      backgroundColor: theme.colors[props.color ? props.color : "primary"],
       "& > $slider": {
-        backgroundColor: theme.colors[props.color ? props.color : "primary"],
-        left: "calc(100% - 25px)"
+        left: "calc(100% - 23px)"
       },
       ...appendStyles({
         component: "switch",
@@ -68,7 +66,7 @@ const switch_ = components => {
     }),
     label: (props, theme) => ({
       ...theme.typography.checkbox,
-      color: theme.colors.text.dark,
+      color: theme.colors.text.dark2,
       userSelect: "none",
       marginRight: "10px",
       ...appendStyles({

@@ -26,7 +26,7 @@ const checkbox = components => {
       })
     }),
     label: (props, theme) => ({
-      color: theme.colors.text.dark,
+      color: theme.colors.text.dark2,
       userSelect: "none",
       marginRight: "10px",
       ...appendStyles({

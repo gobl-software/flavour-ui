@@ -10,14 +10,15 @@ const colors = {
   light: "#f8f9fa",
   dark: "#031b4e",
   text: {
-    dark: "#031b4e",
+    dark: "#0d1a26",
+    dark2: "#5a636e",
     light: "#fff"
   },
   borders: {
     lighterGrey: "#cad2d8"
   },
   backgrounds: {
-    lightgrey: "lightgrey"
+    lightgrey: "#bfbfbf"
   },
   /**
    * @param color rgb, rgba, hla or hex color string.

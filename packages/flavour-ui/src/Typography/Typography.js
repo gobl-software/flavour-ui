@@ -34,7 +34,7 @@ const styles = {
   }),
   p: ({ theme }) => ({
     ...theme.typography.p,
-    color: theme.colors.text.dark
+    color: theme.colors.text.dark2
   })
 };
 

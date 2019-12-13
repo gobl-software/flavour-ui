@@ -31,7 +31,12 @@ const theme = {
   typography: {
     font: "Segoe UI, sans-serif"
   },
-  variables: {}
+  variables: {
+    borders: {
+      radius: 3,
+      width: 1
+    }
+  }
 };
 
 export default class App extends Component {

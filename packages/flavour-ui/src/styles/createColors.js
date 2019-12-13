@@ -9,6 +9,7 @@ const colors = {
   info: "#16a2b8",
   light: "#f8f9fa",
   dark: "#031b4e",
+  default: "#fff",
   text: {
     dark: "#0d1a26",
     dark2: "#5a636e",

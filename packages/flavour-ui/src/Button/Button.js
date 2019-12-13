@@ -36,7 +36,8 @@ const styles = {
   label: {
     display: "inline-flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    textShadow: "-1px -1px 0 rgba(0,0,0,0.10)"
   },
   text: {
     padding: "4px 8px"

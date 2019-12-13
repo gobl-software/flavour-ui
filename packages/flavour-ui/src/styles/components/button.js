@@ -42,24 +42,24 @@ const button = components => {
       transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 250ms",
       "&:hover": {
         color: `${theme.colors.text.light} !important`,
-        backgroundColor: `${theme.colors.darken(
+        backgroundColor: `${theme.colors.lighten(
           theme.colors[props.color ? props.color : "primary"],
-          0.1
+          0.06
         )} !important`,
-        borderColor: `${theme.colors.darken(
+        borderColor: `${theme.colors.lighten(
           theme.colors[props.color ? props.color : "primary"],
-          0.1
+          0.06
         )} !important`
       },
       "&:active": {
         color: `${theme.colors.text.light} !important`,
         backgroundColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.25
+          0.15
         )} !important`,
         borderColor: `${theme.colors.darken(
           theme.colors[props.color ? props.color : "primary"],
-          0.25
+          0.15
         )} !important`
       },
       ...appendStyles({
@@ -71,17 +71,17 @@ const button = components => {
       })
     }),
     color: (props, theme) => ({
-      backgroundColor: theme.colors[props.color ? props.color : "primary"],
+      backgroundColor: theme.colors[props.color ? props.color : "default"],
       "&:hover": {
-        backgroundColor: theme.colors.darken(
-          theme.colors[props.color ? props.color : "primary"],
-          0.1
+        backgroundColor: theme.colors.lighten(
+          theme.colors[props.color ? props.color : "default"],
+          0.06
         )
       },
       "&:active": {
         backgroundColor: theme.colors.darken(
-          theme.colors[props.color ? props.color : "primary"],
-          0.25
+          theme.colors[props.color ? props.color : "default"],
+          0.15
         )
       },
       ...appendStyles({

@@ -19,8 +19,8 @@ const switch_ = components => {
       position: "relative",
       backgroundColor: theme.colors.backgrounds.lightgrey,
       borderRadius: "100px",
-      width: "50px",
-      height: "25px",
+      width: "45px",
+      height: "23px",
       cursor: "pointer",
       marginRight: "7px",
       transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 100ms",
@@ -36,11 +36,11 @@ const switch_ = components => {
       position: "absolute",
       boxSizing: "border-box",
       backgroundColor: "white",
-      height: "21px",
+      height: "19px",
       borderRadius: "100px",
       top: "2px",
       left: "2px",
-      width: "21px",
+      width: "19px",
       transition: "all cubic-bezier(0.4, 0.0, 0.2, 1) 100ms",
       boxShadow: theme.mixins.shadows.light,
       ...appendStyles({
@@ -54,7 +54,7 @@ const switch_ = components => {
     active: (props, theme) => ({
       backgroundColor: theme.colors[props.color ? props.color : "primary"],
       "& > $slider": {
-        left: "calc(100% - 23px)"
+        left: "calc(100% - 21px)"
       },
       ...appendStyles({
         component: "switch",

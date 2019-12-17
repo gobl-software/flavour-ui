@@ -142,7 +142,7 @@ export default class App extends Component {
                     <Button>Middle</Button>
                     <Button>Right</Button>
                   </ButtonGroup>
-                  <ButtonGroup block outlined size="lg" color="primary">
+                  <ButtonGroup block outlined size="md" color="primary">
                     <Button>Left</Button>
                     <Button>Middle</Button>
                     <Button>Right</Button>

@@ -15,7 +15,7 @@ const styles = {
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
       borderLeftWidth: `${
-        props.variant === "outlined"
+        props.outlined === true
           ? theme.variables.borders.width > 1
             ? theme.variables.borders.width / 2
             : 0
@@ -27,7 +27,7 @@ const styles = {
       borderBottomRightRadius: 0,
       marginRight: 0,
       borderRightWidth: `${
-        props.variant === "outlined"
+        props.outlined === true
           ? theme.variables.borders.width > 1
             ? theme.variables.borders.width / 2
             : 0
@@ -35,7 +35,7 @@ const styles = {
       }px`
     }
   }),
-  fullWidth: {
+  block: {
     width: "100%"
   }
 };
@@ -45,20 +45,16 @@ const ButtonGroup = React.forwardRef((props, ref) => {
     children,
     classes,
     className,
-    variant = "normal",
     color,
     size = "md",
-    fullWidth = false,
+    outlined = false,
+    block = false,
     ...other
   } = props;
 
   return (
     <span
-      className={clsx(
-        classes.root,
-        { [classes.fullWidth]: fullWidth },
-        className
-      )}
+      className={clsx(classes.root, { [classes.block]: block }, className)}
       ref={ref}
       {...other}
     >
@@ -66,9 +62,9 @@ const ButtonGroup = React.forwardRef((props, ref) => {
         return React.cloneElement(child, {
           className: clsx(classes.grouped, child.props.className),
           color: child.props.color || color,
-          fullWidth,
+          block: child.props.block || block,
           size: child.props.size || size,
-          variant: child.props.variant || variant
+          outlined: child.props.outlined || outlined
         });
       })}
     </span>

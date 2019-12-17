@@ -12,3 +12,5 @@ export { default as Container } from "./Container";
 export { default as Section } from "./Section";
 export { default as Typography } from "./Typography";
 export { default as ThemeProvider } from "./ThemeProvider";
+
+export { default as withStyles } from "./styles/withStyles";

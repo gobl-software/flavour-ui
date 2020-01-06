@@ -119,9 +119,6 @@ const Grid = React.forwardRef((props, ref) => {
   );
 });
 
-/**
- * @todo create first to do test
- */
 Grid.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,

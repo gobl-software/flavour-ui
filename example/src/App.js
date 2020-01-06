@@ -16,7 +16,8 @@ import {
   Select,
   CardImg,
   CardBody,
-  CardTitle
+  CardTitle,
+  Badge
 } from "@gobl/flavour-ui";
 
 import {
@@ -69,6 +70,35 @@ export default class App extends Component {
                     the release of Letraset sheets containing Lorem Ipsum
                     passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Typography variant="h1">Badges</Typography>
+              <br />
+              <Grid container spacing={1}>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h1">
+                    Messages <Badge>New</Badge>
+                  </Typography>
+                  <Typography variant="h2">
+                    Messages <Badge>New</Badge>
+                  </Typography>
+                  <Typography variant="h3">
+                    Messages <Badge>New</Badge>
+                  </Typography>
+                  <Typography variant="h4">
+                    Messages <Badge>New</Badge>
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} lg={6}>
+                  <Typography variant="h5">
+                    Messages <Badge color="secondary">New</Badge>
+                  </Typography>
+                  <Typography variant="h6">
+                    Messages <Badge color="success">New</Badge>
+                  </Typography>
+                  <Typography variant="p">
+                    Messages <Badge color="danger">New</Badge>
                   </Typography>
                 </Grid>
               </Grid>

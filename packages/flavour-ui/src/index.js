@@ -1,4 +1,5 @@
 export { default as Button } from "./Button";
+export { default as Badge } from "./Badge";
 export { default as ButtonGroup } from "./ButtonGroup";
 export { Card, CardImg, CardBody, CardTitle } from "./Card";
 export { default as Grid } from "./Grid";

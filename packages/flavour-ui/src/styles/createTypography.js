@@ -9,10 +9,10 @@ const createFont = (size, weight, height, font) => {
 
 const typography = font => ({
   h1: {
-    ...createFont(2.6, 800, 1.2, font)
+    ...createFont(2.6, 800, 1, font)
   },
   h2: {
-    ...createFont(2.3, 800, 1.2, font)
+    ...createFont(2.3, 800, 1, font)
   },
   h3: {
     ...createFont(2, 700, 1, font)

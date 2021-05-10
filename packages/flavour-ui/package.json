@@ -60,7 +60,7 @@
   ],
   "dependencies": {
     "deepmerge": "^4.2.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react-icons": "^3.8.0",
     "react-jss": "^10.0.0"
   }
